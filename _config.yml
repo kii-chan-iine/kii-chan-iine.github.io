@@ -7,7 +7,7 @@
 # 井号后面的文字是说明文档，不会被程序读取。
 name: Kii Chan
 # 描述/签名
-description: 你年少的时候是否有过孤独而又热血的梦？
+description: 明早就一起去看海 望向未来
 
 
 #
@@ -33,7 +33,7 @@ navigation:
     url: /tags
 
 # 每页的文章数
-paginate: 8
+paginate: 20
 
 # 你的社交网络链接，它们会作为图标出现在你的网站页脚中，可选填写
 footer-links: 
