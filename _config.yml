@@ -54,7 +54,7 @@ footer-links:
   # youtube: # channel/<your_long_string> or user/<user-name>
 
 # 站点页脚的文字
-footer-text: Copyright (c) 2019 From Middangeard 
+footer-text: Copyright (c) 2021 From Elson #ECworks 
 
 # 输入Disqus shortname，即可添加评论区，细节可阅读文档。
 disqus: kii-chan #shortname
