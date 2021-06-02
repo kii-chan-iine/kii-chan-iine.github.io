@@ -1,0 +1,185 @@
+<!-- build time:Tue May 28 2019 01:37:47 GMT+0000 (Coordinated Universal Time) --><!DOCTYPE html><html class="theme-next mist use-motion" lang="zh-CN"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><meta name="theme-color" content="#222"><meta name="google-site-verification" content="XCppppl60fPQTlwxDodwZIhMarkybEgwVpcEz85KTuQ"><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css"><link rel="stylesheet" href="/css/main.css?v=7.0.1"><link rel="apple-touch-icon" sizes="180x180" href="/images/code.png?v=7.0.1"><link rel="icon" type="image/png" sizes="32x32" href="/images/code.png?v=7.0.1"><link rel="icon" type="image/png" sizes="16x16" href="/images/code.png?v=7.0.1"><link rel="mask-icon" href="/images/code.png?v=7.0.1" color="#222"><script id="hexo.configurations">var NexT=window.NexT||{},CONFIG={root:"/",scheme:"Mist",version:"7.0.1",sidebar:{position:"left",display:"post",offset:12,onmobile:!1,dimmer:!1},back2top:!0,back2top_sidebar:!1,fancybox:!0,fastclick:!0,lazyload:!0,tabs:!0,motion:{enable:!0,async:!1,transition:{post_block:"fadeIn",post_header:"slideDownIn",post_body:"slideDownIn",coll_header:"slideLeftIn",sidebar:"slideUpIn"}},algolia:{applicationID:"",apiKey:"",indexName:"",hits:{per_page:10},labels:{input_placeholder:"Search for Posts",hits_empty:"We didn't find any results for the search: ${query}",hits_stats:"${hits} results found in ${time} ms"}}}</script><meta name="description" content="HEXO 博客最近大更新,页面与之前大不相同,这里跟大家分享一下相关的设置方法"><meta name="keywords" content="Liunx,Node.js,Hexo"><meta property="og:type" content="article"><meta property="og:title" content="Hexo+NexT 进阶设置"><meta property="og:url" content="https://vxhly.github.io/archives/6232b20b.html"><meta property="og:site_name" content="Coding and Fixing"><meta property="og:description" content="HEXO 博客最近大更新,页面与之前大不相同,这里跟大家分享一下相关的设置方法"><meta property="og:locale" content="zh-CN"><meta property="og:updated_time" content="2019-05-28T01:36:30.390Z"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Hexo+NexT 进阶设置"><meta name="twitter:description" content="HEXO 博客最近大更新,页面与之前大不相同,这里跟大家分享一下相关的设置方法"><link rel="alternate" href="/axom.xml" title="Coding and Fixing" type="application/atom+xml"><link rel="canonical" href="https://vxhly.github.io/archives/6232b20b.html"><script id="page.configurations">CONFIG.page={sidebar:""}</script><title>Hexo+NexT 进阶设置 | Coding and Fixing</title><noscript><style>.sidebar-inner,.use-motion .brand,.use-motion .collection-title,.use-motion .comments,.use-motion .menu-item,.use-motion .motion-element,.use-motion .pagination,.use-motion .post-block,.use-motion .post-body,.use-motion .post-header{opacity:initial}.use-motion .logo,.use-motion .site-subtitle,.use-motion .site-title{opacity:initial;top:initial}.use-motion .logo-line-before i{left:initial}.use-motion .logo-line-after i{right:initial}</style></noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"><style>pre{position:relative;border-radius:2px;padding:25px 0 0}pre.mermaid{background:#d3d3d3;display:flex;justify-content:center;padding:0}pre>span.code-copy{cursor:pointer;position:absolute;top:0;right:0;color:#a44545;background-color:#222;border-bottom-left-radius:2px;border-top-right-radius:2px;text-align:right;font-size:.7em;padding:5px 10px;line-height:15px;height:15px;font-weight:500}code.has-numbering{margin-left:2.5rem}code.has-numbering::-webkit-scrollbar{display:none}.pre-numbering{margin:0;position:absolute;top:33px;padding:0 10px}.pre-numbering li{list-style-type:decimal-leading-zero!important}blockquote{color:#888;background-color:#eae6f3;border-left:1rem solid #5236a0;padding:0 1.5rem;position:relative;font-family:Roboto,sans-serif}blockquote>p{word-wrap:break-word}blockquote:after,blockquote:before{color:#392570;font-size:2.5rem;position:absolute;line-height:2.5rem}@media (max-width:760px){.post-body pre{padding:25px 0 0}.post-body .pre-numbering,blockquote:after,blockquote:before{display:none}code.has-numbering{margin:0}}.image-caption{display:none}</style></head><body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN"><div class="container sidebar-position-left page-post-detail"><div class="headband"></div><header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="header-inner"><div class="site-brand-wrapper"><div class="site-meta"><div class="custom-logo-site-title"><a href="/" class="brand" rel="start"><span class="logo-line-before"><i></i></span> <span class="site-title">Coding and Fixing</span> <span class="logo-line-after"><i></i></span></a></div><h1 class="site-subtitle" itemprop="description">Coding and Fixing</h1></div><div class="site-nav-toggle"><button aria-label="切换导航栏"><span class="btn-bar"></span> <span class="btn-bar"></span> <span class="btn-bar"></span></button></div></div><nav class="site-nav"><ul id="menu" class="menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i><br>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i><br>标签<span class="badge">41</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i><br>分类<span class="badge">17</span></a></li><li class="menu-item menu-item-archives menu-item-active"><a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i><br>归档<span class="badge">104</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="menu-item-icon fa fa-fw fa-sitemap"></i><br>站点地图</a></li><li class="menu-item menu-item-search"><a href="javascript:;" class="popup-trigger"><i class="menu-item-icon fa fa-search fa-fw"></i><br>搜索</a></li></ul><div class="site-search"><div class="popup search-popup local-search-popup"><div class="local-search-header clearfix"><span class="search-icon"><i class="fa fa-search"></i> </span><span class="popup-btn-close"><i class="fa fa-times-circle"></i></span><div class="local-search-input-wrapper"><input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input"></div></div><div id="local-search-result"></div></div></div></nav></div></header><main id="main" class="main"><div class="main-inner"><div class="content-wrap"><div id="content" class="content"><div id="posts" class="posts-expand"><div class="reading-progress-bar"></div><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><div class="post-block"><link itemprop="mainEntityOfPage" href="https://vxhly.github.io/archives/6232b20b.html"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="name" content="星火燎原@vxhly"><meta itemprop="description" content="源于生活而高于生活"><meta itemprop="image" content="/images/avatar.png"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="Coding and Fixing"></span><header class="post-header"><h2 class="post-title" itemprop="name headline">Hexo+NexT 进阶设置</h2><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time title="创建时间：2017-10-28 20:24:59" itemprop="dateCreated datePublished" datetime="2017-10-28T20:24:59+00:00">2017-10-28</time> <span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-calendar-check-o"></i> </span><span class="post-meta-item-text">更新于</span> <time title="修改时间：2019-05-28 01:36:30" itemprop="dateModified" datetime="2019-05-28T01:36:30+00:00">2019-05-28</time> </span><span class="post-category"><span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-folder-o"></i> </span><span class="post-meta-item-text">分类于</span> <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/node-js/" itemprop="url" rel="index"><span itemprop="name">node.js</span></a></span> </span><span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-eye"></i> 阅读次数： <span class="busuanzi-value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body" itemprop="articleBody"><p>HEXO 博客最近大更新,页面与之前大不相同,这里跟大家分享一下相关的设置方法<a id="more"></a></p><h1 id="highlight-js"><a href="#highlight-js" class="headerlink" title="highlight.js"></a>highlight.js</h1><blockquote><p><span class="exturl" data-url="aHR0cHM6Ly9oaWdobGlnaHRqcy5vcmcv" title="https://highlightjs.org/">highlightjs 官方网站<i class="fa fa-external-link"></i></span></p></blockquote><p>Next 自带的代码高亮并不符合我的口味,所以就采用了第三方的 <code>highlight.js</code></p><h2 id="Use"><a href="#Use" class="headerlink" title="Use"></a>Use</h2><h3 id="先禁用默认的高亮方式"><a href="#先禁用默认的高亮方式" class="headerlink" title="先禁用默认的高亮方式"></a>先禁用默认的高亮方式</h3><h4 id="编辑配置文件"><a href="#编辑配置文件" class="headerlink" title="编辑配置文件"></a>编辑配置文件</h4><p><code>./_config.yml</code></p><pre><code>highlight:
+  enable: false
+  line_number: true
+  autoi_detect: true
+  tab_replace:
+</code></pre><h3 id="引入第三方-highlight"><a href="#引入第三方-highlight" class="headerlink" title="引入第三方 highlight"></a>引入第三方 highlight</h3><h4 id="编辑主题源文件"><a href="#编辑主题源文件" class="headerlink" title="编辑主题源文件"></a>编辑主题源文件</h4><p><code>./themes/layout/_layout.swing</code></p><p>注意这边需要引入样式,相关的样式以及支持的语言请查看 <span class="exturl" data-url="aHR0cHM6Ly9oaWdobGlnaHRqcy5vcmcvc3RhdGljL2RlbW8v" title="https://highlightjs.org/static/demo/">176 languages and 79 styles<i class="fa fa-external-link"></i></span></p><p>因为个人比较喜欢 <code>Atom</code> 这款编辑器,改编辑器用默认的样式为 <code>atom-one-dark</code>,所以这里采用该样式</p><pre><code class="lang-html">&lt;link rel=&quot;stylesheet&quot; href=&quot;//cdn.bootcss.com/highlight.js/9.12.0/styles/atom-one-dark.min.css&quot;&gt;
+</code></pre><p>除了引入样式,还需初始化 highlightjs,这里提供的代码是可以显示行号的</p><pre><code class="lang-html">&lt;script src=&quot;//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  $(function() {
+    hljs.initHighlighting();
+    $(&#39;pre code&#39;).each(function() {
+      var lines = $(this).text().split(&#39;\n&#39;).length - 1;
+      var $numbering = $(&#39;&lt;ul/&gt;&#39;).addClass(&#39;pre-numbering&#39;);
+      $(this)
+        .addClass(&#39;has-numbering&#39;)
+        .parent()
+        .append($numbering);
+      for (i = 1;i &lt;= lines;i++) {
+        $numbering.append($(&#39;&lt;li/&gt;&#39;));
+      }
+    });
+  });
+
+&lt;/script&gt;
+</code></pre><p>可以看到以上的代码是有添加 class 样式的,所以还需补上相关的样式表,以下的样式表在小分辨率的情况下行号是不显示出来的,优化效果请参照本博客代码高亮区块</p><pre><code class="lang-html">&lt;style&gt;
+  pre {
+    position: relative;
+    padding: 0;
+  }
+
+  code.has-numbering {
+    margin-left: 2.5rem;
+  }
+
+  code.has-numbering::-webkit-scrollbar {
+    display: none;
+  }
+
+  .pre-numbering {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .pre-numbering li {
+    list-style-type: decimal-leading-zero !important;
+  }
+
+  @media (max-width: 760px) {
+    .post-body pre {
+      padding: 0px;
+    }
+
+    .post-body .pre-numbering {
+      display: none;
+    }
+
+    code.has-numbering {
+      margin: 0;
+    }
+  }
+
+&lt;/style&gt;
+</code></pre><h1 id="Copy"><a href="#Copy" class="headerlink" title="Copy"></a>Copy</h1><pre><code class="lang-html">&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.1/clipboard.min.js&quot;&gt;&lt;/script&gt;
+</code></pre><blockquote><p>这边不就贴关键代码了,,请移步 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3plbm9yb2NoYS9jbGlwYm9hcmQuanM=" title="https://github.com/zenorocha/clipboard.js">clipboard.js<i class="fa fa-external-link"></i></span> <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3Z4aGx5L3Z4aGx5LmdpdGh1Yi5pby9ibG9iL2Jsb2ctc291cmNlL3RoZW1lcy9uZXh0L2xheW91dC9fbGF5b3V0LnN3aWc=" title="https://github.com/vxhly/vxhly.github.io/blob/blog-source/themes/next/layout/_layout.swig">_layout.swig<i class="fa fa-external-link"></i></span></p></blockquote><h1 id="优化-blockquote"><a href="#优化-blockquote" class="headerlink" title="优化 blockquote"></a>优化 blockquote</h1><p>默认的引用 blockquote 样式比较丑,写了一些样式优化它,优化效果请参照本博客的引用区块</p><h2 id="编辑主题源文件-1"><a href="#编辑主题源文件-1" class="headerlink" title="编辑主题源文件"></a>编辑主题源文件</h2><p><code>./themes/layout/_layout.swing</code></p><pre><code class="lang-html">&lt;style&gt;
+blockquote {
+  color: #888;
+  background-color: #eae6f3;
+  border-left: 1rem solid #5236a0;
+  padding: 0 1.5rem;
+  position: relative;
+  font-family: &#39;Roboto&#39;, sans-serif;
+}
+
+blockquote:before,
+blockquote:after {
+  color: #392570;
+  font-size: 2.5rem;
+  position: absolute;
+  line-height: 2.5rem;
+}
+
+blockquote:before {
+  content: &quot;\201C&quot;;
+  left: -1rem;
+  top: 0;
+}
+
+blockquote:after {
+  content: &quot;\201D&quot;;
+  right: 0;
+  bottom: -1rem;
+}
+&lt;/style&gt;
+</code></pre><h1 id="网站已运行时间"><a href="#网站已运行时间" class="headerlink" title="网站已运行时间"></a>网站已运行时间</h1><h2 id="编辑主题源文件-2"><a href="#编辑主题源文件-2" class="headerlink" title="编辑主题源文件"></a>编辑主题源文件</h2><p><code>./themes/layout/_parrials/footer.swing</code></p><p>找到以下代码区块</p><pre><code class="lang-html">{% if theme.footer.theme.enable %}
+/* ... */
+{% endif %}
+</code></pre><p>在 <code>&lt;/div&gt;</code> 之前添加</p><pre><code class="lang-html">&lt;span&gt;   |   &lt;/span&gt;
+&lt;span id=&quot;showDays&quot;&gt;&lt;/span&gt;
+</code></pre><p>在该文件末尾处添加</p><pre><code class="lang-html">&lt;script&gt;
+  var seconds = 1000;
+  var minutes = seconds * 60;
+  var hours = minutes * 60;
+  var days = hours * 24;
+  var years = days * 365;
+  var birthDay = Date.UTC(2016,07,30,00,00,00);// 这里设置建站时间
+  setInterval(function() {
+    var today = new Date();
+    var todayYear = today.getFullYear();
+    var todayMonth = today.getMonth()+1;
+    var todayDate = today.getDate();
+    var todayHour = today.getHours();
+    var todayMinute = today.getMinutes();
+    var todaySecond = today.getSeconds();
+    var now = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+    var diff = now - birthDay;
+    var diffYears = Math.floor(diff/years);
+    var diffDays = Math.floor((diff/days)-diffYears*365);
+    var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+    var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+    var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+      document.getElementById(&#39;showDays&#39;).innerHTML=&quot;本站已运行 &quot;+diffYears+&quot; 年 &quot;+diffDays+&quot; 天 &quot;+diffHours+&quot; 小时 &quot;+diffMinutes+&quot; 分钟 &quot;+diffSeconds+&quot; 秒&quot;;
+  }, 1000);
+&lt;/script&gt;
+</code></pre><h1 id="开启页面动画效果"><a href="#开启页面动画效果" class="headerlink" title="开启页面动画效果"></a>开启页面动画效果</h1><h2 id="编辑主题配置文件"><a href="#编辑主题配置文件" class="headerlink" title="编辑主题配置文件"></a>编辑主题配置文件</h2><p><code>./themes/_config.yml</code></p><pre><code># Canvas-nest
+canvas_nest: true
+
+vendors:
+  # Internal version: 1.0.0
+  # https://github.com/hustcc/canvas-nest.js
+  canvas_nest: //cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js
+</code></pre><h1 id="新的评论系统"><a href="#新的评论系统" class="headerlink" title="新的评论系统"></a>新的评论系统</h1><blockquote><p>自从多说和网易云跟帖都挂了之后,Next 官方引入了 Valine 这一款评论系统</p></blockquote><h2 id="关于-Valine-的介绍"><a href="#关于-Valine-的介绍" class="headerlink" title="关于 Valine 的介绍"></a>关于 Valine 的介绍</h2><blockquote><p>请移步 <span class="exturl" data-url="aHR0cHM6Ly9pb2xpdS5jbi8yMDE3L2FkZC12YWxpbmUtY29tbWVudHMtdG8teW91ci1ibG9nLw==" title="https://ioliu.cn/2017/add-valine-comments-to-your-blog/">Valine — 一款极简的评论系统<i class="fa fa-external-link"></i></span>,配置中出现 <code>leancloud application appid</code> 和 <code>leancloud application appkey</code> 获取方法也请看此链接</p><p>相关的配置指南 <span class="exturl" data-url="aHR0cHM6Ly92YWxpbmUuanMub3JnLw==" title="https://valine.js.org/">https://valine.js.org/<i class="fa fa-external-link"></i></span></p></blockquote><h2 id="我的配置"><a href="#我的配置" class="headerlink" title="我的配置"></a>我的配置</h2><h3 id="编辑主题配置文件-1"><a href="#编辑主题配置文件-1" class="headerlink" title="编辑主题配置文件"></a>编辑主题配置文件</h3><p><code>./themes/_config.yml</code></p><pre><code># Valine.
+# You can get your appid and appkey from https://leancloud.cn
+# more info please open https://github.com/xCss/Valine
+valine:
+  enable: true
+  appid:  # your leancloud application appid
+  appkey:  # your leancloud application appkey
+  notify: false # mail notifier , https://github.com/xCss/Valine/wiki
+  verify: false # Verification code
+  placeholder: ヾﾉ≧∀≦)o  亲爱的小主,有何指教
+</code></pre><h2 id="使用最新的-Valine"><a href="#使用最新的-Valine" class="headerlink" title="使用最新的 Valine"></a>使用最新的 Valine</h2><h3 id="修改主题源码文件"><a href="#修改主题源码文件" class="headerlink" title="修改主题源码文件"></a>修改主题源码文件</h3><p><code>./themes/layout/_third-party/comments/valine.swig</code></p><pre><code class="lang-html">&lt;script src=&quot;//unpkg.com/valine/dist/Valine.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  new Valine({
+      av: AV,
+      el: &#39;#comments&#39; ,
+      app_id: &#39;{{ theme.valine.appid }}&#39;,
+      app_key: &#39;{{ theme.valine.appkey }}&#39;,
+      placeholder: &#39;{{ theme.valine.placeholder }}&#39;, // 默认 null
+      notify: {{ theme.valine.notify }}, // 默认 false
+      verify: {{ theme.valine.verify }}, // 默认 false
+      path: {{ theme.valine.path }}, // 默认 window.location.pathname
+      avatar: &#39;{{ theme.valine.avatar }}&#39; // 默认 &#39;&#39;
+  });
+&lt;/script&gt;
+</code></pre></div><div><div id="reward-container"><div>亲!!! 听说给作者打赏一杯咖啡钱,会给自己带来好运哦!</div><button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">打赏</button><div id="qr" style="display:none"><div style="display:inline-block"><img src="http://oss-blog.test.upcdn.net/wechatpay.jpg" alt="星火燎原@vxhly 微信支付"><p>微信支付</p></div><div style="display:inline-block"><img src="http://oss-blog.test.upcdn.net/alipay.jpg" alt="星火燎原@vxhly 支付宝"><p>支付宝</p></div></div></div></div><div><ul class="post-copyright"><li class="post-copyright-author"><strong>本文作者： </strong>星火燎原@vxhly</li><li class="post-copyright-link"><strong>本文链接：</strong> <a href="https://vxhly.github.io/archives/6232b20b.html" title="Hexo+NexT 进阶设置">https://vxhly.github.io/archives/6232b20b.html</a></li><li class="post-copyright-license"><strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC8="><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！</li></ul></div><footer class="post-footer"><div class="post-tags"><a href="/tags/Liunx/" rel="tag"># Liunx</a> <a href="/tags/Node-js/" rel="tag"># Node.js</a> <a href="/tags/Hexo/" rel="tag"># Hexo</a></div><div class="post-nav"><div class="post-nav-next post-nav-item"><a href="/archives/9cbc428.html" rel="next" title="RESTful API 设计指南（补充）"><i class="fa fa-chevron-left"></i> RESTful API 设计指南（补充）</a></div><span class="post-nav-divider"></span><div class="post-nav-prev post-nav-item"><a href="/archives/b0e3118c.html" rel="prev" title="ES6 学习笔记">ES6 学习笔记 <i class="fa fa-chevron-right"></i></a></div></div></footer></div></article></div></div></div><div class="sidebar-toggle"><div class="sidebar-toggle-line-wrap"><span class="sidebar-toggle-line sidebar-toggle-line-first"></span> <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span> <span class="sidebar-toggle-line sidebar-toggle-line-last"></span></div></div><aside id="sidebar" class="sidebar"><div class="sidebar-inner"><ul class="sidebar-nav motion-element"><li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">文章目录</li><li class="sidebar-nav-overview" data-target="site-overview-wrap">站点概览</li></ul><div class="site-overview-wrap sidebar-panel"><div class="site-overview"><div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person"><img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="星火燎原@vxhly"><p class="site-author-name" itemprop="name">星火燎原@vxhly</p><div class="site-description motion-element" itemprop="description">源于生活而高于生活</div></div><nav class="site-state motion-element"><div class="site-state-item site-state-posts"><a href="/archives/"><span class="site-state-item-count">104</span> <span class="site-state-item-name">日志</span></a></div><div class="site-state-item site-state-categories"><a href="/categories/"><span class="site-state-item-count">17</span> <span class="site-state-item-name">分类</span></a></div><div class="site-state-item site-state-tags"><a href="/tags/"><span class="site-state-item-count">41</span> <span class="site-state-item-name">标签</span></a></div></nav><div class="feed-link motion-element"><a href="/axom.xml" rel="alternate"><i class="fa fa-rss"></i> RSS</a></div><div class="links-of-author motion-element"><span class="links-of-author-item"><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3Z4aGx5" title="GitHub &rarr; https://github.com/vxhly"><i class="fa fa-fw fa-github"></i></span> </span><span class="links-of-author-item"><span class="exturl" data-url="bWFpbHRvOnBlbmdjaGVuZ291QGdtYWlsLmNvbQ==" title="E-Mail &rarr; mailto:pengchengou@gmail.com"><i class="fa fa-fw fa-envelope"></i></span></span></div><div class="links-of-blogroll motion-element links-of-blogroll-block"><div class="links-of-blogroll-title"><i class="fa fa-fw fa-link"></i> Links</div><ul class="links-of-blogroll-list"><li class="links-of-blogroll-item"><span class="exturl" data-url="aHR0cHM6Ly9tYW4ubGludXhkZS5uZXQv" title="https://man.linuxde.net/">Liunx Command</span></li><li class="links-of-blogroll-item"><span class="exturl" data-url="aHR0cHM6Ly9sZWFzdC5yZW53ZW5sb25nLmNvbS8=" title="https://least.renwenlong.com/">Least CSS pre-processors</span></li><li class="links-of-blogroll-item"><span class="exturl" data-url="aHR0cHM6Ly9jc3Myc2Fzcy5oZXJva3VhcHAuY29tLw==" title="https://css2sass.herokuapp.com/">CSS 2 SASS/SCSS CONVERTER</span></li><li class="links-of-blogroll-item"><span class="exturl" data-url="aHR0cHM6Ly93d3cuYm9vdGNkbi5jbi8=" title="https://www.bootcdn.cn/">BootCDN</span></li><li class="links-of-blogroll-item"><span class="exturl" data-url="aHR0cHM6Ly93d3cudjJleC5jb20v" title="https://www.v2ex.com/">V2EX</span></li></ul></div></div></div><div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active"><div class="post-toc"><div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#highlight-js"><span class="nav-number">1.</span> <span class="nav-text">highlight.js</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Use"><span class="nav-number">1.1.</span> <span class="nav-text">Use</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#先禁用默认的高亮方式"><span class="nav-number">1.1.1.</span> <span class="nav-text">先禁用默认的高亮方式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#编辑配置文件"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">编辑配置文件</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#引入第三方-highlight"><span class="nav-number">1.1.2.</span> <span class="nav-text">引入第三方 highlight</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#编辑主题源文件"><span class="nav-number">1.1.2.1.</span> <span class="nav-text">编辑主题源文件</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Copy"><span class="nav-number">2.</span> <span class="nav-text">Copy</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#优化-blockquote"><span class="nav-number">3.</span> <span class="nav-text">优化 blockquote</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#编辑主题源文件-1"><span class="nav-number">3.1.</span> <span class="nav-text">编辑主题源文件</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#网站已运行时间"><span class="nav-number">4.</span> <span class="nav-text">网站已运行时间</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#编辑主题源文件-2"><span class="nav-number">4.1.</span> <span class="nav-text">编辑主题源文件</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#开启页面动画效果"><span class="nav-number">5.</span> <span class="nav-text">开启页面动画效果</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#编辑主题配置文件"><span class="nav-number">5.1.</span> <span class="nav-text">编辑主题配置文件</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#新的评论系统"><span class="nav-number">6.</span> <span class="nav-text">新的评论系统</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#关于-Valine-的介绍"><span class="nav-number">6.1.</span> <span class="nav-text">关于 Valine 的介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#我的配置"><span class="nav-number">6.2.</span> <span class="nav-text">我的配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#编辑主题配置文件-1"><span class="nav-number">6.2.1.</span> <span class="nav-text">编辑主题配置文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用最新的-Valine"><span class="nav-number">6.3.</span> <span class="nav-text">使用最新的 Valine</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#修改主题源码文件"><span class="nav-number">6.3.1.</span> <span class="nav-text">修改主题源码文件</span></a></li></ol></li></ol></li></ol></div></div></div></div></aside></div></main><footer id="footer" class="footer"><div class="footer-inner"><div class="copyright">&copy; <span itemprop="copyrightYear">2019</span> <span class="with-love" id="animate"><i class="fa fa-user"></i> </span><span class="author" itemprop="copyrightHolder">星火燎原@vxhly</span></div><div class="busuanzi-count"><script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span class="post-meta-item-icon"><i class="fa fa-user"></i> </span><span class="site-uv" title="总访客量"><span class="busuanzi-value" id="busuanzi_value_site_uv"></span> </span><span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-eye"></i> </span><span class="site-pv" title="总访问量"><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span></div></div></footer><div class="back-to-top"><i class="fa fa-arrow-up"></i></div></div><script>"[object Function]"!==Object.prototype.toString.call(window.Promise)&&(window.Promise=null)</script><script color="255,0,255" opacity="0.5" zindex="-1" count="99" src="//cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest.min.js"></script><script src="//cdn.jsdelivr.net/npm/jquery@2/dist/jquery.min.js"></script><script src="//cdn.jsdelivr.net/npm/fastclick@1/lib/fastclick.min.js"></script><script src="//cdn.jsdelivr.net/npm/jquery-lazyload@1/jquery.lazyload.min.js"></script><script src="//cdn.jsdelivr.net/npm/velocity-animate@1/velocity.min.js"></script><script src="//cdn.jsdelivr.net/npm/velocity-animate@1/velocity.ui.min.js"></script><script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script><script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1/reading_progress.min.js"></script><script src="/js/src/utils.js?v=7.0.1"></script><script src="/js/src/motion.js?v=7.0.1"></script><script src="/js/src/schemes/muse.js?v=7.0.1"></script><script src="/js/src/scrollspy.js?v=7.0.1"></script><script src="/js/src/post-details.js?v=7.0.1"></script><script src="/js/src/next-boot.js?v=7.0.1"></script><script src="/js/src/js.cookie.js?v=7.0.1"></script><script src="/js/src/scroll-cookie.js?v=7.0.1"></script><script src="/js/src/exturl.js?v=7.0.1"></script><script>function proceedsearch(){$("body").append('<div class="search-popup-overlay local-search-pop-overlay"></div>').css("overflow","hidden"),$(".search-popup-overlay").click(onPopupClose),$(".popup").toggle();var e=$("#local-search-input");e.attr("autocapitalize","none"),e.attr("autocorrect","off"),e.focus()}var isfetched=!1,isXml=!0,search_path="search.xml";0===search_path.length?search_path="search.xml":/json$/i.test(search_path)&&(isXml=!1);var path="/"+search_path,onPopupClose=function(e){$(".popup").hide(),$("#local-search-input").val(""),$(".search-result-list").remove(),$("#no-result").remove(),$(".local-search-pop-overlay").remove(),$("body").css("overflow","")},searchFunc=function(e,t,o){"use strict";$("body").append('<div class="search-popup-overlay local-search-pop-overlay"><div id="search-loading-icon"><i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i></div></div>').css("overflow","hidden"),$("#search-loading-icon").css("margin","20% auto 0 auto").css("text-align","center");var n=function(e){return String(e).replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/&#x3A;/g,":").replace(/&#(\d+);/g,function(e,t){return String.fromCharCode(t)}).replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&amp;/g,"&")};$.ajax({url:e,dataType:isXml?"xml":"json",async:!0,success:function(e){isfetched=!0,$(".popup").detach().appendTo(".header-inner");var r=isXml?$("entry",e).map(function(){return{title:$("title",this).text(),content:$("content",this).text(),url:$("url",this).text()}}).get():e,a=document.getElementById(t),s=document.getElementById(o),i=function(){var e=a.value.trim().toLowerCase(),t=e.split(/[\s\-]+/);t.length>1&&t.push(e);var o=[];if(e.length>0&&r.forEach(function(r){function a(t,o,n,r){for(var a=r[r.length-1],s=a.position,i=a.word,c=[],h=0;s+i.length<=n&&0!=r.length;){i===e&&h++,c.push({position:s,length:i.length});var p=s+i.length;for(r.pop();0!=r.length&&(a=r[r.length-1],s=a.position,i=a.word,p>s);)r.pop()}return l+=h,{hits:c,start:o,end:n,searchTextCount:h}}function s(e,t){var o="",n=t.start;return t.hits.forEach(function(t){o+=e.substring(n,t.position);var r=t.position+t.length;o+='<b class="search-keyword">'+e.substring(t.position,r)+"</b>",n=r}),o+=e.substring(n,t.end)}var i=!1,c=0,l=0,h=r.title.trim(),p=h.toLowerCase(),u=r.content.trim().replace(/<[^>]+>/g,"");u=n(u);var f=u.toLowerCase(),g=decodeURIComponent(r.url).replace(/\/{2,}/g,"/"),d=[],v=[];if(""!=h&&(t.forEach(function(e){function t(e,t,o){var n=e.length;if(0===n)return[];var r=0,a=[],s=[];for(o||(t=t.toLowerCase(),e=e.toLowerCase());(a=t.indexOf(e,r))>-1;)s.push({position:a,word:e}),r=a+n;return s}d=d.concat(t(e,p,!1)),v=v.concat(t(e,f,!1))}),(d.length>0||v.length>0)&&(i=!0,c=d.length+v.length)),i){[d,v].forEach(function(e){e.sort(function(e,t){return t.position!==e.position?t.position-e.position:e.word.length-t.word.length})});var C=[];0!=d.length&&C.push(a(h,0,h.length,d));for(var m=[];0!=v.length;){var $=v[v.length-1],x=$.position,w=$.word,y=x-20,T=x+80;y<0&&(y=0),T<x+w.length&&(T=x+w.length),T>u.length&&(T=u.length),m.push(a(u,y,T,v))}m.sort(function(e,t){return e.searchTextCount!==t.searchTextCount?t.searchTextCount-e.searchTextCount:e.hits.length!==t.hits.length?t.hits.length-e.hits.length:e.start-t.start});var b=parseInt("1");b>=0&&(m=m.slice(0,b));var E="";E+=0!=C.length?"<li><a href='"+g+"' class='search-result-title'>"+s(h,C[0])+"</a>":"<li><a href='"+g+"' class='search-result-title'>"+h+"</a>",m.forEach(function(e){E+="<a href='"+g+'\'><p class="search-result">'+s(u,e)+"...</p></a>"}),E+="</li>",o.push({item:E,searchTextCount:l,hitCount:c,id:o.length})}}),1===t.length&&""===t[0])s.innerHTML='<div id="no-result"><i class="fa fa-search fa-5x"></i></div>';else if(0===o.length)s.innerHTML='<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>';else{o.sort(function(e,t){return e.searchTextCount!==t.searchTextCount?t.searchTextCount-e.searchTextCount:e.hitCount!==t.hitCount?t.hitCount-e.hitCount:t.id-e.id});var i='<ul class="search-result-list">';o.forEach(function(e){i+=e.item}),i+="</ul>",s.innerHTML=i}};a.addEventListener("input",i),$(".local-search-pop-overlay").remove(),$("body").css("overflow",""),proceedsearch()}})};$(".popup-trigger").click(function(e){e.stopPropagation(),isfetched===!1?searchFunc(path,"local-search-input","local-search-result"):proceedsearch()}),$(".popup-btn-close").click(onPopupClose),$(".popup").click(function(e){e.stopPropagation()}),$(document).on("keyup",function(e){var t=27===e.which&&$(".search-popup").is(":visible");t&&onPopupClose()})</script><script>$("body").find("div.pdf").length&&$.ajax({type:"GET",url:"//cdn.jsdelivr.net/npm/pdfobject@2/pdfobject.min.js",dataType:"script",cache:!0,success:function(){$("body").find("div.pdf").each(function(e,t){PDFObject.embed($(t).attr("target"),$(t),{pdfOpenParams:{navpanes:0,toolbar:0,statusbar:0,pagemode:"thumbs",view:"FitH"},PDFJS_URL:"/lib/pdf/web/viewer.html",height:$(t).attr("height")||"500px"})})}})</script><script>$("body").find("pre.mermaid").length&&$.ajax({type:"GET",url:"//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js",dataType:"script",cache:!0,success:function(){mermaid.initialize({theme:"forest",logLevel:3,flowchart:{curve:"linear"},gantt:{axisFormat:"%m/%d/%Y"},sequence:{actorMargin:50}})}})</script><script>!function(){var t=document.createElement("script"),e=window.location.protocol.split(":")[0];t.src="https"===e?"https://zz.bdstatic.com/linksubmit/push.js":"http://push.zhanzhang.baidu.com/push.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}()</script><script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-bookmark@1/bookmark.min.js"></script><script>bookmark.scrollToMark("auto","#更多")</script><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.1/clipboard.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script><script type="text/javascript">$(function () {
+      // mermaid.initialize({
+      //   startOnLoad: true
+      // });
+
+      $('pre code').not('.lang-mermaid').each(function (i, block) {
+
+        hljs.highlightBlock(block);
+        const lang = $(this).attr('class').split(' ')[0]
+        const pre = $(this).parents('pre')
+        const span = $(`<span class="code-copy" data-clipboard-snippet>${lang.toUpperCase()} | COPY</span>`)
+        pre.append(span)
+        var lines = $(this).text().split('\n').length - 1;
+        var $numbering = $('<ul/>').addClass('pre-numbering');
+        $(this).addClass('has-numbering').parent().append($numbering);
+        for (i = 1; i <= lines; i++) {
+          $numbering.append($('<li/>'));
+        }
+      });
+
+      new ClipboardJS('.code-copy', {
+        target: function (trigger) {
+          return trigger.previousSibling;
+        }
+      });
+    });</script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-135391925-1"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-135391925-1")</script></body></html><!-- rebuild by neat -->

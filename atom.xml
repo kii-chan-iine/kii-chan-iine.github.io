@@ -1,0 +1,2457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Coding and Fixing</title>
+  
+  <subtitle>Coding and Fixing</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://vxhly.github.io/"/>
+  <updated>2019-05-28T01:36:30.390Z</updated>
+  <id>https://vxhly.github.io/</id>
+  
+  <author>
+    <name>星火燎原@vxhly</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用 Vue cli 3.0 构建自定义组件库</title>
+    <link href="https://vxhly.github.io/archives/67d67641.html"/>
+    <id>https://vxhly.github.io/archives/67d67641.html</id>
+    <published>2019-04-28T17:19:49.000Z</published>
+    <updated>2019-05-28T01:36:30.390Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;本文旨在给大家提供一种构建一个完整 UI 库脚手架的思路：包括如何快速并优雅地构建UI库的主页、如何托管主页、如何编写脚本提升自己的开发效率、如何生成 CHANGELOG 等
+    
+    </summary>
+    
+      <category term="vuejs" scheme="https://vxhly.github.io/categories/vuejs/"/>
+    
+    
+      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+    
+      <category term="Vue.js" scheme="https://vxhly.github.io/tags/Vue-js/"/>
+    
+      <category term="Component" scheme="https://vxhly.github.io/tags/Component/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>谈谈 WEB 前端主流的三大框架</title>
+    <link href="https://vxhly.github.io/archives/65cc14e3.html"/>
+    <id>https://vxhly.github.io/archives/65cc14e3.html</id>
+    <published>2019-04-08T10:09:47.000Z</published>
+    <updated>2019-05-28T01:36:30.398Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;讲到前端的框架,大家想必都能脱口而出：Angular、React、Vue,那么这几个框架的优缺点,以及在项目当中如何抉择框架的使用等等,本篇就将介绍这三大框架的使用感受
+    
+    </summary>
+    
+      <category term="web" scheme="https://vxhly.github.io/categories/web/"/>
+    
+    
+      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+    
+      <category term="Vue.js" scheme="https://vxhly.github.io/tags/Vue-js/"/>
+    
+      <category term="React.js" scheme="https://vxhly.github.io/tags/React-js/"/>
+    
+      <category term="Angular.js" scheme="https://vxhly.github.io/tags/Angular-js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Angularjs 学习笔记</title>
+    <link href="https://vxhly.github.io/archives/6daa0d06.html"/>
+    <id>https://vxhly.github.io/archives/6daa0d06.html</id>
+    <published>2019-04-01T16:44:20.000Z</published>
+    <updated>2019-05-28T01:36:30.398Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;Angularjs 1.0 的学习笔记
+    
+    </summary>
+    
+      <category term="angularjs" scheme="https://vxhly.github.io/categories/angularjs/"/>
+    
+    
+      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+    
+      <category term="Angularjs" scheme="https://vxhly.github.io/tags/Angularjs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>docker 使用指南</title>
+    <link href="https://vxhly.github.io/archives/693996ef.html"/>
+    <id>https://vxhly.github.io/archives/693996ef.html</id>
+    <published>2019-03-26T14:41:23.000Z</published>
+    <updated>2019-05-28T01:36:30.402Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;Docker 是一个开源的应用容器引擎,基于 Go 语言 并遵从Apache2.0协议开源。 Docker 可以让开发者打包他们的应用以及依赖包到一个轻量级、可移植的容器中,然后发布到任何流行的 Linux 机器上,也可以实现虚拟化
+    
+    </summary>
+    
+      <category term="manual" scheme="https://vxhly.github.io/categories/manual/"/>
+    
+    
+      <category term="liunx" scheme="https://vxhly.github.io/tags/liunx/"/>
+    
+      <category term="docker" scheme="https://vxhly.github.io/tags/docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WEB 前端冷门知识</title>
+    <link href="https://vxhly.github.io/archives/c3d6f742.html"/>
+    <id>https://vxhly.github.io/archives/c3d6f742.html</id>
+    <published>2019-02-26T20:22:38.000Z</published>
+    <updated>2019-05-28T01:36:30.402Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;最近在&lt;span class=&quot;exturl&quot; data-url=&quot;aHR0cHM6Ly93d3cubm93Y29kZXIuY29tLw==&quot; title=&quot;https://www.nowcoder.com/&quot;&gt;牛客网&lt;i class=&quot;fa fa-external-link&quot;&gt;&lt;/i&gt;&lt;/span&gt;上刷前端相关的题目,发现自己真的不堪一击,菜的要死,毕竟都是大厂出的题目,在刷题的过程中同时也学到了不少的冷门知识（主要是自己做错的题目里的知识点）,现在分享出来,真的有用,注意这里面内容纯理论
+    
+    </summary>
+    
+      <category term="web" scheme="https://vxhly.github.io/categories/web/"/>
+    
+    
+      <category term="JavaScript" scheme="https://vxhly.github.io/tags/JavaScript/"/>
+    
+      <category term="CSS" scheme="https://vxhly.github.io/tags/CSS/"/>
+    
+      <category term="HTML5" scheme="https://vxhly.github.io/tags/HTML5/"/>
+    
+      <category term="jQuery" scheme="https://vxhly.github.io/tags/jQuery/"/>
+    
+      <category term="WEB" scheme="https://vxhly.github.io/tags/WEB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue 中 watch 的详细用法</title>
+    <link href="https://vxhly.github.io/archives/1abefd7d.html"/>
+    <id>https://vxhly.github.io/archives/1abefd7d.html</id>
+    <published>2019-01-30T14:03:37.000Z</published>
+    <updated>2019-05-28T01:36:30.402Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;一个对象,键是需要观察的表达式,值是对应回调函数。值也可以是方法名,或者包含选项的对象。Vue 实例将会在实例化时调用 $watch(),遍历 watch 对象的每一个属性。
+    
+    </summary>
+    
+      <category term="vuejs" scheme="https://vxhly.github.io/categories/vuejs/"/>
+    
+    
+      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+    
+      <category term="Vue.js" scheme="https://vxhly.github.io/tags/Vue-js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在 vue.js 项目中使用 vuex</title>
+    <link href="https://vxhly.github.io/archives/8d74e1c7.html"/>
+    <id>https://vxhly.github.io/archives/8d74e1c7.html</id>
+    <published>2019-01-26T12:18:11.000Z</published>
+    <updated>2019-05-28T01:36:30.402Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。 它采用集中式存储管理应用的所有组件的状态, 并以相应的规则保证状态以一种可预测的方式发生变化。 这里就简单的介绍 vuex 的使用方法
+    
+    </summary>
+    
+      <category term="vuejs" scheme="https://vxhly.github.io/categories/vuejs/"/>
+    
+    
+      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+    
+      <category term="Vue.js" scheme="https://vxhly.github.io/tags/Vue-js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue.js 发送全局事件（Bus）</title>
+    <link href="https://vxhly.github.io/archives/5ccfcaf1.html"/>
+    <id>https://vxhly.github.io/archives/5ccfcaf1.html</id>
+    <published>2019-01-19T13:27:59.000Z</published>
+    <updated>2019-05-28T01:36:30.402Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;vue 1.0 废弃了 vm.$broadcast 和 vm.$dispatch 的 API,那么在兄弟组件之间进行通信就变的异常为难,现在就需要一个比较便捷的解决方法。那么,eventBus的作用就体现出来了,主要是实现途径是在要相互通信的兄弟组件之中,都引入一个新的 vue 实例,然后通过分别调用这个实例的事件触发和监听来实现通信和参数传递
+    
+    </summary>
+    
+      <category term="vuejs" scheme="https://vxhly.github.io/categories/vuejs/"/>
+    
+    
+      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+    
+      <category term="Vue.js" scheme="https://vxhly.github.io/tags/Vue-js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript 原生实现 jQuery 的方法</title>
+    <link href="https://vxhly.github.io/archives/d57d6c8a.html"/>
+    <id>https://vxhly.github.io/archives/d57d6c8a.html</id>
+    <published>2019-01-06T12:11:18.000Z</published>
+    <updated>2019-05-28T01:36:30.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;提供 jQuery 中的 $()、siblings()、addClass()、hasClass()、removeClass()、toggleClass() 等方法的原生 JavaScript 实现方法,以下方法适用于 Vue.js 项目
+    
+    </summary>
+    
+      <category term="web" scheme="https://vxhly.github.io/categories/web/"/>
+    
+    
+      <category term="JavaScript" scheme="https://vxhly.github.io/tags/JavaScript/"/>
+    
+      <category term="jQuery" scheme="https://vxhly.github.io/tags/jQuery/"/>
+    
+      <category term="Vue.js" scheme="https://vxhly.github.io/tags/Vue-js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>webpack 初学指南</title>
+    <link href="https://vxhly.github.io/archives/81367a4f.html"/>
+    <id>https://vxhly.github.io/archives/81367a4f.html</id>
+    <published>2018-11-16T14:25:54.000Z</published>
+    <updated>2019-05-28T01:36:30.402Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;这边用到的 webpack 版本 4.0+,这边将接触到 TypeScript,ES6,ES7,sass 等 loader …不想解释了直接上代码
+    
+    </summary>
+    
+      <category term="webpack" scheme="https://vxhly.github.io/categories/webpack/"/>
+    
+    
+      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue 项目性能优化(首屏优化)</title>
+    <link href="https://vxhly.github.io/archives/431a5c80.html"/>
+    <id>https://vxhly.github.io/archives/431a5c80.html</id>
+    <published>2018-10-24T13:51:50.000Z</published>
+    <updated>2019-05-28T01:36:30.402Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;随着 Vue 项目越做越大,依赖的第三方 npm 包越来越多,构建之后的文件也会越来越大,尤其是 vendor.js,甚至会达到 2M 左右, 为了解决这个问题,需要做一些探索,在几乎不需要改动业务代码的情况下,找到了几种有明显效果的优化方案 —— CDN + Gzip
+    
+    </summary>
+    
+      <category term="vuejs" scheme="https://vxhly.github.io/categories/vuejs/"/>
+    
+    
+      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+    
+      <category term="Vue.js" scheme="https://vxhly.github.io/tags/Vue-js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>软件版本周期</title>
+    <link href="https://vxhly.github.io/archives/cdcc30dc.html"/>
+    <id>https://vxhly.github.io/archives/cdcc30dc.html</id>
+    <published>2018-10-21T19:13:55.000Z</published>
+    <updated>2019-05-28T01:36:30.398Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;软件版本周期是指计算机软件的发展及发行过程,从Pre-alpha（准预览版本）发展到Alpha（预览版本）、Beta（测试版本）、Released candidate （最终测试版本）至最后的Gold（完成版）
+    
+    </summary>
+    
+      <category term="manual" scheme="https://vxhly.github.io/categories/manual/"/>
+    
+    
+      <category term="Criterion" scheme="https://vxhly.github.io/tags/Criterion/"/>
+    
+      <category term="Debug" scheme="https://vxhly.github.io/tags/Debug/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue 全家桶结合 TypeScript</title>
+    <link href="https://vxhly.github.io/archives/634b4de.html"/>
+    <id>https://vxhly.github.io/archives/634b4de.html</id>
+    <published>2018-09-23T15:19:43.000Z</published>
+    <updated>2019-05-28T01:36:30.402Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;自从 vue cli 升级到 3.0 之后,vue 项目对 TypeScript 的支持度也不断的提升,为了更好的学习 TypeScript,本篇文章记录着 vue 全家桶结合 TypeScript 的食用方式
+    
+    </summary>
+    
+      <category term="vuejs" scheme="https://vxhly.github.io/categories/vuejs/"/>
+    
+    
+      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+    
+      <category term="Vue.js" scheme="https://vxhly.github.io/tags/Vue-js/"/>
+    
+      <category term="Vuex" scheme="https://vxhly.github.io/tags/Vuex/"/>
+    
+      <category term="VueRouter" scheme="https://vxhly.github.io/tags/VueRouter/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>更新 MySQL root 的密码</title>
+    <link href="https://vxhly.github.io/archives/6a26fc31.html"/>
+    <id>https://vxhly.github.io/archives/6a26fc31.html</id>
+    <published>2018-09-06T19:19:17.000Z</published>
+    <updated>2019-05-28T01:36:30.402Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;最近在 ubuntu 系统上安装了 MySQL,但是安装时没有提示输入 root 用户密码,网上胡乱找了一通,这才知道 MySQL 5.7 以上版本的 root 密码都是随机生成的,所以这里提供解决 MySQL 5.7 版本的 root 用户重置密码问题
+    
+    </summary>
+    
+      <category term="mysql" scheme="https://vxhly.github.io/categories/mysql/"/>
+    
+    
+      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+    
+      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+      <category term="Protocol" scheme="https://vxhly.github.io/tags/Protocol/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring Boot 整合 Mybatis</title>
+    <link href="https://vxhly.github.io/archives/78923493.html"/>
+    <id>https://vxhly.github.io/archives/78923493.html</id>
+    <published>2018-08-22T16:01:15.000Z</published>
+    <updated>2019-05-28T01:36:30.398Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;MyBatis 是一款优秀的持久层框架,它支持定制化 SQL、存储过程以及高级映射。MyBatis 避免了几乎所有的 JDBC 代码和手动设置参数以及获取结果集。这里介绍 Spring Boot 整合 Mybatis 的步骤,数据库选用 MYSQL
+    
+    </summary>
+    
+      <category term="java" scheme="https://vxhly.github.io/categories/java/"/>
+    
+    
+      <category term="Spring Boot" scheme="https://vxhly.github.io/tags/Spring-Boot/"/>
+    
+      <category term="Maven" scheme="https://vxhly.github.io/tags/Maven/"/>
+    
+      <category term="Java" scheme="https://vxhly.github.io/tags/Java/"/>
+    
+      <category term="Mybatis" scheme="https://vxhly.github.io/tags/Mybatis/"/>
+    
+      <category term="MySQL" scheme="https://vxhly.github.io/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在 IntelliJ IDEA 中配置 Spring Boot 项目的热部署</title>
+    <link href="https://vxhly.github.io/archives/fc012b51.html"/>
+    <id>https://vxhly.github.io/archives/fc012b51.html</id>
+    <published>2018-08-22T14:47:20.000Z</published>
+    <updated>2019-05-28T01:36:30.398Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;Spring Boot 是由 Pivotal 团队提供的全新框架,其设计目的是用来简化新Spring应用的初始搭建以及开发过程。该框架使用了特定的方式来进行配置,从而使开发人员不再需要定义样板化的配置。Spring Boot 的 Web 项目,在每一次修改了 java 文件或者是 resource 的时候,都必须去重启一下项目,这样的话浪费了很多的时间,实现了热部署,在每一次作了修改之后,都会自动的重启
+    
+    </summary>
+    
+      <category term="java" scheme="https://vxhly.github.io/categories/java/"/>
+    
+    
+      <category term="Spring Boot" scheme="https://vxhly.github.io/tags/Spring-Boot/"/>
+    
+      <category term="Maven" scheme="https://vxhly.github.io/tags/Maven/"/>
+    
+      <category term="Java" scheme="https://vxhly.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在 vue.js 中使用 wangEditor 富文本编辑器</title>
+    <link href="https://vxhly.github.io/archives/28842ff2.html"/>
+    <id>https://vxhly.github.io/archives/28842ff2.html</id>
+    <published>2018-06-13T08:37:16.000Z</published>
+    <updated>2019-05-28T01:36:30.402Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;富文本编辑器在后台管理系统中是一个常见而又简单的需求,这里介绍到的是在 vue.js 项目中使用 wangEditor 这一款富文本编辑器
+    
+    </summary>
+    
+      <category term="vuejs" scheme="https://vxhly.github.io/categories/vuejs/"/>
+    
+    
+      <category term="JavaScript" scheme="https://vxhly.github.io/tags/JavaScript/"/>
+    
+      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git commit 规范指南</title>
+    <link href="https://vxhly.github.io/archives/fdd4f330.html"/>
+    <id>https://vxhly.github.io/archives/fdd4f330.html</id>
+    <published>2018-05-14T14:25:43.000Z</published>
+    <updated>2019-05-28T01:36:30.390Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;目前,社区有多种 Commit message 的写法规范。本文介绍 &lt;span class=&quot;exturl&quot; data-url=&quot;aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vZG9jdW1lbnQvZC8xUXJERmNJaVBqU0xEbjNFTDE1SUp5Z05QaUhPUmdVMV9PT0FxV2ppRFU1WS9lZGl0I2hlYWRpbmc9aC5ncmVsamttbzE0eTA=&quot; title=&quot;https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#heading=h.greljkmo14y0&quot;&gt;Angular 规范&lt;i class=&quot;fa fa-external-link&quot;&gt;&lt;/i&gt;&lt;/span&gt; 是目前使用最广的写法,比较合理和系统化,并且有配套的工具。前前端框架 &lt;span class=&quot;exturl&quot; data-url=&quot;aHR0cHM6Ly9naXRodWIuY29tL2FuZ3VsYXIvYW5ndWxhci5qcy9ibG9iL21hc3Rlci9DT05UUklCVVRJTkcubWQjdG9jMTA=&quot; title=&quot;https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#toc10&quot;&gt;Angular.js&lt;i class=&quot;fa fa-external-link&quot;&gt;&lt;/i&gt;&lt;/span&gt; 采用的就是该规范
+    
+    </summary>
+    
+      <category term="manual" scheme="https://vxhly.github.io/categories/manual/"/>
+    
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+      <category term="Protocol" scheme="https://vxhly.github.io/tags/Protocol/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用 Markdown 生成流程图</title>
+    <link href="https://vxhly.github.io/archives/ba2565b0.html"/>
+    <id>https://vxhly.github.io/archives/ba2565b0.html</id>
+    <published>2018-05-12T00:07:03.000Z</published>
+    <updated>2019-05-28T01:36:30.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;当撰写文档的时候,对于流程图的生成大多使用 Visio 等繁重的工具,没有一种轻便的工具能够画图从而简化文档的编写,就像 markdown 那样。mermaid 解决这个痛点,这是一个类似 markdown 语法的脚本语言,通过 JavaScript 实现图表的生成。
+    
+    </summary>
+    
+      <category term="manual" scheme="https://vxhly.github.io/categories/manual/"/>
+    
+    
+      <category term="Markdown" scheme="https://vxhly.github.io/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>用 ES6 写 jquery 语法时的 this 绑定问题</title>
+    <link href="https://vxhly.github.io/archives/13b5650d.html"/>
+    <id>https://vxhly.github.io/archives/13b5650d.html</id>
+    <published>2018-04-14T12:11:38.000Z</published>
+    <updated>2019-05-28T01:36:30.390Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;在 es6 里使用 jquery 时,习惯用 es5 中直接获取 dom 元素,如 $(‘selector’), 绑 定 click 或 hover 等事件;若你也追求潮流,在选择器事件中使用箭头函数来定义,并用到 $(this) 的话,那么你会发现这完全行不通,想要知道解决方案的话就继续阅读下去
+    
+    </summary>
+    
+      <category term="ES6" scheme="https://vxhly.github.io/categories/ES6/"/>
+    
+    
+      <category term="JavaScript" scheme="https://vxhly.github.io/tags/JavaScript/"/>
+    
+      <category term="jQuery" scheme="https://vxhly.github.io/tags/jQuery/"/>
+    
+      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SQL 语法基础</title>
+    <link href="https://vxhly.github.io/archives/af7cb3d4.html"/>
+    <id>https://vxhly.github.io/archives/af7cb3d4.html</id>
+    <published>2018-01-23T17:04:08.000Z</published>
+    <updated>2019-05-28T01:36:30.398Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;整理了下 SQL 语法基础,适用于 SQL server 和 MySQL,本博文皆为实例 SQL 语句仅供参考
+    
+    </summary>
+    
+      <category term="sql" scheme="https://vxhly.github.io/categories/sql/"/>
+    
+    
+      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+    
+      <category term="SQL" scheme="https://vxhly.github.io/tags/SQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WEB 技术基础知识点</title>
+    <link href="https://vxhly.github.io/archives/40b53b2c.html"/>
+    <id>https://vxhly.github.io/archives/40b53b2c.html</id>
+    <published>2018-01-07T14:36:27.000Z</published>
+    <updated>2019-05-28T01:36:30.402Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;WEB 技术基础知识点（包含：HTML、CSS、JavaScript 三大块知点点集合）
+    
+    </summary>
+    
+      <category term="web" scheme="https://vxhly.github.io/categories/web/"/>
+    
+    
+      <category term="JavaScript" scheme="https://vxhly.github.io/tags/JavaScript/"/>
+    
+      <category term="CSS" scheme="https://vxhly.github.io/tags/CSS/"/>
+    
+      <category term="HTML5" scheme="https://vxhly.github.io/tags/HTML5/"/>
+    
+      <category term="jQuery" scheme="https://vxhly.github.io/tags/jQuery/"/>
+    
+      <category term="WEB" scheme="https://vxhly.github.io/tags/WEB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【发福利】视频教程</title>
+    <link href="https://vxhly.github.io/archives/b89e54c8.html"/>
+    <id>https://vxhly.github.io/archives/b89e54c8.html</id>
+    <published>2017-12-10T17:09:06.000Z</published>
+    <updated>2019-05-28T01:36:30.402Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;最近得一套视频教程,里面包含 Node.js、Angular.js、WEB 开发、MySQL 等视频教程,全是百度云链接,尽快保存以防被和谐
+    
+    </summary>
+    
+      <category term="design" scheme="https://vxhly.github.io/categories/design/"/>
+    
+    
+      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+      <category term="HTML5" scheme="https://vxhly.github.io/tags/HTML5/"/>
+    
+      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+    
+      <category term="MySQL" scheme="https://vxhly.github.io/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ES6 学习笔记</title>
+    <link href="https://vxhly.github.io/archives/b0e3118c.html"/>
+    <id>https://vxhly.github.io/archives/b0e3118c.html</id>
+    <published>2017-11-17T21:35:51.000Z</published>
+    <updated>2019-05-28T01:36:30.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;本篇学习笔记纯粹记录学习 ES6 的过程以及一些坑点,下面的例子没有先后之分,也是很简单的例子,想了解更多的直接戳 &lt;span class=&quot;exturl&quot; data-url=&quot;aHR0cDovL2VzNi5ydWFueWlmZW5nLmNvbS8=&quot; title=&quot;http://es6.ruanyifeng.com/&quot;&gt;ECMAScript 6 入门&lt;i class=&quot;fa fa-external-link&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+    
+    </summary>
+    
+      <category term="ES6" scheme="https://vxhly.github.io/categories/ES6/"/>
+    
+    
+      <category term="JavaScript" scheme="https://vxhly.github.io/tags/JavaScript/"/>
+    
+      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo+NexT 进阶设置</title>
+    <link href="https://vxhly.github.io/archives/6232b20b.html"/>
+    <id>https://vxhly.github.io/archives/6232b20b.html</id>
+    <published>2017-10-28T20:24:59.000Z</published>
+    <updated>2019-05-28T01:36:30.390Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;HEXO 博客最近大更新,页面与之前大不相同,这里跟大家分享一下相关的设置方法
+    
+    </summary>
+    
+      <category term="node.js" scheme="https://vxhly.github.io/categories/node-js/"/>
+    
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+    
+      <category term="Hexo" scheme="https://vxhly.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>RESTful API 设计指南（补充）</title>
+    <link href="https://vxhly.github.io/archives/9cbc428.html"/>
+    <id>https://vxhly.github.io/archives/9cbc428.html</id>
+    <published>2017-09-29T12:17:33.000Z</published>
+    <updated>2019-05-28T01:36:30.398Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;网络应用程序,分为前端和后端两个部分。这时候必须有一种统一的机制,方便不同的前端设备与后端进行通信。这导致 API 构架的流行,甚至出现 “API First” 的设计思想。&lt;span class=&quot;exturl&quot; data-url=&quot;aHR0cDovL2VuLndpa2lwZWRpYS5vcmcvd2lraS9SZXByZXNlbnRhdGlvbmFsX3N0YXRlX3RyYW5zZmVy&quot; title=&quot;http://en.wikipedia.org/wiki/Representational_state_transfer&quot;&gt;&lt;code&gt;RESTful API&lt;/code&gt;&lt;i class=&quot;fa fa-external-link&quot;&gt;&lt;/i&gt;&lt;/span&gt; 是目前比较成熟的一套互联网应用程序的 API 设计理论
+    
+    </summary>
+    
+      <category term="manual" scheme="https://vxhly.github.io/categories/manual/"/>
+    
+    
+      <category term="Criterion" scheme="https://vxhly.github.io/tags/Criterion/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue.js 填坑笔记</title>
+    <link href="https://vxhly.github.io/archives/68fd47cc.html"/>
+    <id>https://vxhly.github.io/archives/68fd47cc.html</id>
+    <published>2017-09-11T16:55:20.000Z</published>
+    <updated>2019-05-28T01:36:30.390Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;记录一些使用 vue-cli 脚手架创建项目时,遇到的一些问题以及解决方案
+    
+    </summary>
+    
+      <category term="vuejs" scheme="https://vxhly.github.io/categories/vuejs/"/>
+    
+    
+      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+    
+      <category term="Vue.js" scheme="https://vxhly.github.io/tags/Vue-js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Liunx 命令练习</title>
+    <link href="https://vxhly.github.io/archives/8183b2ea.html"/>
+    <id>https://vxhly.github.io/archives/8183b2ea.html</id>
+    <published>2017-09-03T20:46:08.000Z</published>
+    <updated>2019-05-28T01:36:30.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;简单的一些 Liunx 命令练习
+    
+    </summary>
+    
+      <category term="testing" scheme="https://vxhly.github.io/categories/testing/"/>
+    
+    
+      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+    
+      <category term="Command" scheme="https://vxhly.github.io/tags/Command/"/>
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>渗透基础知识</title>
+    <link href="https://vxhly.github.io/archives/67941abf.html"/>
+    <id>https://vxhly.github.io/archives/67941abf.html</id>
+    <published>2017-09-03T19:54:18.000Z</published>
+    <updated>2019-05-28T01:36:30.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;整理的渗透所需的一些基础知识
+    
+    </summary>
+    
+      <category term="pentest" scheme="https://vxhly.github.io/categories/pentest/"/>
+    
+    
+      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+      <category term="PHP" scheme="https://vxhly.github.io/tags/PHP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>安全渗透基础测试题</title>
+    <link href="https://vxhly.github.io/archives/c4a1452e.html"/>
+    <id>https://vxhly.github.io/archives/c4a1452e.html</id>
+    <published>2017-09-03T17:04:22.000Z</published>
+    <updated>2019-05-28T01:36:30.398Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;安全渗透基础测试题,考点涉及到 HTML、PHP、MySQL、SQL 注入、XSS 攻击、CTF、Python 等
+    
+    </summary>
+    
+      <category term="testing" scheme="https://vxhly.github.io/categories/testing/"/>
+    
+    
+      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+    
+      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+      <category term="PHP" scheme="https://vxhly.github.io/tags/PHP/"/>
+    
+      <category term="WEB" scheme="https://vxhly.github.io/tags/WEB/"/>
+    
+      <category term="MySQL" scheme="https://vxhly.github.io/tags/MySQL/"/>
+    
+      <category term="Python" scheme="https://vxhly.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue.js 利用 Express 结合 MySQL 或者 MongoDB</title>
+    <link href="https://vxhly.github.io/archives/3d83674d.html"/>
+    <id>https://vxhly.github.io/archives/3d83674d.html</id>
+    <published>2017-09-02T00:04:08.000Z</published>
+    <updated>2019-05-28T01:36:30.402Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;使用 vue-cli 脚手架工具创建一个基于 webpack 的 Vue 项目本身已经包含了 Express, 但是项目若需要结合 MySQL 或者 MongoDB, 还需折腾一番
+    
+    </summary>
+    
+      <category term="vuejs" scheme="https://vxhly.github.io/categories/vuejs/"/>
+    
+    
+      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+    
+      <category term="MongoDB" scheme="https://vxhly.github.io/tags/MongoDB/"/>
+    
+      <category term="Vue.js" scheme="https://vxhly.github.io/tags/Vue-js/"/>
+    
+      <category term="MySQL" scheme="https://vxhly.github.io/tags/MySQL/"/>
+    
+      <category term="Express" scheme="https://vxhly.github.io/tags/Express/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Shell 监听脚本：新增文件</title>
+    <link href="https://vxhly.github.io/archives/f7b6023a.html"/>
+    <id>https://vxhly.github.io/archives/f7b6023a.html</id>
+    <published>2017-08-22T21:03:18.000Z</published>
+    <updated>2019-05-28T01:36:30.398Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;Liunx 下的监听 shell 脚本,脚本功能实现,当一小时内有新增的新文件,立刻删除它,此脚本允许被后台运行
+    
+    </summary>
+    
+      <category term="pentest" scheme="https://vxhly.github.io/categories/pentest/"/>
+    
+    
+      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+      <category term="Code" scheme="https://vxhly.github.io/tags/Code/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>浅谈 SSH 服务</title>
+    <link href="https://vxhly.github.io/archives/5ec8ccce.html"/>
+    <id>https://vxhly.github.io/archives/5ec8ccce.html</id>
+    <published>2017-08-15T21:42:25.000Z</published>
+    <updated>2019-05-28T01:36:30.398Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;SSH 是每一台 Linux 系统的标准配置服务,本文将总结 SSH 的常见用法
+    
+    </summary>
+    
+      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+    
+    
+      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+      <category term="Service" scheme="https://vxhly.github.io/tags/Service/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nofollow 正确使用方式</title>
+    <link href="https://vxhly.github.io/archives/9725c842.html"/>
+    <id>https://vxhly.github.io/archives/9725c842.html</id>
+    <published>2017-07-05T19:07:00.000Z</published>
+    <updated>2019-05-28T01:36:30.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;有的网站内容比较的重要,不希望别人所知道,同时也防止一些无聊的 SEO 站长特意灌水,发一些无关的信息,所以最佳解决方式是设置 Nofollow
+    
+    </summary>
+    
+      <category term="web" scheme="https://vxhly.github.io/categories/web/"/>
+    
+    
+      <category term="Criterion" scheme="https://vxhly.github.io/tags/Criterion/"/>
+    
+      <category term="HTML5" scheme="https://vxhly.github.io/tags/HTML5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在你的 VPS 服务器搭建 Ghost 博客系统</title>
+    <link href="https://vxhly.github.io/archives/884a30e7.html"/>
+    <id>https://vxhly.github.io/archives/884a30e7.html</id>
+    <published>2017-06-02T14:53:49.000Z</published>
+    <updated>2019-05-28T01:36:30.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;Ghost 采用 Node.js 编写,默认使用 SQLite3 数据库,非常轻量,因为是文件型数据库,所以无需安装。Ghost 允许多用户编写博文,使用 Markdown 来编写博文
+    
+    </summary>
+    
+      <category term="node.js" scheme="https://vxhly.github.io/categories/node-js/"/>
+    
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows 下安装 MongoDB</title>
+    <link href="https://vxhly.github.io/archives/4e562ec2.html"/>
+    <id>https://vxhly.github.io/archives/4e562ec2.html</id>
+    <published>2017-05-29T17:11:30.000Z</published>
+    <updated>2019-05-28T01:36:30.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;MongoDB 是目前在 IT 行业非常流行的一种非关系型数据库 (NoSql),其灵活的数据存储方式备受当前 IT 从业人员的青睐。这里主要讲如何在 Windows 平台下安装 MongoDB
+    
+    </summary>
+    
+      <category term="design" scheme="https://vxhly.github.io/categories/design/"/>
+    
+    
+      <category term="Windows" scheme="https://vxhly.github.io/tags/Windows/"/>
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+    
+      <category term="MongoDB" scheme="https://vxhly.github.io/tags/MongoDB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Liunx 安全加固命令集合</title>
+    <link href="https://vxhly.github.io/archives/267c870c.html"/>
+    <id>https://vxhly.github.io/archives/267c870c.html</id>
+    <published>2017-05-20T14:22:42.000Z</published>
+    <updated>2019-05-28T01:36:30.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;收集 Liunx 系统安全加固时,发现系统漏洞,修复系统,加固系统信息等命令集合
+    
+    </summary>
+    
+      <category term="pentest" scheme="https://vxhly.github.io/categories/pentest/"/>
+    
+    
+      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+    
+      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+    
+      <category term="Command" scheme="https://vxhly.github.io/tags/Command/"/>
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>kali 下渗透测试的一些小技巧</title>
+    <link href="https://vxhly.github.io/archives/7979f023.html"/>
+    <id>https://vxhly.github.io/archives/7979f023.html</id>
+    <published>2017-05-20T13:23:12.000Z</published>
+    <updated>2019-05-28T01:36:30.398Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;总结在渗透测试上的一些小技巧,基本上都是 kali 下的一些常用的工具使用集合
+    
+    </summary>
+    
+      <category term="pentest" scheme="https://vxhly.github.io/categories/pentest/"/>
+    
+    
+      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+    
+      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PHP 代码审计之 PHP 基础知识</title>
+    <link href="https://vxhly.github.io/archives/ff9c4cbd.html"/>
+    <id>https://vxhly.github.io/archives/ff9c4cbd.html</id>
+    <published>2017-05-19T17:31:01.000Z</published>
+    <updated>2019-05-28T01:36:30.398Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;本文主要为学习代码审计前的一些 PHP 基础知识的学习笔记
+    
+    </summary>
+    
+      <category term="debug" scheme="https://vxhly.github.io/categories/debug/"/>
+    
+    
+      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+    
+      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+    
+      <category term="PHP" scheme="https://vxhly.github.io/tags/PHP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在 windows 下安装 Cmder</title>
+    <link href="https://vxhly.github.io/archives/447494ff.html"/>
+    <id>https://vxhly.github.io/archives/447494ff.html</id>
+    <published>2017-04-08T14:15:00.000Z</published>
+    <updated>2019-05-28T01:36:30.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;Cmder 是一款 windows 环境下非常简洁美观易用轻量的 cmd 替代者,它支持了大部分的 Liunx 命令
+    
+    </summary>
+    
+      <category term="windows" scheme="https://vxhly.github.io/categories/windows/"/>
+    
+    
+      <category term="Command" scheme="https://vxhly.github.io/tags/Command/"/>
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PHP 文件包含漏洞总结</title>
+    <link href="https://vxhly.github.io/archives/c09aa989.html"/>
+    <id>https://vxhly.github.io/archives/c09aa989.html</id>
+    <published>2017-04-02T16:31:38.000Z</published>
+    <updated>2019-05-28T01:36:30.398Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;PHP 文件包含漏洞的产生原因是在通过 PHP 的函数引入文件时,由于传入的文件名没有经过合理的校验,从而操作了预想之外的文件,就可能导致意外的文件泄露甚至恶意的代码注入
+    
+    </summary>
+    
+      <category term="pentest" scheme="https://vxhly.github.io/categories/pentest/"/>
+    
+    
+      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+    
+      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+    
+      <category term="PHP" scheme="https://vxhly.github.io/tags/PHP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS 的新特性</title>
+    <link href="https://vxhly.github.io/archives/fd833805.html"/>
+    <id>https://vxhly.github.io/archives/fd833805.html</id>
+    <published>2017-03-21T20:04:11.000Z</published>
+    <updated>2019-05-28T01:36:30.390Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:22 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;在众多的 CSS 新特性中, 有 3 个采用的新特性值得我们一起学习, 这里将记录这些新特性的使用方法
+    
+    </summary>
+    
+      <category term="web" scheme="https://vxhly.github.io/categories/web/"/>
+    
+    
+      <category term="CSS" scheme="https://vxhly.github.io/tags/CSS/"/>
+    
+      <category term="HTML5" scheme="https://vxhly.github.io/tags/HTML5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS 选择器介绍</title>
+    <link href="https://vxhly.github.io/archives/e00b3071.html"/>
+    <id>https://vxhly.github.io/archives/e00b3071.html</id>
+    <published>2017-03-03T19:52:30.000Z</published>
+    <updated>2019-05-28T01:36:30.390Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:22 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;CSS 选择器是 WEB 开发中一个重要部分, 通过 CSS 选择器, 可以提高开发人员的工作效率。 在本篇文章中将介绍属性选择器和伪类选择器的基本用法
+    
+    </summary>
+    
+      <category term="web" scheme="https://vxhly.github.io/categories/web/"/>
+    
+    
+      <category term="CSS" scheme="https://vxhly.github.io/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>IPSec VPN 的配置</title>
+    <link href="https://vxhly.github.io/archives/4030be2e.html"/>
+    <id>https://vxhly.github.io/archives/4030be2e.html</id>
+    <published>2017-03-02T10:02:33.000Z</published>
+    <updated>2019-05-28T01:36:30.390Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;IPSec VPN 指采用 IPSec 协议来实现远程接入的一种 VPN 技术, 本篇文章介绍在虚拟机下搭建 IPSec VPN 的全过程（使用 L2TP 连接方式）
+    
+    </summary>
+    
+      <category term="windows" scheme="https://vxhly.github.io/categories/windows/"/>
+    
+    
+      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+    
+      <category term="Service" scheme="https://vxhly.github.io/tags/Service/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>7 种新型的 CSS 长度单位</title>
+    <link href="https://vxhly.github.io/archives/bd3100fb.html"/>
+    <id>https://vxhly.github.io/archives/bd3100fb.html</id>
+    <published>2016-12-22T20:41:34.000Z</published>
+    <updated>2019-05-28T01:36:30.390Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:22 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;众所周知 CSS 技术我们虽然很熟悉, 在使用的过程却很容易被困住, 这让我们在新问题出现的时候变得很不利。 所以本文将介绍 CSS 中会用到的几个度量单位
+    
+    </summary>
+    
+      <category term="web" scheme="https://vxhly.github.io/categories/web/"/>
+    
+    
+      <category term="CSS" scheme="https://vxhly.github.io/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Socks 代理反弹突破内网</title>
+    <link href="https://vxhly.github.io/archives/ca37b044.html"/>
+    <id>https://vxhly.github.io/archives/ca37b044.html</id>
+    <published>2016-11-24T14:46:22.000Z</published>
+    <updated>2019-05-28T01:36:30.398Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;对于渗透测试者来说,如何绕过防火墙的阻挡在内网展开渗透测试成为需解决的问题,本文介绍了在夺取映射到外网的内网服务器权限后,如何利用 Socks 代理反弹获得内网访问权限
+    
+    </summary>
+    
+      <category term="networking" scheme="https://vxhly.github.io/categories/networking/"/>
+    
+    
+      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+    
+      <category term="Network" scheme="https://vxhly.github.io/tags/Network/"/>
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常见的文件头和文件尾</title>
+    <link href="https://vxhly.github.io/archives/fb2bd835.html"/>
+    <id>https://vxhly.github.io/archives/fb2bd835.html</id>
+    <published>2016-11-23T10:05:44.000Z</published>
+    <updated>2019-05-28T01:36:30.390Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;文件头是位于文件开头的一段承担一定任务的数据,一般都在开头的部分。而文件尾对应的就在 文件的结束部分,本篇将介绍常见的文件头和文件尾的十六进制数,这些文件的文件头和文件尾几乎多是一样的
+    
+    </summary>
+    
+      <category term="windows" scheme="https://vxhly.github.io/categories/windows/"/>
+    
+    
+      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+    
+      <category term="Windows" scheme="https://vxhly.github.io/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL 数据库安全加固</title>
+    <link href="https://vxhly.github.io/archives/75edbf20.html"/>
+    <id>https://vxhly.github.io/archives/75edbf20.html</id>
+    <published>2016-10-30T16:02:43.000Z</published>
+    <updated>2019-05-28T01:36:30.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;数据库作为数据管理的平台,它的安全性首先由系统内部和网络安全两部分来决定的。对于系统管理员来说,首先要保证系统本身的安全,在安装 MySQL 数据时,需要对基础环境进行较好的配置。本篇笔记将记录在 RedHat Liunx 系统下 MySQL 数据库的安全加固方法
+    
+    </summary>
+    
+      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+    
+    
+      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+      <category term="Service" scheme="https://vxhly.github.io/tags/Service/"/>
+    
+      <category term="MySQL" scheme="https://vxhly.github.io/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Gulp 使用指南</title>
+    <link href="https://vxhly.github.io/archives/e59c5b19.html"/>
+    <id>https://vxhly.github.io/archives/e59c5b19.html</id>
+    <published>2016-10-28T19:06:15.000Z</published>
+    <updated>2019-05-28T01:36:30.390Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;本文主要介绍如何使用 Gulp.js,来帮助你构建一个自动化的前端开发流程。总结并归类自身使用中所遇到的方法、问题,便于新人上手和理解,同时也作为一份 Gulp 参考文档来使用,让你对 Gulp 有个更深入的了解
+    
+    </summary>
+    
+      <category term="manual" scheme="https://vxhly.github.io/categories/manual/"/>
+    
+    
+      <category term="JavaScript" scheme="https://vxhly.github.io/tags/JavaScript/"/>
+    
+      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript 中的 DOM 事件</title>
+    <link href="https://vxhly.github.io/archives/fe9a6fe9.html"/>
+    <id>https://vxhly.github.io/archives/fe9a6fe9.html</id>
+    <published>2016-10-28T16:59:57.000Z</published>
+    <updated>2019-05-28T01:36:30.390Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;这篇文章主要介绍了 JavaScript 中 DOM 0 级事件和 DOM 2 级事件的区别介绍
+    
+    </summary>
+    
+      <category term="web" scheme="https://vxhly.github.io/categories/web/"/>
+    
+    
+      <category term="JavaScript" scheme="https://vxhly.github.io/tags/JavaScript/"/>
+    
+      <category term="jQuery" scheme="https://vxhly.github.io/tags/jQuery/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>RedHat 系统安全加固（五）：防火墙 (iptables) 的设置</title>
+    <link href="https://vxhly.github.io/archives/2b51fa3c.html"/>
+    <id>https://vxhly.github.io/archives/2b51fa3c.html</id>
+    <published>2016-10-27T10:00:55.000Z</published>
+    <updated>2019-05-28T01:36:30.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;本系列笔记又是 Liunx 学习系列教程的一大步,本系列学习笔记记录 RedHat 系统的安全加固。本篇笔记记录 RedHat 下的防火请的开启和关闭,还有允许哪些端口通过防火墙
+    
+    </summary>
+    
+      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+    
+    
+      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>编写 CSS 代码的一些建议</title>
+    <link href="https://vxhly.github.io/archives/c6e1afac.html"/>
+    <id>https://vxhly.github.io/archives/c6e1afac.html</id>
+    <published>2016-10-22T22:28:14.000Z</published>
+    <updated>2019-05-28T01:36:30.398Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;想要写出高质量的 CSS 代码。那么这篇记录将大大提升你撰写 CSS 代码的效率
+    
+    </summary>
+    
+      <category term="design" scheme="https://vxhly.github.io/categories/design/"/>
+    
+    
+      <category term="CSS" scheme="https://vxhly.github.io/tags/CSS/"/>
+    
+      <category term="Criterion" scheme="https://vxhly.github.io/tags/Criterion/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>RedHat 系统安全加固（四）：服务和进程管理</title>
+    <link href="https://vxhly.github.io/archives/a76b3915.html"/>
+    <id>https://vxhly.github.io/archives/a76b3915.html</id>
+    <published>2016-10-19T11:01:04.000Z</published>
+    <updated>2019-05-28T01:36:30.398Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;本系列笔记又是 Liunx 学习系列教程的一大步,本系列学习笔记记录 RedHat 系统的安全加固。本篇笔记是记录系统服务和进程的查看与关闭,通俗的来说进程是运行起来的程序。唯一标示进程的是进程描述符（PID）,在 linux 内核中是通过 task_struck 和 task_list 来定义和管理进程的
+    
+    </summary>
+    
+      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+    
+    
+      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+      <category term="Protocol" scheme="https://vxhly.github.io/tags/Protocol/"/>
+    
+      <category term="Service" scheme="https://vxhly.github.io/tags/Service/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>RedHat 系统安全加固（三）：系统日志审计</title>
+    <link href="https://vxhly.github.io/archives/17557f0c.html"/>
+    <id>https://vxhly.github.io/archives/17557f0c.html</id>
+    <published>2016-10-16T13:39:09.000Z</published>
+    <updated>2019-05-28T01:36:30.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;本系列笔记又是 Liunx 学习系列教程的一大步,本系列学习笔记记录 RedHat 系统的安全加固。本篇笔记是记录系统日志审计的配置,加强系统的防御能力
+    
+    </summary>
+    
+      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+    
+    
+      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+    
+      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>RedHat 系统安全加固（二）：用户和文件权限</title>
+    <link href="https://vxhly.github.io/archives/83a8114d.html"/>
+    <id>https://vxhly.github.io/archives/83a8114d.html</id>
+    <published>2016-10-14T22:08:33.000Z</published>
+    <updated>2019-05-28T01:36:30.402Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;本系列笔记又是 Liunx 学习系列教程的一大步,本系列学习笔记记录 RedHat 系统的安全加固。本篇笔记是记录用户和文件的权限（主要是特殊权限）,加强系统的防御能力
+    
+    </summary>
+    
+      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+    
+    
+      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+    
+      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Liunx 学习笔记（七）：文件的特殊权限</title>
+    <link href="https://vxhly.github.io/archives/ced21d05.html"/>
+    <id>https://vxhly.github.io/archives/ced21d05.html</id>
+    <published>2016-10-14T19:25:27.000Z</published>
+    <updated>2019-05-28T01:36:30.398Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;本篇是 Liunx 的学习笔记系列第七篇,在 Liunx 中文件除了 rwx 权限,还存在 SetUID 、 SetGID 、 Sicky BIT 特殊权限,本篇就是来介绍这些特殊权限
+    
+    </summary>
+    
+      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+    
+    
+      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>RedHat 系统安全加固（一）： 帐号安全</title>
+    <link href="https://vxhly.github.io/archives/b62bc725.html"/>
+    <id>https://vxhly.github.io/archives/b62bc725.html</id>
+    <published>2016-10-14T11:06:38.000Z</published>
+    <updated>2019-05-28T01:36:30.390Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;本系列笔记又是 Liunx 学习系列教程的一大步, 本系列学习笔记记录 RedHat 系统的安全加固。 本篇主要介绍相关于帐号安全的加固策略, 加强系统的防御能力
+    
+    </summary>
+    
+      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+    
+    
+      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+    
+      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SASS 用法指南</title>
+    <link href="https://vxhly.github.io/archives/ef87912d.html"/>
+    <id>https://vxhly.github.io/archives/ef87912d.html</id>
+    <published>2016-10-11T18:57:49.000Z</published>
+    <updated>2019-05-28T01:36:30.398Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;SASS 是 CSS 预处理器之一,它的基本思想是,用一种专门的编程语言,进行网页样式设计,然后再编译成正常的 CSS 文件,它提供了许多便利的写法,大大节省了设计者的时间,使得 CSS 的开发,变得简单和可维护
+    
+    </summary>
+    
+      <category term="manual" scheme="https://vxhly.github.io/categories/manual/"/>
+    
+    
+      <category term="CSS" scheme="https://vxhly.github.io/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>渗透工具用法（二）：BurpSuite 的用法</title>
+    <link href="https://vxhly.github.io/archives/6686ada6.html"/>
+    <id>https://vxhly.github.io/archives/6686ada6.html</id>
+    <published>2016-10-08T16:02:34.000Z</published>
+    <updated>2019-05-28T01:36:30.402Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;此系列笔记是网络渗透工具的使用方法,本篇是介绍 Web 应用程序测试工具 BurpSuite 的使用方法。Burp Suite 其多种功能可以帮我们执行各种任务,请求的拦截和修改,扫描 web 应用程序漏洞,以暴力破解登陆表单,执行会话令牌等多种的随机性检查
+    
+    </summary>
+    
+      <category term="pentest" scheme="https://vxhly.github.io/categories/pentest/"/>
+    
+    
+      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+    
+      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+      <category term="Protocol" scheme="https://vxhly.github.io/tags/Protocol/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Liunx 学习笔记（六）：用户的管理</title>
+    <link href="https://vxhly.github.io/archives/c00a7200.html"/>
+    <id>https://vxhly.github.io/archives/c00a7200.html</id>
+    <published>2016-10-07T01:31:32.000Z</published>
+    <updated>2019-05-28T01:36:30.402Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;本篇是 Liunx 的学习笔记系列第五篇,这一篇将介绍 Liunx 下用户的管理。用户管理看似很简单,但是里面还隐藏着大学问呢
+    
+    </summary>
+    
+      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+    
+    
+      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTML 和 CSS 代码规范</title>
+    <link href="https://vxhly.github.io/archives/a7ff1bf6.html"/>
+    <id>https://vxhly.github.io/archives/a7ff1bf6.html</id>
+    <published>2016-10-03T21:45:11.000Z</published>
+    <updated>2019-05-28T01:36:30.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;介绍 HTML 和 CSS 的格式和代码规范,旨在提高代码质量和协作效率
+    
+    </summary>
+    
+      <category term="web" scheme="https://vxhly.github.io/categories/web/"/>
+    
+    
+      <category term="CSS" scheme="https://vxhly.github.io/tags/CSS/"/>
+    
+      <category term="Criterion" scheme="https://vxhly.github.io/tags/Criterion/"/>
+    
+      <category term="HTML5" scheme="https://vxhly.github.io/tags/HTML5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JDK 的安装和环境变量的配置</title>
+    <link href="https://vxhly.github.io/archives/b76beaef.html"/>
+    <id>https://vxhly.github.io/archives/b76beaef.html</id>
+    <published>2016-09-30T19:36:02.000Z</published>
+    <updated>2019-05-28T01:36:30.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;JDK 是 Java 语言的软件开发工具包,主要用于移动设备、嵌入式设备上的 java 应用程序。JDK 是整个 java 开发的核心,它包含了 JAVA 的运行环境,JAVA 工具和 JAVA 基础的类库。这里将介绍在 Windows 下 JDK 的安装和环境变量的配置
+    
+    </summary>
+    
+      <category term="manual" scheme="https://vxhly.github.io/categories/manual/"/>
+    
+    
+      <category term="Code" scheme="https://vxhly.github.io/tags/Code/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Liunx 服务配置笔记（六）：DNS 服务安全配置</title>
+    <link href="https://vxhly.github.io/archives/a8e13ac0.html"/>
+    <id>https://vxhly.github.io/archives/a8e13ac0.html</id>
+    <published>2016-09-27T13:25:48.000Z</published>
+    <updated>2019-05-28T01:36:30.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;这篇是 Liunx 的服务配置笔记系列第五篇,这一篇将具体介绍 Red Hat Liunx 下 DNS 服务的安全配置。所谓 DNS 就是一个域名解析服务器,其中 DNS 还包含正向解析和反向解析
+    
+    </summary>
+    
+      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+    
+    
+      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+      <category term="Protocol" scheme="https://vxhly.github.io/tags/Protocol/"/>
+    
+      <category term="Service" scheme="https://vxhly.github.io/tags/Service/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>FontAwesome 图标样式 CSS 参考清单</title>
+    <link href="https://vxhly.github.io/archives/26e7f8f6.html"/>
+    <id>https://vxhly.github.io/archives/26e7f8f6.html</id>
+    <published>2016-09-25T16:50:04.000Z</published>
+    <updated>2019-05-28T01:36:30.390Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;在网站开发中多多少少都会使用到图标,这也是 HTML5 发展以来最具有特色的地方,也就是说,我们可以完全可以抛弃用图片当图标,现在就可以使用 CSS 样式加上字体库实现图标的引用
+    
+    </summary>
+    
+      <category term="design" scheme="https://vxhly.github.io/categories/design/"/>
+    
+    
+      <category term="CSS" scheme="https://vxhly.github.io/tags/CSS/"/>
+    
+      <category term="HTML5" scheme="https://vxhly.github.io/tags/HTML5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>渗透工具用法（三）：Nmap 的用法</title>
+    <link href="https://vxhly.github.io/archives/2a42c61c.html"/>
+    <id>https://vxhly.github.io/archives/2a42c61c.html</id>
+    <published>2016-09-23T16:29:57.000Z</published>
+    <updated>2019-05-28T01:36:30.402Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;此系列笔记是网络渗透工具的使用方法,本篇是介绍端口扫描工具 Nmap 的使用方法。Nmap 在渗透测试中经常用到,它不仅可以用来确定目标网络上计算机的存活状态,而且可以扫描各个计算机的操作系统、开放端口、服务,还有可能获得用户的证书。熟练掌握 Nmap 的用法,可以极大的提高渗透测试技术
+    
+    </summary>
+    
+      <category term="pentest" scheme="https://vxhly.github.io/categories/pentest/"/>
+    
+    
+      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+    
+      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+      <category term="Protocol" scheme="https://vxhly.github.io/tags/Protocol/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>渗透工具用法（一）：SQLmap 的用法</title>
+    <link href="https://vxhly.github.io/archives/b58c2725.html"/>
+    <id>https://vxhly.github.io/archives/b58c2725.html</id>
+    <published>2016-09-20T10:46:46.000Z</published>
+    <updated>2019-05-28T01:36:30.402Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;此系列笔记是网络渗透工具的使用方法,本篇是介绍 SQL 注入工具 SQLmap 的使用方法。SQLmap 是一款用来检测与利用 SQL 注入漏洞的免费开源工具,有一个非常棒的特性,即对检测与利用的自动化处理（数据库指纹、访问底层文件系统、执行命令）
+    
+    </summary>
+    
+      <category term="pentest" scheme="https://vxhly.github.io/categories/pentest/"/>
+    
+    
+      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+    
+      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+      <category term="Python" scheme="https://vxhly.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Liunx 服务配置笔记（五）：SAMBA 服务安全配置</title>
+    <link href="https://vxhly.github.io/archives/9044a7d9.html"/>
+    <id>https://vxhly.github.io/archives/9044a7d9.html</id>
+    <published>2016-09-19T19:33:21.000Z</published>
+    <updated>2019-05-28T01:36:30.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;本篇是 Liunx 的服务配置笔记系列第五篇,这一篇将具体介绍 Red Hat Liunx 下 SAMBA 服务的安全配置。所谓 SAMBA 就是建立 Liunx 和 Windows 之间的共享,使 Windows 能够访问 Liunx 下共享出来的文件
+    
+    </summary>
+    
+      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+    
+    
+      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+      <category term="Protocol" scheme="https://vxhly.github.io/tags/Protocol/"/>
+    
+      <category term="Service" scheme="https://vxhly.github.io/tags/Service/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Liunx 服务配置笔记（四）：APACHE 服务安全配置</title>
+    <link href="https://vxhly.github.io/archives/e21a12c7.html"/>
+    <id>https://vxhly.github.io/archives/e21a12c7.html</id>
+    <published>2016-09-19T14:58:33.000Z</published>
+    <updated>2019-05-28T01:36:30.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;本篇是 Liunx 的服务配置笔记系列第四篇,这一篇将具体介绍 Red Hat Liunx 下 APACHE 服务的安全配置。所谓 APACHE 就是一个 WEB 服务器,为 WEB 网页提供服务
+    
+    </summary>
+    
+      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+    
+    
+      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+      <category term="Protocol" scheme="https://vxhly.github.io/tags/Protocol/"/>
+    
+      <category term="Service" scheme="https://vxhly.github.io/tags/Service/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Liunx 服务配置笔记（三）：FTP 服务安全配置</title>
+    <link href="https://vxhly.github.io/archives/48020709.html"/>
+    <id>https://vxhly.github.io/archives/48020709.html</id>
+    <published>2016-09-16T20:56:49.000Z</published>
+    <updated>2019-05-28T01:36:30.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;本篇是 Liunx 的服务配置笔记系列第三篇,这一篇将具体介绍 Red Hat Liunx 下 FTP 服务的安全配置。确切的说,应该叫它 vsFTP,就是文件的上传和下载服务,主要的功能是在服务器与客户端之间进行文件的传输
+    
+    </summary>
+    
+      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+    
+    
+      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+      <category term="Protocol" scheme="https://vxhly.github.io/tags/Protocol/"/>
+    
+      <category term="Service" scheme="https://vxhly.github.io/tags/Service/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Liunx 服务配置笔记（二）：SSH 服务安全配置</title>
+    <link href="https://vxhly.github.io/archives/f22e3ca2.html"/>
+    <id>https://vxhly.github.io/archives/f22e3ca2.html</id>
+    <published>2016-09-16T11:59:15.000Z</published>
+    <updated>2019-05-28T01:36:30.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;本篇是 Liunx 的服务配置笔记系列第二篇,这一篇将具体介绍 Red Hat Liunx 下 SSH 服务的安全配置。所谓 SSH 就是加密的数据传输,但是使用其的默认配置并不是安全的,所以还需要对其进行详细的配置
+    
+    </summary>
+    
+      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+    
+    
+      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+      <category term="Protocol" scheme="https://vxhly.github.io/tags/Protocol/"/>
+    
+      <category term="Service" scheme="https://vxhly.github.io/tags/Service/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Liunx 服务配置笔记（一）：概述</title>
+    <link href="https://vxhly.github.io/archives/6b4c6369.html"/>
+    <id>https://vxhly.github.io/archives/6b4c6369.html</id>
+    <published>2016-09-15T18:59:15.000Z</published>
+    <updated>2019-05-28T01:36:30.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;Liunx 的学习笔记已经推出有一段时间了,现继续推出在 Liunx 中 SAMBA 服务、SSH 服务、FTP 服务、APACHE 服务、DNS 服务的安全配置。本文就先介绍这几个服务的相关内容
+    
+    </summary>
+    
+      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+    
+    
+      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+      <category term="Service" scheme="https://vxhly.github.io/tags/Service/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Liunx 学习笔记（五）：基础操作</title>
+    <link href="https://vxhly.github.io/archives/a5687d4.html"/>
+    <id>https://vxhly.github.io/archives/a5687d4.html</id>
+    <published>2016-09-15T16:09:27.000Z</published>
+    <updated>2019-05-28T01:36:30.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;本篇是 Liunx 的学习笔记系列第五篇,这一篇将介绍 Liunx 的基础操作。很多人觉得 Liunx 非常难学,但不其然,只要掌握一些基础的命令操作,Liunx 还是非常好上手的
+    
+    </summary>
+    
+      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+    
+    
+      <category term="Command" scheme="https://vxhly.github.io/tags/Command/"/>
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>IP 地址规划</title>
+    <link href="https://vxhly.github.io/archives/2689f5dc.html"/>
+    <id>https://vxhly.github.io/archives/2689f5dc.html</id>
+    <published>2016-09-11T21:49:24.000Z</published>
+    <updated>2019-05-28T01:36:30.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;当申请到一个 C 类网络地址时,很多时候需要对其子网划分,那么一个高效简便的子网划分方法由此而生
+    
+    </summary>
+    
+      <category term="networking" scheme="https://vxhly.github.io/categories/networking/"/>
+    
+    
+      <category term="Network" scheme="https://vxhly.github.io/tags/Network/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Liunx 学习笔记（三）：文件的压缩与解压缩</title>
+    <link href="https://vxhly.github.io/archives/7270a2e0.html"/>
+    <id>https://vxhly.github.io/archives/7270a2e0.html</id>
+    <published>2016-09-10T14:04:39.000Z</published>
+    <updated>2019-05-28T01:36:30.390Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;本篇是 Liunx 的学习笔记系列第三篇,这一篇将介绍在 Liunx 下压缩解压文件或目录常用命令。压缩文件及目录可以大大增加磁盘的利用率
+    
+    </summary>
+    
+      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+    
+    
+      <category term="Command" scheme="https://vxhly.github.io/tags/Command/"/>
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常用的正则表达式</title>
+    <link href="https://vxhly.github.io/archives/e89e918.html"/>
+    <id>https://vxhly.github.io/archives/e89e918.html</id>
+    <published>2016-09-09T19:02:34.000Z</published>
+    <updated>2019-05-28T01:36:30.398Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;很多不太懂正则的童鞋,在遇到需要用正则校验数据时,往往是在网上去找很久,结果找来的还是不很符合要求。所以我把开发中常用的一些正则表达式整理了一下,包括校验数字、字符、一些特殊的需求等等
+    
+    </summary>
+    
+      <category term="design" scheme="https://vxhly.github.io/categories/design/"/>
+    
+    
+      <category term="Code" scheme="https://vxhly.github.io/tags/Code/"/>
+    
+      <category term="RegExp" scheme="https://vxhly.github.io/tags/RegExp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Liunx 学习笔记（二）：vim 的使用</title>
+    <link href="https://vxhly.github.io/archives/1694930d.html"/>
+    <id>https://vxhly.github.io/archives/1694930d.html</id>
+    <published>2016-09-08T22:20:23.000Z</published>
+    <updated>2019-05-28T01:36:30.402Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;本篇是 Liunx 的学习笔记系列第二篇,这一篇将介绍 vim 的使用技巧。vim 是一款终端编辑器,是由 vi 演变而来的,它与 vi 最大的区别是,vim 拥有代码高亮,其他操作都是共用的
+    
+    </summary>
+    
+      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+    
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Liunx 学习笔记（一）：目录结构说明</title>
+    <link href="https://vxhly.github.io/archives/70bd1178.html"/>
+    <id>https://vxhly.github.io/archives/70bd1178.html</id>
+    <published>2016-09-08T19:35:12.000Z</published>
+    <updated>2019-05-28T01:36:30.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;接触了 Liunx 也有一段时间了,也算对 Liunx 有一定的了解,在这里将陆续的推出 Liunx 的学习笔记系列,做个记录,方便以后忘记有处可循。Liunx 是以文件系统为主的,所以 Liunx 下的每一个目录都有其各自的作用,则本篇将介绍 Liunx 的各个目录结构及其说明
+    
+    </summary>
+    
+      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+    
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>reveal.js（HTML 演示文稿）中文文档</title>
+    <link href="https://vxhly.github.io/archives/8bdf06de.html"/>
+    <id>https://vxhly.github.io/archives/8bdf06de.html</id>
+    <published>2016-09-03T13:49:17.000Z</published>
+    <updated>2019-05-28T01:36:30.398Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;最近发现了一个可以用 HTML+CSS3 就能做出一份优美的 PPT 的 JavaScript 框架（reveal.js）,但是我并没有找到该框架的中文帮助文档,所以在这里将提供中文帮助文档（本人的英文水平并不是很好,所以客官们凑合着看,顺便添加一些相关内容）
+    
+    </summary>
+    
+      <category term="manual" scheme="https://vxhly.github.io/categories/manual/"/>
+    
+    
+      <category term="JavaScript" scheme="https://vxhly.github.io/tags/JavaScript/"/>
+    
+      <category term="CSS" scheme="https://vxhly.github.io/tags/CSS/"/>
+    
+      <category term="HTML5" scheme="https://vxhly.github.io/tags/HTML5/"/>
+    
+      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+    
+      <category term="Code" scheme="https://vxhly.github.io/tags/Code/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>解读 npm 中的 package.json</title>
+    <link href="https://vxhly.github.io/archives/5052e847.html"/>
+    <id>https://vxhly.github.io/archives/5052e847.html</id>
+    <published>2016-08-30T17:08:18.000Z</published>
+    <updated>2019-05-28T01:36:30.398Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;package.json 是 Node.js 应用中比较重要的部分,它定义了项目的依赖关系,这里将介绍该文件各个配置项的作用
+    
+    </summary>
+    
+      <category term="node.js" scheme="https://vxhly.github.io/categories/node-js/"/>
+    
+    
+      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>浅谈 Node.js 中的 npm</title>
+    <link href="https://vxhly.github.io/archives/4bdc3688.html"/>
+    <id>https://vxhly.github.io/archives/4bdc3688.html</id>
+    <published>2016-08-26T15:30:10.000Z</published>
+    <updated>2019-05-28T01:36:30.398Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;主要介绍 npm 中的各个选项的作用以及其区别。npm 依赖于 Node.js,童鞋们要注意你的系统是否有 Node.js 环境
+    
+    </summary>
+    
+      <category term="node.js" scheme="https://vxhly.github.io/categories/node-js/"/>
+    
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS 代码书写顺序以及代码规范</title>
+    <link href="https://vxhly.github.io/archives/7c12557e.html"/>
+    <id>https://vxhly.github.io/archives/7c12557e.html</id>
+    <published>2016-08-24T20:40:06.000Z</published>
+    <updated>2019-05-28T01:36:30.390Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:22 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;一个优秀的前端开发人员, 在书写 CSS 时必定要注意的重点, 而不是随意的书写 CSS, 这样会给自己还有他人带来困扰
+    
+    </summary>
+    
+      <category term="web" scheme="https://vxhly.github.io/categories/web/"/>
+    
+    
+      <category term="CSS" scheme="https://vxhly.github.io/tags/CSS/"/>
+    
+      <category term="Criterion" scheme="https://vxhly.github.io/tags/Criterion/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTML5 移动端头部标签</title>
+    <link href="https://vxhly.github.io/archives/1ae8a561.html"/>
+    <id>https://vxhly.github.io/archives/1ae8a561.html</id>
+    <published>2016-08-22T16:21:30.000Z</published>
+    <updated>2019-05-28T01:36:30.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;记录 HTML5 通用的移动端和 PC 端头部标签,即 meta 标签
+    
+    </summary>
+    
+      <category term="web" scheme="https://vxhly.github.io/categories/web/"/>
+    
+    
+      <category term="HTML5" scheme="https://vxhly.github.io/tags/HTML5/"/>
+    
+      <category term="Moblie" scheme="https://vxhly.github.io/tags/Moblie/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jQuery 各个版本的下载链接</title>
+    <link href="https://vxhly.github.io/archives/f087f5b5.html"/>
+    <id>https://vxhly.github.io/archives/f087f5b5.html</id>
+    <published>2016-08-18T17:13:24.000Z</published>
+    <updated>2019-05-28T01:36:30.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;提供 jQuery 所有版本的下载链接和 CDN 链接
+    
+    </summary>
+    
+      <category term="web" scheme="https://vxhly.github.io/categories/web/"/>
+    
+    
+      <category term="JavaScript" scheme="https://vxhly.github.io/tags/JavaScript/"/>
+    
+      <category term="jQuery" scheme="https://vxhly.github.io/tags/jQuery/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS 的一些冷知识</title>
+    <link href="https://vxhly.github.io/archives/263bbb8c.html"/>
+    <id>https://vxhly.github.io/archives/263bbb8c.html</id>
+    <published>2016-08-17T17:27:08.000Z</published>
+    <updated>2019-05-28T01:36:30.390Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;记录常用而不易于记忆的 css 自定义代码
+    
+    </summary>
+    
+      <category term="web" scheme="https://vxhly.github.io/categories/web/"/>
+    
+    
+      <category term="CSS" scheme="https://vxhly.github.io/tags/CSS/"/>
+    
+      <category term="Code" scheme="https://vxhly.github.io/tags/Code/"/>
+    
+      <category term="Layout" scheme="https://vxhly.github.io/tags/Layout/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常见的端口号以及其对应的应用程序或服务</title>
+    <link href="https://vxhly.github.io/archives/b2502458.html"/>
+    <id>https://vxhly.github.io/archives/b2502458.html</id>
+    <published>2016-08-16T16:04:29.000Z</published>
+    <updated>2019-05-28T01:36:30.390Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:22 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;列出 TCP/UDP 协议常见的端口号占用情况, 以助于分析该服务器开放了哪些端口号, 或者程序占用了哪些端口号
+    
+    </summary>
+    
+      <category term="networking" scheme="https://vxhly.github.io/categories/networking/"/>
+    
+    
+      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+    
+      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+    
+      <category term="Network" scheme="https://vxhly.github.io/tags/Network/"/>
+    
+      <category term="Windows" scheme="https://vxhly.github.io/tags/Windows/"/>
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+      <category term="Protocol" scheme="https://vxhly.github.io/tags/Protocol/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>浏览器对象模型</title>
+    <link href="https://vxhly.github.io/archives/8852f7a3.html"/>
+    <id>https://vxhly.github.io/archives/8852f7a3.html</id>
+    <published>2016-08-15T21:58:30.000Z</published>
+    <updated>2019-05-28T01:36:30.390Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:22 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;BOM (Browser Object Model) 是指浏览器对象模型, 是用于描述这种对象与对象之间层次关系的模型
+    
+    </summary>
+    
+      <category term="web" scheme="https://vxhly.github.io/categories/web/"/>
+    
+    
+      <category term="JavaScript" scheme="https://vxhly.github.io/tags/JavaScript/"/>
+    
+      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTML5 的一些冷知识</title>
+    <link href="https://vxhly.github.io/archives/ba82b422.html"/>
+    <id>https://vxhly.github.io/archives/ba82b422.html</id>
+    <published>2016-08-15T18:12:36.000Z</published>
+    <updated>2019-05-28T01:36:30.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;现已进入了 HTML5 时代,这些知识在前端开发人员眼里也就变得更加重要
+    
+    </summary>
+    
+      <category term="web" scheme="https://vxhly.github.io/categories/web/"/>
+    
+    
+      <category term="HTML5" scheme="https://vxhly.github.io/tags/HTML5/"/>
+    
+      <category term="Code" scheme="https://vxhly.github.io/tags/Code/"/>
+    
+      <category term="Layout" scheme="https://vxhly.github.io/tags/Layout/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>移动端网页自适应方案</title>
+    <link href="https://vxhly.github.io/archives/73483817.html"/>
+    <id>https://vxhly.github.io/archives/73483817.html</id>
+    <published>2016-08-13T19:40:34.000Z</published>
+    <updated>2019-05-28T01:36:30.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;解决移动端网页的自适应,让开发变得更加简洁
+    
+    </summary>
+    
+      <category term="design" scheme="https://vxhly.github.io/categories/design/"/>
+    
+    
+      <category term="JavaScript" scheme="https://vxhly.github.io/tags/JavaScript/"/>
+    
+      <category term="jQuery" scheme="https://vxhly.github.io/tags/jQuery/"/>
+    
+      <category term="Moblie" scheme="https://vxhly.github.io/tags/Moblie/"/>
+    
+      <category term="Layout" scheme="https://vxhly.github.io/tags/Layout/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>运行命令集合</title>
+    <link href="https://vxhly.github.io/archives/6295cd5e.html"/>
+    <id>https://vxhly.github.io/archives/6295cd5e.html</id>
+    <published>2016-08-11T20:46:27.000Z</published>
+    <updated>2019-05-28T01:36:30.398Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;记录 Windows 常见应用的运行快捷命令,以下记录的命令默认为 win+R 组合键调出的窗口,非命令提示符窗口
+    
+    </summary>
+    
+      <category term="windows" scheme="https://vxhly.github.io/categories/windows/"/>
+    
+    
+      <category term="Pentest" scheme="https://vxhly.github.io/tags/Pentest/"/>
+    
+      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+    
+      <category term="Command" scheme="https://vxhly.github.io/tags/Command/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Flexbox 布局</title>
+    <link href="https://vxhly.github.io/archives/c8c4f9a9.html"/>
+    <id>https://vxhly.github.io/archives/c8c4f9a9.html</id>
+    <published>2016-08-11T14:27:56.000Z</published>
+    <updated>2019-05-28T01:36:30.390Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;Flex 布局,可以简便、完整、响应式地实现各种页面布局,目前,它已经得到了所有浏览器的支持
+    
+    </summary>
+    
+      <category term="manual" scheme="https://vxhly.github.io/categories/manual/"/>
+    
+    
+      <category term="CSS" scheme="https://vxhly.github.io/tags/CSS/"/>
+    
+      <category term="HTML5" scheme="https://vxhly.github.io/tags/HTML5/"/>
+    
+      <category term="Code" scheme="https://vxhly.github.io/tags/Code/"/>
+    
+      <category term="Layout" scheme="https://vxhly.github.io/tags/Layout/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Console 的一些应用小技巧</title>
+    <link href="https://vxhly.github.io/archives/cab01f37.html"/>
+    <id>https://vxhly.github.io/archives/cab01f37.html</id>
+    <published>2016-08-10T16:57:53.000Z</published>
+    <updated>2019-05-28T01:36:30.398Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;一个简单而实用的控制台命令,用来调试 JavaScript 代码的不合理性
+    
+    </summary>
+    
+      <category term="debug" scheme="https://vxhly.github.io/categories/debug/"/>
+    
+    
+      <category term="JavaScript" scheme="https://vxhly.github.io/tags/JavaScript/"/>
+    
+      <category term="Debug" scheme="https://vxhly.github.io/tags/Debug/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>简单而实用的 jQuery 小技巧</title>
+    <link href="https://vxhly.github.io/archives/f0f4a46e.html"/>
+    <id>https://vxhly.github.io/archives/f0f4a46e.html</id>
+    <published>2016-08-09T15:26:35.000Z</published>
+    <updated>2019-05-28T01:36:30.398Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;简单的窍门的集合,用来帮助你 jQuery 代码的进阶
+    
+    </summary>
+    
+      <category term="web" scheme="https://vxhly.github.io/categories/web/"/>
+    
+    
+      <category term="JavaScript" scheme="https://vxhly.github.io/tags/JavaScript/"/>
+    
+      <category term="jQuery" scheme="https://vxhly.github.io/tags/jQuery/"/>
+    
+      <category term="Code" scheme="https://vxhly.github.io/tags/Code/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript 获取 URL 请求参数</title>
+    <link href="https://vxhly.github.io/archives/9d963a10.html"/>
+    <id>https://vxhly.github.io/archives/9d963a10.html</id>
+    <published>2016-08-07T19:21:58.000Z</published>
+    <updated>2019-05-28T01:36:30.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;通过 JavaScript 原生方法,获取 URL 所带的请求参数备用
+    
+    </summary>
+    
+      <category term="design" scheme="https://vxhly.github.io/categories/design/"/>
+    
+    
+      <category term="JavaScript" scheme="https://vxhly.github.io/tags/JavaScript/"/>
+    
+      <category term="Code" scheme="https://vxhly.github.io/tags/Code/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>需要一款称手的编辑器</title>
+    <link href="https://vxhly.github.io/archives/60ce49fe.html"/>
+    <id>https://vxhly.github.io/archives/60ce49fe.html</id>
+    <published>2016-08-07T16:49:47.000Z</published>
+    <updated>2019-05-28T01:36:30.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;以下介绍的编辑器是跨平台,无论是 Windows,还是 Liunx,甚至是 Mac,都可以成为程序员称手的利器
+    
+    </summary>
+    
+      <category term="design" scheme="https://vxhly.github.io/categories/design/"/>
+    
+    
+      <category term="Code" scheme="https://vxhly.github.io/tags/Code/"/>
+    
+      <category term="WEB" scheme="https://vxhly.github.io/tags/WEB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于 Chrome 浏览器的调试方法</title>
+    <link href="https://vxhly.github.io/archives/3861842.html"/>
+    <id>https://vxhly.github.io/archives/3861842.html</id>
+    <published>2016-08-05T18:24:29.000Z</published>
+    <updated>2019-05-28T01:36:30.390Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;作为前端开发人员,最佳的调试环境便是浏览器自带的开发者工具,此文则介绍 Chrome 浏览器的开发者工具的使用方法
+    
+    </summary>
+    
+      <category term="debug" scheme="https://vxhly.github.io/categories/debug/"/>
+    
+    
+      <category term="JavaScript" scheme="https://vxhly.github.io/tags/JavaScript/"/>
+    
+      <category term="CSS" scheme="https://vxhly.github.io/tags/CSS/"/>
+    
+      <category term="HTML5" scheme="https://vxhly.github.io/tags/HTML5/"/>
+    
+      <category term="Debug" scheme="https://vxhly.github.io/tags/Debug/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Emmet 用法举例</title>
+    <link href="https://vxhly.github.io/archives/e4d9b9eb.html"/>
+    <id>https://vxhly.github.io/archives/e4d9b9eb.html</id>
+    <published>2016-08-04T13:20:34.000Z</published>
+    <updated>2019-05-28T01:36:30.390Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;Emmet 的前身是大名鼎鼎的 Zen coding。如果你从事 Web 前端开发的话,对该插件一定不会陌生。它使用仿 CSS 选择器的语法来代码,大大提高了 HTML/CSS 代码编写的速度
+    
+    </summary>
+    
+      <category term="manual" scheme="https://vxhly.github.io/categories/manual/"/>
+    
+    
+      <category term="CSS" scheme="https://vxhly.github.io/tags/CSS/"/>
+    
+      <category term="HTML5" scheme="https://vxhly.github.io/tags/HTML5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用 Hexo+NexT 在 Github 上搭建静态博客</title>
+    <link href="https://vxhly.github.io/archives/ef056a27.html"/>
+    <id>https://vxhly.github.io/archives/ef056a27.html</id>
+    <published>2016-08-03T13:11:30.000Z</published>
+    <updated>2019-05-28T01:36:30.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;Hexo 是一个快速,简单而高效的静态博客框架,本文将介绍如何在 GitHub 上使用 Hexo+NexT 搭建静态博客
+    
+    </summary>
+    
+      <category term="node.js" scheme="https://vxhly.github.io/categories/node-js/"/>
+    
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+    
+      <category term="Hexo" scheme="https://vxhly.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CMD 常用命令</title>
+    <link href="https://vxhly.github.io/archives/2283a2c8.html"/>
+    <id>https://vxhly.github.io/archives/2283a2c8.html</id>
+    <published>2016-08-02T18:59:24.000Z</published>
+    <updated>2019-05-28T01:36:30.390Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:22 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;记录 windows 下常用的 CMD 命令
+    
+    </summary>
+    
+      <category term="windows" scheme="https://vxhly.github.io/categories/windows/"/>
+    
+    
+      <category term="Security" scheme="https://vxhly.github.io/tags/Security/"/>
+    
+      <category term="Command" scheme="https://vxhly.github.io/tags/Command/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu 开启 root 用户</title>
+    <link href="https://vxhly.github.io/archives/e6877bfb.html"/>
+    <id>https://vxhly.github.io/archives/e6877bfb.html</id>
+    <published>2016-08-02T15:29:46.000Z</published>
+    <updated>2019-05-28T01:36:30.398Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;Ubuntu 默认不开启 root 账户的,所以有需开启 root 账户的按照以下做法即可,切换 root 账户后 chromium 浏览器不能使用
+    
+    </summary>
+    
+      <category term="liunx" scheme="https://vxhly.github.io/categories/liunx/"/>
+    
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript 生成随机数</title>
+    <link href="https://vxhly.github.io/archives/5c7d9cd0.html"/>
+    <id>https://vxhly.github.io/archives/5c7d9cd0.html</id>
+    <published>2016-08-02T13:49:41.000Z</published>
+    <updated>2019-05-28T01:36:30.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;为 JS 中的 Math 对象新增生成不重复随机数方法
+    
+    </summary>
+    
+      <category term="design" scheme="https://vxhly.github.io/categories/design/"/>
+    
+    
+      <category term="JavaScript" scheme="https://vxhly.github.io/tags/JavaScript/"/>
+    
+      <category term="Code" scheme="https://vxhly.github.io/tags/Code/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu 下连接 WIFI</title>
+    <link href="https://vxhly.github.io/archives/9b236238.html"/>
+    <id>https://vxhly.github.io/archives/9b236238.html</id>
+    <published>2016-08-01T12:24:19.000Z</published>
+    <updated>2019-05-28T01:36:30.398Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;基于已经安装双系统,或是只有 Ubuntu 系统,在虚拟机下不存在此问题
+    
+    </summary>
+    
+      <category term="networking" scheme="https://vxhly.github.io/categories/networking/"/>
+    
+    
+      <category term="Network" scheme="https://vxhly.github.io/tags/Network/"/>
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu 下科学上网</title>
+    <link href="https://vxhly.github.io/archives/79ca2b96.html"/>
+    <id>https://vxhly.github.io/archives/79ca2b96.html</id>
+    <published>2016-07-31T21:32:24.000Z</published>
+    <updated>2019-05-28T01:36:30.402Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;翻墙,主要用于 npm 的代理。没有 vpn 服务器不要紧,肯花点小钱就可以搞定（访问 &lt;a href=&quot;//www.gaotizi.com/aff.php?aff=133&quot;&gt;高梯子&lt;/a&gt;）
+    
+    </summary>
+    
+      <category term="networking" scheme="https://vxhly.github.io/categories/networking/"/>
+    
+    
+      <category term="Network" scheme="https://vxhly.github.io/tags/Network/"/>
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git 远程推送配置</title>
+    <link href="https://vxhly.github.io/archives/9a1dd005.html"/>
+    <id>https://vxhly.github.io/archives/9a1dd005.html</id>
+    <published>2016-07-31T16:09:21.000Z</published>
+    <updated>2019-05-28T01:36:30.390Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;Git 是一个开源的分布式版本控制系统,可以有效、高速的处理从很小到非常大的项目版本管理
+    
+    </summary>
+    
+      <category term="manual" scheme="https://vxhly.github.io/categories/manual/"/>
+    
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+      <category term="Protocol" scheme="https://vxhly.github.io/tags/Protocol/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用 nvm 安装 Node.js</title>
+    <link href="https://vxhly.github.io/archives/c6e979c.html"/>
+    <id>https://vxhly.github.io/archives/c6e979c.html</id>
+    <published>2016-07-31T15:11:44.000Z</published>
+    <updated>2019-05-28T01:36:30.402Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Tue May 28 2019 01:37:23 GMT+0000 (Coordinated Universal Time) --&gt;&lt;p&gt;安装 Node.js 的最佳方式是使用 nvm。nvm 最开始是在 &lt;code&gt;Mac OS&lt;/code&gt; 下开发的,所以 &lt;code&gt;Mac OS&lt;/code&gt; 下同样使用 nvm 安装 Node.js
+    
+    </summary>
+    
+      <category term="node.js" scheme="https://vxhly.github.io/categories/node-js/"/>
+    
+    
+      <category term="Liunx" scheme="https://vxhly.github.io/tags/Liunx/"/>
+    
+      <category term="Node.js" scheme="https://vxhly.github.io/tags/Node-js/"/>
+    
+  </entry>
+  
+</feed>
