@@ -1,0 +1,57 @@
+*::selection {
+  background: #22979b;
+  color: #fff;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+p {
+  margin: 1em auto;
+}
+
+.timeline-wrapper {
+  top: 3.6rem;
+}
+
+h1 + ul,
+h1 + ol,
+h2 + ul,
+h2 + ol,
+h3 + ul,
+h3 + ol,
+h4 + ul,
+h4 + ol,
+h5 + ul,
+h5 + ol,
+h6 + ul,
+h6 + ol {
+  margin: 1em 0;
+}
+
+div[class*="language-"] .highlight-lines .highlighted {
+  background-color: rgba(34, 151, 155, 0.5) !important;
+  color: #fff;
+  &:before {
+    background-color: rgba(34, 151, 155, 0.5) !important;
+  }
+}
+
+.comments-wrapper {
+  max-width: 1024px !important;
+}
+
+.source p {
+  margin: 0;
+  paddng:0;
+}
+
+div[class~="language-txt"]:before{
+  content: "txt";
+}
+
+div[class~="language-bat"]:before{
+  content: "bat";
+}
