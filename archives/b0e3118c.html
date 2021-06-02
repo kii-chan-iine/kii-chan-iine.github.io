@@ -1,0 +1,574 @@
+<!-- build time:Tue May 28 2019 01:37:47 GMT+0000 (Coordinated Universal Time) --><!DOCTYPE html><html class="theme-next mist use-motion" lang="zh-CN"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><meta name="theme-color" content="#222"><meta name="google-site-verification" content="XCppppl60fPQTlwxDodwZIhMarkybEgwVpcEz85KTuQ"><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css"><link rel="stylesheet" href="/css/main.css?v=7.0.1"><link rel="apple-touch-icon" sizes="180x180" href="/images/code.png?v=7.0.1"><link rel="icon" type="image/png" sizes="32x32" href="/images/code.png?v=7.0.1"><link rel="icon" type="image/png" sizes="16x16" href="/images/code.png?v=7.0.1"><link rel="mask-icon" href="/images/code.png?v=7.0.1" color="#222"><script id="hexo.configurations">var NexT=window.NexT||{},CONFIG={root:"/",scheme:"Mist",version:"7.0.1",sidebar:{position:"left",display:"post",offset:12,onmobile:!1,dimmer:!1},back2top:!0,back2top_sidebar:!1,fancybox:!0,fastclick:!0,lazyload:!0,tabs:!0,motion:{enable:!0,async:!1,transition:{post_block:"fadeIn",post_header:"slideDownIn",post_body:"slideDownIn",coll_header:"slideLeftIn",sidebar:"slideUpIn"}},algolia:{applicationID:"",apiKey:"",indexName:"",hits:{per_page:10},labels:{input_placeholder:"Search for Posts",hits_empty:"We didn't find any results for the search: ${query}",hits_stats:"${hits} results found in ${time} ms"}}}</script><meta name="description" content="本篇学习笔记纯粹记录学习 ES6 的过程以及一些坑点,下面的例子没有先后之分,也是很简单的例子,想了解更多的直接戳 ECMAScript 6 入门"><meta name="keywords" content="JavaScript,Node.js"><meta property="og:type" content="article"><meta property="og:title" content="ES6 学习笔记"><meta property="og:url" content="https://vxhly.github.io/archives/b0e3118c.html"><meta property="og:site_name" content="Coding and Fixing"><meta property="og:description" content="本篇学习笔记纯粹记录学习 ES6 的过程以及一些坑点,下面的例子没有先后之分,也是很简单的例子,想了解更多的直接戳 ECMAScript 6 入门"><meta property="og:locale" content="zh-CN"><meta property="og:updated_time" content="2019-05-28T01:36:30.394Z"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="ES6 学习笔记"><meta name="twitter:description" content="本篇学习笔记纯粹记录学习 ES6 的过程以及一些坑点,下面的例子没有先后之分,也是很简单的例子,想了解更多的直接戳 ECMAScript 6 入门"><link rel="alternate" href="/axom.xml" title="Coding and Fixing" type="application/atom+xml"><link rel="canonical" href="https://vxhly.github.io/archives/b0e3118c.html"><script id="page.configurations">CONFIG.page={sidebar:""}</script><title>ES6 学习笔记 | Coding and Fixing</title><noscript><style>.sidebar-inner,.use-motion .brand,.use-motion .collection-title,.use-motion .comments,.use-motion .menu-item,.use-motion .motion-element,.use-motion .pagination,.use-motion .post-block,.use-motion .post-body,.use-motion .post-header{opacity:initial}.use-motion .logo,.use-motion .site-subtitle,.use-motion .site-title{opacity:initial;top:initial}.use-motion .logo-line-before i{left:initial}.use-motion .logo-line-after i{right:initial}</style></noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"><style>pre{position:relative;border-radius:2px;padding:25px 0 0}pre.mermaid{background:#d3d3d3;display:flex;justify-content:center;padding:0}pre>span.code-copy{cursor:pointer;position:absolute;top:0;right:0;color:#a44545;background-color:#222;border-bottom-left-radius:2px;border-top-right-radius:2px;text-align:right;font-size:.7em;padding:5px 10px;line-height:15px;height:15px;font-weight:500}code.has-numbering{margin-left:2.5rem}code.has-numbering::-webkit-scrollbar{display:none}.pre-numbering{margin:0;position:absolute;top:33px;padding:0 10px}.pre-numbering li{list-style-type:decimal-leading-zero!important}blockquote{color:#888;background-color:#eae6f3;border-left:1rem solid #5236a0;padding:0 1.5rem;position:relative;font-family:Roboto,sans-serif}blockquote>p{word-wrap:break-word}blockquote:after,blockquote:before{color:#392570;font-size:2.5rem;position:absolute;line-height:2.5rem}@media (max-width:760px){.post-body pre{padding:25px 0 0}.post-body .pre-numbering,blockquote:after,blockquote:before{display:none}code.has-numbering{margin:0}}.image-caption{display:none}</style></head><body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN"><div class="container sidebar-position-left page-post-detail"><div class="headband"></div><header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="header-inner"><div class="site-brand-wrapper"><div class="site-meta"><div class="custom-logo-site-title"><a href="/" class="brand" rel="start"><span class="logo-line-before"><i></i></span> <span class="site-title">Coding and Fixing</span> <span class="logo-line-after"><i></i></span></a></div><h1 class="site-subtitle" itemprop="description">Coding and Fixing</h1></div><div class="site-nav-toggle"><button aria-label="切换导航栏"><span class="btn-bar"></span> <span class="btn-bar"></span> <span class="btn-bar"></span></button></div></div><nav class="site-nav"><ul id="menu" class="menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i><br>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i><br>标签<span class="badge">41</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i><br>分类<span class="badge">17</span></a></li><li class="menu-item menu-item-archives menu-item-active"><a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i><br>归档<span class="badge">104</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="menu-item-icon fa fa-fw fa-sitemap"></i><br>站点地图</a></li><li class="menu-item menu-item-search"><a href="javascript:;" class="popup-trigger"><i class="menu-item-icon fa fa-search fa-fw"></i><br>搜索</a></li></ul><div class="site-search"><div class="popup search-popup local-search-popup"><div class="local-search-header clearfix"><span class="search-icon"><i class="fa fa-search"></i> </span><span class="popup-btn-close"><i class="fa fa-times-circle"></i></span><div class="local-search-input-wrapper"><input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input"></div></div><div id="local-search-result"></div></div></div></nav></div></header><main id="main" class="main"><div class="main-inner"><div class="content-wrap"><div id="content" class="content"><div id="posts" class="posts-expand"><div class="reading-progress-bar"></div><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><div class="post-block"><link itemprop="mainEntityOfPage" href="https://vxhly.github.io/archives/b0e3118c.html"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="name" content="星火燎原@vxhly"><meta itemprop="description" content="源于生活而高于生活"><meta itemprop="image" content="/images/avatar.png"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="Coding and Fixing"></span><header class="post-header"><h2 class="post-title" itemprop="name headline">ES6 学习笔记</h2><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time title="创建时间：2017-11-17 21:35:51" itemprop="dateCreated datePublished" datetime="2017-11-17T21:35:51+00:00">2017-11-17</time> <span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-calendar-check-o"></i> </span><span class="post-meta-item-text">更新于</span> <time title="修改时间：2019-05-28 01:36:30" itemprop="dateModified" datetime="2019-05-28T01:36:30+00:00">2019-05-28</time> </span><span class="post-category"><span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-folder-o"></i> </span><span class="post-meta-item-text">分类于</span> <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/ES6/" itemprop="url" rel="index"><span itemprop="name">ES6</span></a></span> </span><span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-eye"></i> 阅读次数： <span class="busuanzi-value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body" itemprop="articleBody"><p>本篇学习笔记纯粹记录学习 ES6 的过程以及一些坑点,下面的例子没有先后之分,也是很简单的例子,想了解更多的直接戳 <span class="exturl" data-url="aHR0cDovL2VzNi5ydWFueWlmZW5nLmNvbS8=" title="http://es6.ruanyifeng.com/">ECMAScript 6 入门<i class="fa fa-external-link"></i></span><a id="more"></a></p><h1 id="建立一个-ES6-专属项目"><a href="#建立一个-ES6-专属项目" class="headerlink" title="建立一个 ES6 专属项目"></a>建立一个 ES6 专属项目</h1><p>创建 package.json,将以下的 json 复制到你的文件中,然后运行 <code>npm insatll</code></p><pre><code class="lang-json">{
+  &quot;name&quot;: &quot;es6-demo&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;description&quot;: &quot;学习 ES6&quot;,
+  &quot;main&quot;: &quot;src/index.js&quot;,
+  &quot;devDependencies&quot;: {
+    &quot;babel-cli&quot;: &quot;^6.26.0&quot;,
+    &quot;babel-eslint&quot;: &quot;^8.0.2&quot;,
+    &quot;babel-preset-latest&quot;: &quot;^6.24.1&quot;,
+    &quot;babel-preset-react&quot;: &quot;^6.24.1&quot;,
+    &quot;babel-preset-stage-2&quot;: &quot;^6.24.1&quot;,
+    &quot;eslint&quot;: &quot;^4.10.0&quot;,
+    &quot;eslint-friendly-formatter&quot;: &quot;^3.0.0&quot;,
+    &quot;eslint-loader&quot;: &quot;^1.9.0&quot;,
+    &quot;eslint-plugin-promise&quot;: &quot;^3.6.0&quot;,
+    &quot;eslint-plugin-standard&quot;: &quot;^3.0.1&quot;,
+    &quot;eslint-config-standard&quot;: &quot;^10.2.1&quot;,
+    &quot;eslint-plugin-html&quot;: &quot;^3.2.2&quot;,
+    &quot;nodemon&quot;: &quot;^1.12.1&quot;,
+    &quot;eslint-plugin-import&quot;: &quot;^2.8.0&quot;,
+    &quot;eslint-plugin-node&quot;: &quot;^5.2.1&quot;
+  },
+  &quot;scripts&quot;: {
+    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;,
+    &quot;dev&quot;: &quot;nodemon ./src/index.js --exec babel-node&quot;,
+    &quot;babel&quot;: &quot;babel-node ./src/index.js&quot;,
+    &quot;lint&quot;: &quot;eslint --ext .js src&quot;
+  },
+  &quot;author&quot;: &quot;&quot;,
+  &quot;license&quot;: &quot;ISC&quot;
+}
+</code></pre><p>可以看到上面的 package.json 是有 eslint 代码校验的,所以还需在项目目录下新建 <code>.babelrc</code>、<code>.editorconfig</code>、<code>.eslintrc.js</code></p><p><code>.babelrc</code></p><pre><code class="lang-json">{
+  &quot;presets&quot;: [&quot;es2015&quot;],
+  &quot;plugins&quot;: []
+}
+</code></pre><p><code>.editorconfig</code></p><pre><code class="lang-bash">root = true
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+</code></pre><p><code>.eslintrc.js</code></p><pre><code class="lang-javascript">// http://eslint.org/docs/user-guide/configuring
+
+module.exports = {
+  root: true,
+  parser: &quot;babel-eslint&quot;,
+  parserOptions: {
+    sourceType: &quot;module&quot;
+  },
+  env: {
+    browser: true
+  },
+  // https://github.com/standard/standard/blob/master/docs/RULES-en.md
+  extends: &quot;standard&quot;,
+  // required to lint *.vue files
+  plugins: [&quot;html&quot;],
+  // add your custom rules here
+  rules: {
+    // allow paren-less arrow functions
+    &quot;arrow-parens&quot;: 0,
+    // allow async-await
+    &quot;generator-star-spacing&quot;: 0,
+    // allow debugger during development
+    &quot;no-debugger&quot;: process.env.NODE_ENV === &quot;production&quot; ? 2 : 0
+  }
+};
+</code></pre><h2 id="运行你的项目"><a href="#运行你的项目" class="headerlink" title="运行你的项目"></a>运行你的项目</h2><pre><code class="lang-bash">npm run dev
+</code></pre><blockquote><p>因为安装了 nodemon 该模块,所以我们不需要每次保存都去运行 <code>node src/index.js</code>, nodemon 该模块会在保存后自动执行命令</p></blockquote><h1 id="ES6-块级作用域"><a href="#ES6-块级作用域" class="headerlink" title="ES6 块级作用域"></a>ES6 块级作用域</h1><p>这一小节让我想到很多年前阅读到 Nicholas 的那本红宝书,所讲的作用域以及 Var。也许至今,还有一些人搞不明白变量提升的含义。如果你有幸在大学里写过 C 语言,其实这就很好理解了。一个我们所说明的变量其实包含声明,赋值两个部分,是否有看过在头文件里声明,或者在 C 函数体内先声明,比如：</p><pre><code class="lang-javascript">int sayB(){
+ int b;
+ b = 1;
+ return b;
+}
+sayB()
+</code></pre><p>而 JS 中所提到的变量提升,与其非常类似,你在函数体内定义的变量,无论在哪里定义,都会提升到函数的顶部,比如：</p><pre><code class="lang-javascript">function b() {
+  console.log(v);// ?会报错吗？
+  if (true) {
+    var v = 1;
+  }
+}
+</code></pre><p>// 其实不会,执行顺序会变成</p><pre><code class="lang-javascript">function b() {
+  var v;
+  console.log(v);
+  if (true) {
+    v = 1;
+  }
+}
+</code></pre><p>好了,我们不复习之前的知识了,块级作用域顾名思义的其作用域在一个小块中,其中跟两个关键字有关系 let 和 const ,于是乎你用它们定义的变量,也就只能存在于块级作用域内了。</p><pre><code class="lang-javascript">function b() {
+  console.log(v);
+  if (true) {
+    let v = 1;
+  }
+}
+</code></pre><p>这个时候再打印 v 是会报错的,不像之前那样给你一个 undefined。</p><p>通过这一小节的阅读,这应该是其中一个很大的知识点,以及知晓了一些有趣的事情,这和 let const 有关。let 和 const 定义的变量不会像 var 一样,覆盖到全局。以前我们用 var 来定义变量时,如果多写一个重名的,只会是最后一个覆盖之前的。但是,这里如果你用 let 或者 const 来定义时,必然会报错。而且 const 定义的变量是不允许再赋值的,但是它允许对于键的再赋值,比如：</p><pre><code class="lang-javascript">const b = { a: 1 };
+
+// b.a = 2 (YES)
+</code></pre><p>可以说对于以前我印象中最深刻的是如果从数组里可以正确的获取到其数值,需要借助闭包来完成,而现在因为块级作用域的存在,你完全可以不必要像 ES5 那样借助闭包了。</p><pre><code class="lang-javascript">for (let i = 0;i &lt; j;i++) {
+  //i
+}
+</code></pre><p>这个时候可以很顺利的完成从[0…n] 的过程。</p><p>很明显,块级作用域在某些时候帮助我们节约了很多事情,不会像因为变量提升而带来的某些不可预知的奇怪问题。最后这一小节给出了最佳实践,同名而言,如果你定义的是一个预知的值（不再修改）那么你应该使用 const,反之你应该使用 let,尽量的避免使用 var,当然你想定义一个全局变量除外。</p><h1 id="字符串处理与函数"><a href="#字符串处理与函数" class="headerlink" title="字符串处理与函数"></a>字符串处理与函数</h1><p>说到字符串我想 ES6 提供了最好的便利是”模板语法”,这一特性让我们深受鼓舞,想着终于不是那么搓的来拼接变量了。当然,这一版本的 JS 在字符串上也提供了很多起他的方法,比起它来倒是要黯然神伤的多。比如我们几乎很少用到的 codePointAt,fromCodePoint,normalize,像这几个一般在国际化的产品中会有的比较多,一般正常情况下几乎很少会接触到。</p><p>以前我们使用 indexOf &gt; -1 来判断一个字符是否在这个字符串中,现在好了 ES6 提供了三个方法它们都会返回一个布尔值来告诉你是否存在：includes,startsWith,endsWith。从字面上几乎可以理解第一个方法在字符串中检查指定的文本,有返回 true,没有返回 false。第二个和第三个方法只是在你检查的方向上有所区别,从首部开始还是从尾部开始而已。当然,如果你还是想要文本的位置,那么你可以继续使用 indexOf 或 lastIndexOf。哦,对了字符串还提供了一个 repeat 方法,用于返回一个将当前字符串重复几次之后的字符串,看起来,这玩意有些鸡肋,但是你要是开发编辑器之类的应用,它倒是非常有用。</p><p>说说”模板语法”吧。</p><pre><code class="lang-javascript">const name = &quot;icepy&quot;;
+const message = `${name} call u`;
+console.log(message);
+</code></pre><p>如果在以前我们想完成谁 call 你这样的动态消息,都需要如此：</p><pre><code class="lang-javascript">var name = &quot;icepy&quot;;
+var message = name + &quot;call u&quot;;
+console.log(message);
+</code></pre><p>粗看起来也没有什么不好,但是如果这个消息会很长很长,那么就要用+来拼接几行了。那时候看起来,就比较搓了。如果有模板语法之后,我们会怎样？</p><pre><code class="lang-javascript">const name = &quot;icepy&quot;;
+const phone = &quot;186xxxxxx&quot;;
+const message = `
+${name} call u
+Phone Number: ${phone}`;
+</code></pre><p>会不会舒服很多？当然这个特性带给你的不仅仅是这些,很重要的一点是完全可以支持”运算”式的表达式,你可以在完全可以支持”运算”式的表达式,你可以在{}来运算一些结果。看到这里,是不是感觉到和一些模板库很像？幸运的是,从今之后再也不用引入一些基础模板库了。</p><p>在模板语法中我可能用的比较多的就是 tag,有时候我会比较偷懒,将字符串的转换写成函数,然后不同类型的转换,直接用 tag 就好,比如：</p><pre><code class="lang-javascript">function message(literals, ...subs) {
+  // do
+}
+const name = &quot;icepy&quot;;
+const phone = &quot;186xxxxx&quot;;
+const mg = message`${name} call u, Phone Number: ${phone}`;
+</code></pre><p>也许,从这个小例子里并不能看出来什么,你可以想象一下,如果你想自己控制结果的输出,在 message 函数中,你可以转换成任意的结果,完全取决于你写的这个 message 函数。比如在消息中,文本,会员,等级,之类的,你都可以偷懒在这个 message 函数中完成,结合某些判断来给出你想要的结果。</p><p>ES6 的函数有几个显著的特点,方便了传入参数的处理,又不失优雅。提供的箭头函数虽然有诸多限制,但是在表达上减少了代码量还解决了我们在 ES5 中遇到的<code>this</code>丢失的问题。比较乐观的说,这是我非常喜欢使用的 ES6 新特性之一。</p><p>在参数处理上,ES6 给大家提供了默认参数和不定参数的选择,而默认参数在某个形式上对于解决默认值的问题,终于不用再去处理很多的判断了,想想 JavaScript 在”布尔”逻辑判断上的隐式转换,比如”0” == false,如果你的参数传入的是 0,本意它就是一个真实存在的参数,当在逻辑判断中时,这个参数被隐式的转换了,从而获取了默认值。</p><pre><code class="lang-javascript">function logName(name = &quot;icepy&quot;) {
+  console.log(name);
+}
+logName();// icepy
+logName(&quot;wower&quot;);// wower
+</code></pre><p>在你细心的处理默认参数时,有一点需要注意：</p><pre><code class="lang-javascript">function logName(name = &quot;icepy&quot;, Qname = name) {
+  // name
+  // Qname
+}
+logName();//icepy
+</code></pre><p>你可以将第二个参数的默认值设置成第一个参数,但是不能将第一个参数的默认值设置成第二个参数。</p><p>关于不定参数我想和 Function 一起说说,先来看一段 Weex 执行业务 Code 的代码：</p><pre><code class="lang-javascript">/**
+ * Call a new function body with some global objects.
+ * @param  {object} globalObjects
+ * @param  {string} code
+ * @return {any}
+ */
+function callFunction(globalObjects, body) {
+  const globalKeys = [];
+  const globalValues = [];
+  for (const key in globalObjects) {
+    globalKeys.push(key);
+    globalValues.push(globalObjects[key]);
+  }
+  globalKeys.push(body);
+
+  const result = new Function(...globalKeys);
+  return result(...globalValues);
+}
+</code></pre><p>这个巧妙的 callFunction 就包含了我们想看到的不定参数与 Function 构造函数,不定参数使用…来表示,它用一个数组包含了其中的参数,相信读到这里,你会很快的联想到 ES5 中的 arguments,你可以说和它类似,又非常不同。</p><p>如果在函数定义时写了不定参数,那么这个函数就只能接受唯一的一个,如果函数定义时定义了多个参数呢？</p><pre><code class="lang-javascript">function (name,...profile){
+  // profile []
+  // arguments
+  // name
+}
+</code></pre><p>你可以通过这样的关系看到不定参数与 arguments 之间的关系,arguments 永远包含所有的参数,这也意味着它包含了 name,而 profile 并不包含 name。回到上面的那段 Weex 核心代码,细心阅读一下,相信你会有收获。</p><ol><li>body 是 bundle.js 的业务代码,将它加入到 globalKeys 最后一个位置。</li><li>定义一个拥有不定参数 globalKeys 的 Function 来生成一个函数</li><li>Function 你可以知道,它接受参数和函数体,并且最后一个永远是函数体</li><li>最后执行生成的函数,将 globalValues 当不定参数传入 说起来…还可以用来处理其他的事情,来多实践一下吧。</li></ol><p>说完参数,我们再来说说平时我们可能大量使用的 () =&gt; {} 箭头函数,它可能是我们非常乐见的”语法糖”之一,不过在此之前有一些要说明的是：</p><ul><li>自身没有 this,super 等,而这些需要外层的非箭头函数来决定</li><li>不能实例化</li><li>没有原型</li><li>不能改变 this,arguments 等</li></ul><p>如果你写过 React + Redux,相信你一定对箭头函数使用的非常频繁,比如：</p><pre><code class="lang-javascript">const title = data =&gt; ({
+  type: TITLE,
+  payload: {
+    data
+  }
+});
+
+export const getDefaultData = () =&gt; dispatch =&gt; {};
+</code></pre><p>是不是有种似曾相识的感觉？</p><p>有时候我们在写 React 组件时,可能会用到立即调用模式：</p><pre><code class="lang-javascript">... {
+  render(){
+    return (
+      &lt;div&gt;
+       (() =&gt; {
+         return (&lt;div&gt;icepy&lt;/div&gt;)
+       })()
+      &lt;/div&gt;
+    );
+  }
+}
+</code></pre><p>不过,说真的,我常常配合着数组用,Why？表达的很简单：</p><pre><code class="lang-javascript">values.sort((a, b) =&gt; a - b);
+</code></pre><h1 id="解构和扩展对象的功能性"><a href="#解构和扩展对象的功能性" class="headerlink" title="解构和扩展对象的功能性"></a>解构和扩展对象的功能性</h1><p>如果你正在开发使用数据驱动的应用,那么这一小节的内容对你来讲,就非常重要了,欢迎来到解构的世界。</p><p>何为”解构”？当我们定义了很多对象和数组,又必须从中提取有价值的数据时,这种行为在 ES6 中被称为”解构”,解构分为两种：对象解构和数组解构。</p><p>如果你定义过这样的对象：</p><pre><code class="lang-javascript">const obj = {
+  name: &quot;icepy&quot;,
+  work: &quot;alibaba&quot;
+};
+
+const { name, work } = obj;
+</code></pre><p>这是一种非常常见的解构,将值提取出来,假设有一天 icepy 离职了,没有工作呢？</p><pre><code class="lang-javascript">const obj = {
+  name: &quot;icepy&quot;
+};
+const { name, work } = obj;
+</code></pre><p>这个时候 work 会是一个 undefined,但是我想给予他一份”新的工作”,骑摩托车旅行：</p><pre><code class="lang-javascript">const obj = {
+  name: &quot;icepy&quot;
+};
+const { name, work = &quot;骑摩托车旅行&quot; } = obj;
+</code></pre><p>当然,如果可以,我们也可以重新定义一个名字,比如 work 变成 travel：</p><pre><code class="lang-javascript">const obj = {
+  name: &quot;icepy&quot;
+};
+const { name, work: travel = &quot;骑摩托车旅行&quot; } = obj;
+</code></pre><p>解构在函数的参数中也可以定义,当然传参时需要传入的是对象了。如果你写过一些 Redux,那么相信对这个会无比的熟悉：</p><pre><code class="lang-javascript">export const changeDate = ({ mode, date }) =&gt; dispatch =&gt; {
+  dispatch(setTime({ mode, date }));
+};
+
+// 在action里可以直接使用mode和date
+</code></pre><p>如果你有多重嵌套的对象,解构也可以很方便的提取出来你想要的数据：</p><pre><code class="lang-javascript">const obj = {
+  home: {
+    ad: &quot;hunan 湘西&quot;,
+    mz: &quot;m&quot;
+  },
+  name: &quot;icepy&quot;
+};
+
+const { home: { ad, mz = &quot;h&quot; }, name } = obj;
+</code></pre><p>那么,如果你这样定义过数组：</p><pre><code class="lang-javascript">const arr = [1, 2, 3];
+
+let [f, s, t] = arr;
+
+console.log(f);//1
+console.log(s);//2
+console.log(t);//3
+</code></pre><p>当然如果你只想取第三个元素,只需要用,占位即可,如果你想从嵌套的数组中提取数据,其实和对象非常类似：</p><pre><code class="lang-javascript">const arr = [1, 2, 3];
+
+let [, , t] = arr;
+
+const arr = [1, [2], 3];
+
+let [, [f]] = arr;
+
+// f
+</code></pre><p>曾经我们可能会有这样的一个需求,有一个数组,需要第五个元素之后的元素,返回一个新数组：</p><pre><code class="lang-javascript">const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let [, , , , , ...f] = arr;
+//f
+</code></pre><p>而现在,这样多简单。</p><p>当然在这一小节中,主要的内容都是这些实践操作性的内容,如果有时间,不妨试试。</p><p>在《红宝书》里是这样来说对象初始值的：</p><pre><code class="lang-javascript">var name = &quot;icepy&quot;;
+var age = 18;
+var obj = {
+  name: name,
+  age: age,
+  say: function() {
+    console.log(this.name);
+  }
+};
+</code></pre><p>到了 ES6 中,你可以使用一个更简写的方式：</p><pre><code class="lang-javascript">let name = &quot;icepy&quot;;
+let age = 18;
+let obj = {
+  name,
+  age,
+  say() {
+    console.log(this.name);
+  }
+};
+</code></pre><p>比之 ES5,这拥有了极致的简化,而且使用 say(){}定义的属性可以调用 super。</p><p>这一小节里讲的内容,比较重要的是讲原型的增强,其他的比如对对象的增强,仅是添加了几个我们已经比较常用的方法了：</p><pre><code class="lang-javascript">Object.is;
+Object.assign;
+Object.setPrototypeOf;
+</code></pre><p>可能某些情况下会出现这样的状况,A 类是 B 类的父类,A 类定义了 say 方法,B 类也定义了 say 方法,在 B 类的 parentSay 中调用 A 类的 say 方法,实例化 B 类,直接调用 parentSay 方法,这个时候我们就很尴尬了,如果调用 this.say,不一定能调用到 A 类定义的 say 方法。在 ES5 中给我们提供了一个 getPrototypeOf 方法来获取任意一个对象的原型,根据 JS 的继承机制我们可以知道如果调用 Object.getPrototypeOf(this)正好就可以获取到父类的原型,然后再调用 say 方法就可以了。</p><p>但,这也有一个很尴尬的问题,于是,ES6 给我们提供了 super 来代表父类,这个时候,我们直接使用 super.say()就很方便的区别调用 A 类的 say 方法和 B 类的 say 方法了。</p><p>有趣的是,ES6 还为我们提供了一个设置原型的方法”setPrototypeOf”,这个方法可以设置原型对象。</p><p>如果曾经你使用过类似 jQuery 的 extend 方法,那么就应该对 assign 会有相当熟悉了感觉,它和 extend 非常类型,可以将一对象中的属性,方法赋值给另一个对象。至于 is,就是一个正确的布尔值比对,大部分情况下与 === 行为一致。</p><h1 id="什么是-Symbol-以及怎么使用"><a href="#什么是-Symbol-以及怎么使用" class="headerlink" title="什么是 Symbol 以及怎么使用"></a>什么是 Symbol 以及怎么使用</h1><p>Symbol 其实解决了两个问题：</p><ul><li>唯一性</li><li>通过 Symbol 的属性来操作 JavaScript 内部的逻辑</li></ul><p>这个特性的出现为我们定义程序有了普遍的意义,它和原来的六个原始类型一样,也是一个原始类型,你可以调用 Symbol()来初始化。</p><pre><code class="lang-javascript">let v = Symbol(&quot;icepy&quot;);
+</code></pre><p>唯一性</p><p>我们知道在 JavaScript 的世界里,唯一性是很难被描述的,哪怕你用任意的加密函数生成的 Key 也有可能被撞库,Symbol 为我们带来了这样的唯一性：</p><pre><code class="lang-javascript">let name = Symbol(&quot;name&quot;);
+let max = Symbol();
+let obj = {
+  [name]: &quot;icepy&quot;,
+  [max]: 29
+};
+
+// Symbol()
+</code></pre><p>Symbol 可以接收一个参数,这个参数用来 des,主要用于程序调试时的跟踪,当然你也可以不传入参数,同样的我们可以通过 typeof 来判断是否为 Symbol 类型。</p><p>Symbol 属性中提供了 for 方法来处理全局共享的问题,它可以从指定的 Symbol 注册表中来搜索到具体的内容,反之你可以用 keyFor 来推断某个 Symbol 关联的键。</p><p>通过 Symbol 的属性来操作 JavaScript 内部的逻辑</p><p>以前我们比较难去操作 JavaScript 本身语言内部的逻辑,最多也是在原型链上去定义或者修改某个方法的实现,Symbol 的属性中提供了很多去处理程序内部执行的逻辑,如果你有兴趣,可以仔细阅读一下 MDN 上的文档： Symbol ,这里主要举一个例子来说明：</p><p>在以前我们想判断一个数组,可能会这样写：</p><pre><code class="lang-javascript">let f = [];
+Object.prototype.toString.call(f);
+// &quot;[object Array]&quot;
+</code></pre><p>我们可以定义”[object Array]”来判断,但是,假设今天我们写的某些应用程序中,我想将某些类定义出来类型,通过类型的判断,想解决一些问题,最开始我们可能可以用 instance 来判断是哪个实例,但,这解决不了问题。</p><p>有了 Symbol 属性之后,我们可以改变 Object.prototype.toString 的返回值。</p><pre><code class="lang-javascript">function Pre() {}
+Pro.prototype[Symbol.toStringTag] = &quot;Pre&quot;;
+
+const me = new Pre();
+
+// Object.prototype.toString.call(me)
+// [object Pre]
+</code></pre><p>可能在这个粗躁的例子中,很难看出来 Symbol 的作用。</p><p>但是,在之前有说到可以通过 instance 来判断是否为某个类或函数的实例,有一天我想给予它就算它是真实的实例,我也想让它返回 false,即：不是一个实例。</p><pre><code class="lang-javascript">function Pre() {}
+Object.defineProperty(Pre, Symbol.hasInstance, {
+  value: function() {
+    return false;
+  }
+});
+</code></pre><p>这就是 Symbol 的作用之一,来改变语言程序内部的逻辑。</p><p>也许,这些特性在你真实的应用中,很少会用到,不过,看一看,也是没有坏处的。</p><h1 id="新的-Set-集合-Map-集合"><a href="#新的-Set-集合-Map-集合" class="headerlink" title="新的 Set 集合,Map 集合"></a>新的 Set 集合,Map 集合</h1><p>曾经在 JavaScript 中就只有一种集合可用：数组,如果可以你将对象也称之为一种集合。对于老程序员来说,数组可能会勾起很多大家的回忆,毕竟我们用数组,对象实现了诸如去重复,缓存等等,而今天,ES6 带来了 Set 集合和 Map 集合,让我们更方便的去操作这些。</p><ul><li><span class="exturl" data-url="aHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvemgtQ04vZG9jcy9XZWIvSmF2YVNjcmlwdC9SZWZlcmVuY2UvR2xvYmFsX09iamVjdHMvU2V0" title="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Set">Set<i class="fa fa-external-link"></i></span></li><li><span class="exturl" data-url="aHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvemgtQ04vZG9jcy9XZWIvSmF2YVNjcmlwdC9SZWZlcmVuY2UvR2xvYmFsX09iamVjdHMvV2Vha1NldA==" title="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/WeakSet">WeakSet<i class="fa fa-external-link"></i></span></li><li><span class="exturl" data-url="aHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvemgtQ04vZG9jcy9XZWIvSmF2YVNjcmlwdC9SZWZlcmVuY2UvR2xvYmFsX09iamVjdHMvTWFw" title="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map">Map<i class="fa fa-external-link"></i></span></li><li><span class="exturl" data-url="aHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvemgtQ04vZG9jcy9XZWIvSmF2YVNjcmlwdC9SZWZlcmVuY2UvR2xvYmFsX09iamVjdHMvV2Vha01hcA==" title="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/WeakMap">WeakMap<i class="fa fa-external-link"></i></span></li></ul><p>关于 API 有兴趣的朋友,可以去翻一翻文档,特别简单。 在使用 Set 或者 WeakSet 之前,你应该需要了解一下 Set 或 WeakSet 的特点：</p><p>它是一个不可重复的无序列表 值与值之间的比较是通过 Object.is 方法来进行的,这也意味着 5 和”5”会占据两个空间 Set 和 WeakSet 区别在于,WeakSet 只提供了基础的方法,并且是一个弱引用。 如果你有兴趣对一个数组去除重复的值：</p><pre><code class="lang-javascript">[...new Set([1, 1, 1, 2, 2, 3, 3, 2, 5])];
+</code></pre><p>这就是 Set 集合给予的魅力。</p><p>关于 Map 和 WeakMap,你应该也需要知晓其中的特点：</p><ul><li>它是一个由多个无序键值对组成的集合</li><li>键名可以是任意的数据类型</li><li>WeakMap 的键名只能是对象,与 WeakSet 类似,它也是一个弱引用</li><li>Map 比 WeakMap 多了几个方法,但是基础的 set get 都是相同的</li></ul><p>目前,已知的 Map 的用途,可能就是来存储私有数据,存储对象引用（可以自动释放）,大部分情况下,你基本不会用到 Map。</p><pre><code class="lang-javascript">let privateData = new WeakMap();
+
+class Pre {
+  constructor(name) {
+    privateData.set(this, { name });
+  }
+  preName() {
+    return privateData.get(this).name;
+  }
+}
+
+export default Pre;
+</code></pre><p>这些对于内存管理倒是很方便了,不需要自己手动的去跟踪信息,再手动的去设置 null 来断开引用。</p><h1 id="iterator-和-generator-的使用"><a href="#iterator-和-generator-的使用" class="headerlink" title="iterator 和 generator 的使用"></a>iterator 和 generator 的使用</h1><p>这一小节的内容,比较鼓舞的是终于可以在 JS 语言层面,能看见 Iterator 和 Generator 了。说到迭代器,也许你会有疑问,可以预期的,你能看到 Generator 的实现也是依赖迭代器。我所接触到的编程语言中,最早让我理解这个特性的是 Python。迭代器是一种特殊的对象,它的设计有专门的接口（描述）来完成我们常说的迭代（循环）过程。</p><p>每一个迭代器对象,都具备 next 方法（当然它也具备一些比如 throw 方法）,当你执行 next 方法时,会返回一个（描述）对象,这个对象中,存在 value,done 属性,你想要的值就是 value,而 done 则是用来描述整个迭代过程是否结束,可以想象,当迭代过程结束之后,value 的值必然会是一个”空”（不同语言的描述不同）,JS 会给你一个 undefined。</p><p>目前我们所知道的数组,Set,Map 这三个集合是会存在迭代器,而且它们都有内建的迭代器：entries,values,keys。不知道,你在前几个小节中是否有印象 Symbol 中存在一个 iterator 属性,如果你想知道,不妨翻一翻之前分享的 Symbol。在这里,我们可以通过 Symbol.iterator 来获取默认的迭代器（如果具备 Symbol.iterator 属性,那么意味着它必然具备默认的迭代器）。</p><pre><code class="lang-javascript">let sets = [1, 2, 3];
+let iterator = sets[Symbol.iterator]();
+console.log(iterator.next());
+console.log(iterator.next());
+console.log(iterator.next());
+</code></pre><p>如果你不想调用三下迭代器,你可以自己写一个小的循环,比如：</p><pre><code class="lang-javascript">let res = iterator.next();
+while (!res.done) {
+  res = iterator.next();
+  console.log(res);
+}
+</code></pre><p>所谓的 Generator 也就是一种可以返回迭代器的函数,只不过它用*和 yield 来表示（描述过程）。</p><pre><code class="lang-javascript">function* createIterator() {
+  yield 1;
+  yield 2;
+}
+
+let iterator = createIterator();
+
+console.log(iterator.next());
+console.log(iterator.next());
+</code></pre><p>其实这很好理解,（语言）在背后帮我们对这个函数进行了包装,每一个 yield 都会返回一个迭代器对象,你想执行真正的逻辑,或者你想获取值,都需要通过这个迭代器对象来获取。</p><p>Generator 可以辅助我们完成很多复杂的任务,而这些基础知识,又与 iterator 息息相关,举一个很简单的例子,相信有很多朋友,应该使用过 co 这个异步编程的库,它就是用 Generator 来实现,当然它的设计会比例子要复杂的多,我们先来看一个 co 简单的用法：</p><pre><code class="lang-javascript">import co from &quot;co&quot;;
+co(function*() {
+  var result = yield Promise.resolve(true);
+  return result;
+}).then(
+  function(value) {
+    console.log(value);
+  },
+  function(err) {
+    console.error(err.stack);
+  }
+);
+</code></pre><p>相应的,我们来实现一个简化的版本：</p><pre><code class="lang-javascript">function co(task){
+  let _task = task()
+  let resl = _task.next();
+  while(!resl.done){
+    console.log(resl);
+    resl = _task.next(resl.value);
+  }
+}
+
+function sayName(){
+  return {
+    name: &#39;icepy&#39;
+  }
+}
+
+function assign *(f){
+  console.log(f)
+  let g = yield sayName()
+  return Object.assign(g,{age:f});
+}
+
+co(function *(){
+  let info = yield *assign(18)
+  console.log(info)
+})
+</code></pre><p>虽然,这个例子中,还不能很好的看出来”异步”的场景,但是它很好的描述了 Generator 的使用方式。</p><p>从最开始的定义中,已经和大家说明了,Generator 最终返回的依然是一个迭代器对象,有了这个迭代器对象,当你在处理某些场景时,你可以通过 yield 来控制,流程的走向。通过 co 函数,我们可以看出,先来执行 next 方法,然后通过一个 while 循环,来判断 done 是否为 true,如果为 true 则代表整个迭代过程的结束,于是,这里就可以退出循环了。在 Generator 中的返回值,可以通过给 next 方法传递参数的方式来实现,也就是遇上第一个 yield 的返回值。</p><p>有逻辑,自然会存在错误,在 Generator 捕获错误的时机与执行 throw 方法的顺序有关系,一个小例子：</p><pre><code class="lang-javascript">let hu = function*() {
+  let g = yield 1;
+  try {
+    let j = yield 2;
+  } catch (e) {
+    console.log(e);
+  }
+  return 34;
+};
+
+let _it = hu();
+
+console.log(_it.next());
+console.log(_it.next());
+console.log(_it.throw(new Error(&quot;hu error&quot;)));
+</code></pre><p>当我能捕获到错误的时机是允许完第二次的 yield,这个时候就可以 try 了。</p><p>Iterator 和 generator 给了我们很多启发,在编程的维度上,我能想到的就是去处理异步代码时为我们提供便捷的方式。当然迭代器,这个方向上,可以做的事情有很多,如果你悉心去寻找,相信,很快能找到答案。</p><h1 id="怎么写类-以及-Promise-和如何封装处理异步"><a href="#怎么写类-以及-Promise-和如何封装处理异步" class="headerlink" title="怎么写类,以及 Promise 和如何封装处理异步"></a>怎么写类,以及 Promise 和如何封装处理异步</h1><p>大部分面向对象的语言都支持类和类继承的特性 从 ECMA1-ECMA5 的版本都不支持类和类继承的特性,于是开发者们通过原型,构造函数等来模拟类和类继承特性,这里不在复述,如果你有兴趣的话,可以阅读一下红包书（JavaScript 高级程序设计）中关于类,类继承这两章。ECMA6 终于至少在语言层（依然是基于原型的语法糖）面看起来支持了类和类继承,理解类的基本原理有助于理解 ES6 关于类的设计。</p><p><strong>基本的类声明</strong></p><pre><code class="lang-javascript">class Human {
+  constructor(name) {
+    this.name = name;
+  }
+
+  sayName() {
+    console.log(this.name);
+  }
+}
+
+let man = new Human(&quot;icepy&quot;);
+man.sayName();
+
+console.log(typeof Human);// function
+</code></pre><p>类的基本定义与一个构造函数非常的类似,通过 typeof 也能看得出来 class 定义的也是一个 function,在声明中,我们定义的属性,定义了原型上的方法 sayName。但是,类声明的比之函数声明,又多了一些不同的东西,比如类声明是不允许提升的,且内部运行的环境 100%的严格模式不允许强制降级。</p><p>类与函数一样,也可以是表达式,也可以将类当一个参数传给另外的函数或者类：</p><pre><code class="lang-javascript">let Human = class {
+  constructor(name) {
+    this.name = name;
+  }
+  sayName() {
+    console.log(this.name);
+  }
+};
+
+function fetchObj(HumanClass) {
+  return new HumanClass(&quot;icepy&quot;);
+}
+
+let man = fetchObj(Human);
+</code></pre><p>但是匿名的类表达式,有一个不好的地方,就是在调试的时候很难定位,不过我们可以像函数一样给表达式加上一个 name：</p><pre><code class="lang-javascript">let Human = class Human{
+ ...
+}
+</code></pre><p><strong>高阶知识</strong></p><p>我们可以为类中的属性创建访问器,就像使用 Object.defineProperty 给对象的属性创建访问器一样的含义。</p><pre><code class="lang-javascript">class Human {
+  constructor(name) {
+    this.name = name;
+  }
+  get name() {
+    return this.manName;
+  }
+
+  set name(newValue) {
+    this.manName = newValue;
+  }
+}
+</code></pre><p>唯一需要注意的是关于”死循环”的问题。</p><p>类中的方法,访问器,都可以和对象一样,可计算,也就是使用[]这些方法,属性的名字可以用变量来代替。</p><p>有趣的知识点,是可以在类中声明一个 generator 方法,这一点倒是可以和上一小节的内容结合起来,不过一般情况下,在类中声明一个 generator 方法的情况非常少见：</p><pre><code class="lang-javascript">class Human {
+  constructor(name) {
+    this.name = name;
+  }
+
+  *sayName() {
+    yield 1;
+  }
+}
+</code></pre><p>你如果有兴趣的话,可以把 sayName 改造成可支持异步的。</p><p>关于”静态”也就是说不必实例化就可以调用的方法,类语法也支持了这个：</p><pre><code class="lang-javascript">class Human {
+  constructor(name) {
+    this.name = name;
+  }
+
+  static sayWork(name) {
+    return new Human(name);
+  }
+}
+
+Human.sayWork();
+</code></pre><p>有趣的是,如果是在同一个类中两个静态方法,其中一个方法想调用另外一个静态方法,这个时候,也可以使用 this。</p><pre><code class="lang-javascript">class Human {
+  constructor(name) {
+    this.name = name;
+  }
+  static sayWork(name) {
+    return new Human(this.whichName());
+  }
+  static whichName() {
+    return &quot;icepy&quot;;
+  }
+}
+</code></pre><p>既然说到了类,我们不可避免的要谈到继承,在 ES6 中的类继承几乎简化到了一个关键字 extends,而且从前面的可计算来说,继承这个地方也是可以被计算的。</p><pre><code class="lang-javascript">class Human {
+  constructor(name) {
+    this.name = name;
+  }
+}
+
+class Icepy extends Human {
+  constructor(name) {
+    super(name);
+  }
+
+  sayName() {
+    console.log(this.name);
+  }
+}
+</code></pre><p>关于 super 使用的时机,在前几章中有谈到,类中如果有继承,并且指定了 constructor,那么就必须在使用 this 之前先调用 super 来初始化 this。这个继承不仅仅是原型上,也包括静态成员,而且就算父类与子类都有同样的方法名,也不怕被覆盖,可以用<span class="exturl" data-url="aHR0cDovL3RoaXMueHh45ZKMaHR0cDovL3N1cGVyLnh4eOadpeWIhuWIq+iwg+eUqCzlnKjku6XlvoDmiJHku6znlKjljp/lnovmqKHmi5/ml7Ys5bCx6Z2e5bi46Zq+55WM5a6a6L+Z5Liq5pa55rOV5Yiw5bqV6LCD55So5p2l6Ieq5ZOq6YeM44CC" title="http://this.xxx和http://super.xxx来分别调用,在以往我们用原型模拟时,就非常难界定这个方法到底调用来自哪里。">http://this.xxx和http://super.xxx来分别调用,在以往我们用原型模拟时,就非常难界定这个方法到底调用来自哪里。<i class="fa fa-external-link"></i></span></p><p>如果你想知道类是否被实例化,也可以通过 new.target 来确定,在别的语言中有抽象类的概念,也就是只定义描述不搞实现,并且不能被实例化,只能被继承。这个时候,new.target 就能排上用场了。</p><pre><code class="lang-javascript">class Human {
+  constructor() {
+    if (new.target === Human) {
+      throw new Error(&quot;抽象类不可以使用new&quot;);
+    }
+  }
+  sayName() {}
+}
+</code></pre><p>最后一个想说一下的是关于 Symbol.species 属性,这个属性用来返回函数的静态访问器属,说得更直白一些,你想用 instanceof 来判断一个对象属于哪个类,用它就能改变这个逻辑的内部实现,从而判定出可能不是原来访问器的类名。</p><pre><code class="lang-javascript">class MyArrar extends Array {
+  static get [Symbol.species]() {
+    return Array;
+  }
+}
+</code></pre><p>正常情况下 MyArray 返回的必然是 MyArray,如果我想让它返回 Array,那么这个时候就需要用到 Symbol.species 属性了。</p><p>类属于 ES6 的新特性,它让我们可以更方便,安全的定义类,使用类,而不是像 ES5 一样,需要搞那么多复杂的东西来模拟这个特性。</p><p>在异步编程概念已经普及的今天,我们依然要谈一谈它,对于我们做前端代码的意义。当你通过 Ajax 请求数据使用回调函数来获取数据时,这就是一种异步编程。</p><pre><code class="lang-javascript">$.ajax({
+  url: &quot;xxx&quot;,
+  success: function(data) {
+    // data
+  }
+});
+</code></pre><p>考虑到 JavaScript 属于单线程的特点,异步对于这门语言就可见多么的重要。你可以试着想想,当我们没有异步时,我正准备提交一个信息,界面就卡住了,一直要等待信息返回结果才能有接下来的其他操作,这很痛苦。在 JavaScript 的世界里,异步是非常重要的一件事情。</p><p>Promise 正是想来处理这样的异步编程,如果我们用 Promise 该如何处理这段 Ajax？</p><pre><code class="lang-javascript">function fetch() {
+  return new Promise(function(resolve, reject) {
+    $.ajax({
+      url: &quot;xxx&quot;,
+      success: function(data) {
+        resolve(data);
+      },
+      error: function(error) {
+        reject(error);
+      }
+    });
+  });
+}
+
+fetch()
+  .then(function(data) {})
+  .catch(function(error) {});
+</code></pre><p>这辅助我们避免了回调地狱式的恐惧,更优雅的处理了回调。如果,你有兴趣,可以配合着 Promise 来学习【理论上的内容,可以仔细阅读】。</p><p><strong>Promise 声明周期</strong></p><ul><li>进行中（pending）</li><li>已经完成（fulfilled）</li><li>拒绝（rejected）</li></ul><p>如同上面 Ajax 的例子,我们可以很好的包装一个函数,让 fetch 函数返回一个 Promise 对象。在 Promise 构造函数里,可以传入一个 callback,并且在这里完成主体逻辑的编写。唯一需要注意的是：Promise 对象只能通过 resolve 和 reject 函数来返回,在外部使用 then 或 catch 来获取。如果你直接抛出一个错误（throw new Error(‘error’)）,catch 也是可以正确的捕获到的。</p><p><strong>Promise 其他的方法</strong></p><p>Promise.all（当所有在可迭代参数中的 promises 已完成,或者第一个传递的 promise（指 reject）失败时,返回 promise。）</p><pre><code class="lang-javascript">var p1 = Promise.resolve(3);
+var p2 = 1337;
+var p3 = new Promise((resolve, reject) =&gt; {
+  setTimeout(resolve, 100, &quot;foo&quot;);
+});
+
+Promise.all([p1, p2, p3]).then(values =&gt; {
+  console.log(values);// [3, 1337, &quot;foo&quot;]
+});
+</code></pre><p>Promise.race（返回一个新的 promise,参数 iterable 中只要有一个 promise 对象”完成（resolve）”或”失败（reject）”,新的 promise 就会立刻”完成（resolve）”或者”失败（reject）”,并获得之前那个 promise 对象的返回值或者错误原因。）</p><pre><code class="lang-javascript">var p1 = new Promise(function(resolve, reject) {
+  setTimeout(resolve, 500, &quot;one&quot;);
+});
+var p2 = new Promise(function(resolve, reject) {
+  setTimeout(resolve, 100, &quot;two&quot;);
+});
+
+Promise.race([p1, p2]).then(function(value) {
+  console.log(value);// &quot;two&quot;
+  // 两个都完成,但 p2 更快
+});
+</code></pre><p>有趣的是如果你使用 ES6 的 class,你是可以去派生 Promise 的,就像我们想派生 Array 一样：</p><pre><code class="lang-javascript">class MePromise extends Promise {
+  // 处理 ...
+}
+</code></pre><p>那么,除了 Promise 还有没有更牛逼的方案？这是有的,目前的异步编程已经从最初的 callback 进化到了如下的顺序。</p><blockquote><p>callback -&gt; Promise -&gt; generator -&gt; async await</p></blockquote><p>未来,肯定属于 async await 了。</p><h1 id="代理和反射"><a href="#代理和反射" class="headerlink" title="代理和反射"></a>代理和反射</h1><p>这两个 API 在实际的业务场景中几乎非常少的使用,至于具体的场景可能还需要大家来挖掘了。看起来每一个 API 都有一些其他的 API 可模拟,可使用,它们具体的内涵就是在于拦截,执行,返回结果。</p><p><strong>Proxy（代理）</strong></p><p>从字面上来看,这应该很好理解,就像 nginx 一样,将请求代理。我们来看一个非常小的例子：</p><pre><code class="lang-javascript">let handler = {
+  get: function(target, name) {
+    return name in target ? target[name] : 37;
+  }
+};
+
+let p = new Proxy({}, handler);
+
+p.a = 1;
+p.b = undefined;
+
+console.log(p.a, p.b);
+// 1, undefined
+
+console.log(&quot;c&quot; in p, p.c);
+</code></pre><p>通过 new Proxy 来创建一个自定义的行为,handler 做为捕获器可以捕获对象操作的行为。这一点上,其实和 Object.defineProperty 来创建一个 get,set 方法非常像。由于 b 已经存在,所以返回的是 undefined,当我们打印 c 时,p.c 就会返回 37。</p><p>有兴趣的话,可以仔细阅读：<span class="exturl" data-url="aHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvemgtQ04vZG9jcy9XZWIvSmF2YVNjcmlwdC9SZWZlcmVuY2UvR2xvYmFsX09iamVjdHMvUHJveHk=" title="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Proxy">Proxy<i class="fa fa-external-link"></i></span></p><p><strong>Reflect</strong></p><p>Reflect（反射）其实也和 Proxy 的作用非常类似,它提供的是拦截操作 JavaScript 的方法,唯一和代理不同的是,Reflect 提供的是静态方法,无法使用 new 运算符。</p><p>获取一个属性：</p><pre><code class="lang-javascript">let obj = { a: 1 };
+
+console.log(Reflect.get(obj, &quot;a&quot;));
+</code></pre><p>设置一个属性：</p><pre><code class="lang-javascript">let obj = {};
+Reflect.set(obj, &quot;prop&quot;, &quot;value&quot;);// true
+obj.prop;// &quot;value&quot;
+</code></pre><p>对函数进行调用：</p><pre><code class="lang-javascript">Reflect.apply(Math.floor, undefined, [1.75]);
+</code></pre><p>这和函数的 apply 唯一不同的是第一个参数必须是要调用的函数,后两个参数与函数的 apply 保持一致。</p><p>更多的方法,有兴趣的话可以阅读：<span class="exturl" data-url="aHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvemgtQ04vZG9jcy9XZWIvSmF2YVNjcmlwdC9SZWZlcmVuY2UvR2xvYmFsX09iamVjdHMvUmVmbGVjdA==" title="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Reflect">Reflect<i class="fa fa-external-link"></i></span></p><p>说实话,这两个 API 的应用场景,其实我也有些糊涂,可能要经常使用,比对,才能发现比之对应有相同功能的方法的区别。</p><h1 id="使用模块封装代码"><a href="#使用模块封装代码" class="headerlink" title="使用模块封装代码"></a>使用模块封装代码</h1><p>不知不觉《深入理解 ES6》阅读笔记就写到了最后一篇,完结之后可能会开启另外的一个系列,分享自己的知识点,让阅读到的人有一点点的收获,以及自己的成长。最后一篇主要是来写一写用模块封装代码的事情,回顾历史,从最早的立即执行函数,再到 require.js,以及 commonjs,今天我们面对的是语言标准给我们带来的模块化方案。如果说模块,我们应该可以从字面的意思上来看,这是一种可以自动运行在严格模式下并且没有办法退出的代码块。这种代码块在作用域上可以避免互相之间的污染,以及更好的组织代码运行。</p><p>模块语法</p><p>ES6 定义了一对非常简单的关键字来描述模块的导入和导出,在此之间,又为了方便而定义了一些导出导入的方式。</p><pre><code class="lang-javascript">import from
+export
+</code></pre><p>基本的导出,我们可以用 export 来将函数暴露出去：</p><pre><code class="lang-javascript">export function a() {}
+</code></pre><p>当然这样的方式,也可以导出类,对象,变量等。</p><p>有了导出,自然会有导入：</p><pre><code class="lang-javascript">// 假设a.js
+
+export function a() {}
+
+// b.js使用a.js
+
+import { a } from &quot;a.js&quot;;
+
+a();
+</code></pre><p>这样,也就构成了 ES6 的模块系统。</p><p>除此之外,整个模块系统给了我们很多其他的方式来操作,比如导出一个默认的函数：</p><pre><code class="lang-javascript">// a.js
+export default function a() {}
+
+// b.js
+
+import a from &quot;a.js&quot;;
+</code></pre><p>如果可以,我想给 a 起一个别名：</p><pre><code class="lang-javascript">// a.js
+
+export function a() {}
+import * as query from &quot;a.js&quot;;
+</code></pre><p>当然了,我们也可以导出多个函数：</p><pre><code class="lang-javascript">export function a() {}
+export function b() {}
+
+import { a, b } from &quot;a.js&quot;;
+</code></pre><p>至于其他的用法,有兴趣的朋友,可以阅读一下 export 和 import 。</p><p>在浏览器中不借助 webpack 这样的工具也可以使用模块系统,只需要将 type=module,这个模块需要注意的,可能就是关于路径的问题了,其他都和 export import 一样。</p></div><div><div id="reward-container"><div>亲!!! 听说给作者打赏一杯咖啡钱,会给自己带来好运哦!</div><button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">打赏</button><div id="qr" style="display:none"><div style="display:inline-block"><img src="http://oss-blog.test.upcdn.net/wechatpay.jpg" alt="星火燎原@vxhly 微信支付"><p>微信支付</p></div><div style="display:inline-block"><img src="http://oss-blog.test.upcdn.net/alipay.jpg" alt="星火燎原@vxhly 支付宝"><p>支付宝</p></div></div></div></div><div><ul class="post-copyright"><li class="post-copyright-author"><strong>本文作者： </strong>星火燎原@vxhly</li><li class="post-copyright-link"><strong>本文链接：</strong> <a href="https://vxhly.github.io/archives/b0e3118c.html" title="ES6 学习笔记">https://vxhly.github.io/archives/b0e3118c.html</a></li><li class="post-copyright-license"><strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC8="><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！</li></ul></div><footer class="post-footer"><div class="post-tags"><a href="/tags/JavaScript/" rel="tag"># JavaScript</a> <a href="/tags/Node-js/" rel="tag"># Node.js</a></div><div class="post-nav"><div class="post-nav-next post-nav-item"><a href="/archives/6232b20b.html" rel="next" title="Hexo+NexT 进阶设置"><i class="fa fa-chevron-left"></i> Hexo+NexT 进阶设置</a></div><span class="post-nav-divider"></span><div class="post-nav-prev post-nav-item"><a href="/archives/b89e54c8.html" rel="prev" title="【发福利】视频教程">【发福利】视频教程 <i class="fa fa-chevron-right"></i></a></div></div></footer></div></article></div></div></div><div class="sidebar-toggle"><div class="sidebar-toggle-line-wrap"><span class="sidebar-toggle-line sidebar-toggle-line-first"></span> <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span> <span class="sidebar-toggle-line sidebar-toggle-line-last"></span></div></div><aside id="sidebar" class="sidebar"><div class="sidebar-inner"><ul class="sidebar-nav motion-element"><li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">文章目录</li><li class="sidebar-nav-overview" data-target="site-overview-wrap">站点概览</li></ul><div class="site-overview-wrap sidebar-panel"><div class="site-overview"><div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person"><img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="星火燎原@vxhly"><p class="site-author-name" itemprop="name">星火燎原@vxhly</p><div class="site-description motion-element" itemprop="description">源于生活而高于生活</div></div><nav class="site-state motion-element"><div class="site-state-item site-state-posts"><a href="/archives/"><span class="site-state-item-count">104</span> <span class="site-state-item-name">日志</span></a></div><div class="site-state-item site-state-categories"><a href="/categories/"><span class="site-state-item-count">17</span> <span class="site-state-item-name">分类</span></a></div><div class="site-state-item site-state-tags"><a href="/tags/"><span class="site-state-item-count">41</span> <span class="site-state-item-name">标签</span></a></div></nav><div class="feed-link motion-element"><a href="/axom.xml" rel="alternate"><i class="fa fa-rss"></i> RSS</a></div><div class="links-of-author motion-element"><span class="links-of-author-item"><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3Z4aGx5" title="GitHub &rarr; https://github.com/vxhly"><i class="fa fa-fw fa-github"></i></span> </span><span class="links-of-author-item"><span class="exturl" data-url="bWFpbHRvOnBlbmdjaGVuZ291QGdtYWlsLmNvbQ==" title="E-Mail &rarr; mailto:pengchengou@gmail.com"><i class="fa fa-fw fa-envelope"></i></span></span></div><div class="links-of-blogroll motion-element links-of-blogroll-block"><div class="links-of-blogroll-title"><i class="fa fa-fw fa-link"></i> Links</div><ul class="links-of-blogroll-list"><li class="links-of-blogroll-item"><span class="exturl" data-url="aHR0cHM6Ly9tYW4ubGludXhkZS5uZXQv" title="https://man.linuxde.net/">Liunx Command</span></li><li class="links-of-blogroll-item"><span class="exturl" data-url="aHR0cHM6Ly9sZWFzdC5yZW53ZW5sb25nLmNvbS8=" title="https://least.renwenlong.com/">Least CSS pre-processors</span></li><li class="links-of-blogroll-item"><span class="exturl" data-url="aHR0cHM6Ly9jc3Myc2Fzcy5oZXJva3VhcHAuY29tLw==" title="https://css2sass.herokuapp.com/">CSS 2 SASS/SCSS CONVERTER</span></li><li class="links-of-blogroll-item"><span class="exturl" data-url="aHR0cHM6Ly93d3cuYm9vdGNkbi5jbi8=" title="https://www.bootcdn.cn/">BootCDN</span></li><li class="links-of-blogroll-item"><span class="exturl" data-url="aHR0cHM6Ly93d3cudjJleC5jb20v" title="https://www.v2ex.com/">V2EX</span></li></ul></div></div></div><div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active"><div class="post-toc"><div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#建立一个-ES6-专属项目"><span class="nav-number">1.</span> <span class="nav-text">建立一个 ES6 专属项目</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#运行你的项目"><span class="nav-number">1.1.</span> <span class="nav-text">运行你的项目</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ES6-块级作用域"><span class="nav-number">2.</span> <span class="nav-text">ES6 块级作用域</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#字符串处理与函数"><span class="nav-number">3.</span> <span class="nav-text">字符串处理与函数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解构和扩展对象的功能性"><span class="nav-number">4.</span> <span class="nav-text">解构和扩展对象的功能性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是-Symbol-以及怎么使用"><span class="nav-number">5.</span> <span class="nav-text">什么是 Symbol 以及怎么使用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#新的-Set-集合-Map-集合"><span class="nav-number">6.</span> <span class="nav-text">新的 Set 集合,Map 集合</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#iterator-和-generator-的使用"><span class="nav-number">7.</span> <span class="nav-text">iterator 和 generator 的使用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#怎么写类-以及-Promise-和如何封装处理异步"><span class="nav-number">8.</span> <span class="nav-text">怎么写类,以及 Promise 和如何封装处理异步</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代理和反射"><span class="nav-number">9.</span> <span class="nav-text">代理和反射</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用模块封装代码"><span class="nav-number">10.</span> <span class="nav-text">使用模块封装代码</span></a></li></ol></div></div></div></div></aside></div></main><footer id="footer" class="footer"><div class="footer-inner"><div class="copyright">&copy; <span itemprop="copyrightYear">2019</span> <span class="with-love" id="animate"><i class="fa fa-user"></i> </span><span class="author" itemprop="copyrightHolder">星火燎原@vxhly</span></div><div class="busuanzi-count"><script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span class="post-meta-item-icon"><i class="fa fa-user"></i> </span><span class="site-uv" title="总访客量"><span class="busuanzi-value" id="busuanzi_value_site_uv"></span> </span><span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-eye"></i> </span><span class="site-pv" title="总访问量"><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span></div></div></footer><div class="back-to-top"><i class="fa fa-arrow-up"></i></div></div><script>"[object Function]"!==Object.prototype.toString.call(window.Promise)&&(window.Promise=null)</script><script color="255,0,255" opacity="0.5" zindex="-1" count="99" src="//cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest.min.js"></script><script src="//cdn.jsdelivr.net/npm/jquery@2/dist/jquery.min.js"></script><script src="//cdn.jsdelivr.net/npm/fastclick@1/lib/fastclick.min.js"></script><script src="//cdn.jsdelivr.net/npm/jquery-lazyload@1/jquery.lazyload.min.js"></script><script src="//cdn.jsdelivr.net/npm/velocity-animate@1/velocity.min.js"></script><script src="//cdn.jsdelivr.net/npm/velocity-animate@1/velocity.ui.min.js"></script><script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script><script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1/reading_progress.min.js"></script><script src="/js/src/utils.js?v=7.0.1"></script><script src="/js/src/motion.js?v=7.0.1"></script><script src="/js/src/schemes/muse.js?v=7.0.1"></script><script src="/js/src/scrollspy.js?v=7.0.1"></script><script src="/js/src/post-details.js?v=7.0.1"></script><script src="/js/src/next-boot.js?v=7.0.1"></script><script src="/js/src/js.cookie.js?v=7.0.1"></script><script src="/js/src/scroll-cookie.js?v=7.0.1"></script><script src="/js/src/exturl.js?v=7.0.1"></script><script>function proceedsearch(){$("body").append('<div class="search-popup-overlay local-search-pop-overlay"></div>').css("overflow","hidden"),$(".search-popup-overlay").click(onPopupClose),$(".popup").toggle();var e=$("#local-search-input");e.attr("autocapitalize","none"),e.attr("autocorrect","off"),e.focus()}var isfetched=!1,isXml=!0,search_path="search.xml";0===search_path.length?search_path="search.xml":/json$/i.test(search_path)&&(isXml=!1);var path="/"+search_path,onPopupClose=function(e){$(".popup").hide(),$("#local-search-input").val(""),$(".search-result-list").remove(),$("#no-result").remove(),$(".local-search-pop-overlay").remove(),$("body").css("overflow","")},searchFunc=function(e,t,o){"use strict";$("body").append('<div class="search-popup-overlay local-search-pop-overlay"><div id="search-loading-icon"><i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i></div></div>').css("overflow","hidden"),$("#search-loading-icon").css("margin","20% auto 0 auto").css("text-align","center");var n=function(e){return String(e).replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/&#x3A;/g,":").replace(/&#(\d+);/g,function(e,t){return String.fromCharCode(t)}).replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&amp;/g,"&")};$.ajax({url:e,dataType:isXml?"xml":"json",async:!0,success:function(e){isfetched=!0,$(".popup").detach().appendTo(".header-inner");var r=isXml?$("entry",e).map(function(){return{title:$("title",this).text(),content:$("content",this).text(),url:$("url",this).text()}}).get():e,a=document.getElementById(t),s=document.getElementById(o),i=function(){var e=a.value.trim().toLowerCase(),t=e.split(/[\s\-]+/);t.length>1&&t.push(e);var o=[];if(e.length>0&&r.forEach(function(r){function a(t,o,n,r){for(var a=r[r.length-1],s=a.position,i=a.word,c=[],h=0;s+i.length<=n&&0!=r.length;){i===e&&h++,c.push({position:s,length:i.length});var p=s+i.length;for(r.pop();0!=r.length&&(a=r[r.length-1],s=a.position,i=a.word,p>s);)r.pop()}return l+=h,{hits:c,start:o,end:n,searchTextCount:h}}function s(e,t){var o="",n=t.start;return t.hits.forEach(function(t){o+=e.substring(n,t.position);var r=t.position+t.length;o+='<b class="search-keyword">'+e.substring(t.position,r)+"</b>",n=r}),o+=e.substring(n,t.end)}var i=!1,c=0,l=0,h=r.title.trim(),p=h.toLowerCase(),u=r.content.trim().replace(/<[^>]+>/g,"");u=n(u);var f=u.toLowerCase(),g=decodeURIComponent(r.url).replace(/\/{2,}/g,"/"),d=[],v=[];if(""!=h&&(t.forEach(function(e){function t(e,t,o){var n=e.length;if(0===n)return[];var r=0,a=[],s=[];for(o||(t=t.toLowerCase(),e=e.toLowerCase());(a=t.indexOf(e,r))>-1;)s.push({position:a,word:e}),r=a+n;return s}d=d.concat(t(e,p,!1)),v=v.concat(t(e,f,!1))}),(d.length>0||v.length>0)&&(i=!0,c=d.length+v.length)),i){[d,v].forEach(function(e){e.sort(function(e,t){return t.position!==e.position?t.position-e.position:e.word.length-t.word.length})});var C=[];0!=d.length&&C.push(a(h,0,h.length,d));for(var m=[];0!=v.length;){var $=v[v.length-1],x=$.position,w=$.word,y=x-20,T=x+80;y<0&&(y=0),T<x+w.length&&(T=x+w.length),T>u.length&&(T=u.length),m.push(a(u,y,T,v))}m.sort(function(e,t){return e.searchTextCount!==t.searchTextCount?t.searchTextCount-e.searchTextCount:e.hits.length!==t.hits.length?t.hits.length-e.hits.length:e.start-t.start});var b=parseInt("1");b>=0&&(m=m.slice(0,b));var E="";E+=0!=C.length?"<li><a href='"+g+"' class='search-result-title'>"+s(h,C[0])+"</a>":"<li><a href='"+g+"' class='search-result-title'>"+h+"</a>",m.forEach(function(e){E+="<a href='"+g+'\'><p class="search-result">'+s(u,e)+"...</p></a>"}),E+="</li>",o.push({item:E,searchTextCount:l,hitCount:c,id:o.length})}}),1===t.length&&""===t[0])s.innerHTML='<div id="no-result"><i class="fa fa-search fa-5x"></i></div>';else if(0===o.length)s.innerHTML='<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>';else{o.sort(function(e,t){return e.searchTextCount!==t.searchTextCount?t.searchTextCount-e.searchTextCount:e.hitCount!==t.hitCount?t.hitCount-e.hitCount:t.id-e.id});var i='<ul class="search-result-list">';o.forEach(function(e){i+=e.item}),i+="</ul>",s.innerHTML=i}};a.addEventListener("input",i),$(".local-search-pop-overlay").remove(),$("body").css("overflow",""),proceedsearch()}})};$(".popup-trigger").click(function(e){e.stopPropagation(),isfetched===!1?searchFunc(path,"local-search-input","local-search-result"):proceedsearch()}),$(".popup-btn-close").click(onPopupClose),$(".popup").click(function(e){e.stopPropagation()}),$(document).on("keyup",function(e){var t=27===e.which&&$(".search-popup").is(":visible");t&&onPopupClose()})</script><script>$("body").find("div.pdf").length&&$.ajax({type:"GET",url:"//cdn.jsdelivr.net/npm/pdfobject@2/pdfobject.min.js",dataType:"script",cache:!0,success:function(){$("body").find("div.pdf").each(function(e,t){PDFObject.embed($(t).attr("target"),$(t),{pdfOpenParams:{navpanes:0,toolbar:0,statusbar:0,pagemode:"thumbs",view:"FitH"},PDFJS_URL:"/lib/pdf/web/viewer.html",height:$(t).attr("height")||"500px"})})}})</script><script>$("body").find("pre.mermaid").length&&$.ajax({type:"GET",url:"//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js",dataType:"script",cache:!0,success:function(){mermaid.initialize({theme:"forest",logLevel:3,flowchart:{curve:"linear"},gantt:{axisFormat:"%m/%d/%Y"},sequence:{actorMargin:50}})}})</script><script>!function(){var t=document.createElement("script"),e=window.location.protocol.split(":")[0];t.src="https"===e?"https://zz.bdstatic.com/linksubmit/push.js":"http://push.zhanzhang.baidu.com/push.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}()</script><script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-bookmark@1/bookmark.min.js"></script><script>bookmark.scrollToMark("auto","#更多")</script><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.1/clipboard.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script><script type="text/javascript">$(function () {
+      // mermaid.initialize({
+      //   startOnLoad: true
+      // });
+
+      $('pre code').not('.lang-mermaid').each(function (i, block) {
+
+        hljs.highlightBlock(block);
+        const lang = $(this).attr('class').split(' ')[0]
+        const pre = $(this).parents('pre')
+        const span = $(`<span class="code-copy" data-clipboard-snippet>${lang.toUpperCase()} | COPY</span>`)
+        pre.append(span)
+        var lines = $(this).text().split('\n').length - 1;
+        var $numbering = $('<ul/>').addClass('pre-numbering');
+        $(this).addClass('has-numbering').parent().append($numbering);
+        for (i = 1; i <= lines; i++) {
+          $numbering.append($('<li/>'));
+        }
+      });
+
+      new ClipboardJS('.code-copy', {
+        target: function (trigger) {
+          return trigger.previousSibling;
+        }
+      });
+    });</script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-135391925-1"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-135391925-1")</script></body></html><!-- rebuild by neat -->
