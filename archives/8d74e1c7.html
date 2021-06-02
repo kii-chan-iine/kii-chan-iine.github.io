@@ -1,0 +1,178 @@
+<!-- build time:Tue May 28 2019 01:37:45 GMT+0000 (Coordinated Universal Time) --><!DOCTYPE html><html class="theme-next mist use-motion" lang="zh-CN"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><meta name="theme-color" content="#222"><meta name="google-site-verification" content="XCppppl60fPQTlwxDodwZIhMarkybEgwVpcEz85KTuQ"><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css"><link rel="stylesheet" href="/css/main.css?v=7.0.1"><link rel="apple-touch-icon" sizes="180x180" href="/images/code.png?v=7.0.1"><link rel="icon" type="image/png" sizes="32x32" href="/images/code.png?v=7.0.1"><link rel="icon" type="image/png" sizes="16x16" href="/images/code.png?v=7.0.1"><link rel="mask-icon" href="/images/code.png?v=7.0.1" color="#222"><script id="hexo.configurations">var NexT=window.NexT||{},CONFIG={root:"/",scheme:"Mist",version:"7.0.1",sidebar:{position:"left",display:"post",offset:12,onmobile:!1,dimmer:!1},back2top:!0,back2top_sidebar:!1,fancybox:!0,fastclick:!0,lazyload:!0,tabs:!0,motion:{enable:!0,async:!1,transition:{post_block:"fadeIn",post_header:"slideDownIn",post_body:"slideDownIn",coll_header:"slideLeftIn",sidebar:"slideUpIn"}},algolia:{applicationID:"",apiKey:"",indexName:"",hits:{per_page:10},labels:{input_placeholder:"Search for Posts",hits_empty:"We didn't find any results for the search: ${query}",hits_stats:"${hits} results found in ${time} ms"}}}</script><meta name="description" content="Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。 它采用集中式存储管理应用的所有组件的状态, 并以相应的规则保证状态以一种可预测的方式发生变化。 这里就简单的介绍 vuex 的使用方法"><meta name="keywords" content="Node.js,Vue.js"><meta property="og:type" content="article"><meta property="og:title" content="在 vue.js 项目中使用 vuex"><meta property="og:url" content="https://vxhly.github.io/archives/8d74e1c7.html"><meta property="og:site_name" content="Coding and Fixing"><meta property="og:description" content="Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。 它采用集中式存储管理应用的所有组件的状态, 并以相应的规则保证状态以一种可预测的方式发生变化。 这里就简单的介绍 vuex 的使用方法"><meta property="og:locale" content="zh-CN"><meta property="og:updated_time" content="2019-05-28T01:36:30.402Z"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="在 vue.js 项目中使用 vuex"><meta name="twitter:description" content="Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。 它采用集中式存储管理应用的所有组件的状态, 并以相应的规则保证状态以一种可预测的方式发生变化。 这里就简单的介绍 vuex 的使用方法"><link rel="alternate" href="/axom.xml" title="Coding and Fixing" type="application/atom+xml"><link rel="canonical" href="https://vxhly.github.io/archives/8d74e1c7.html"><script id="page.configurations">CONFIG.page={sidebar:""}</script><title>在 vue.js 项目中使用 vuex | Coding and Fixing</title><noscript><style>.sidebar-inner,.use-motion .brand,.use-motion .collection-title,.use-motion .comments,.use-motion .menu-item,.use-motion .motion-element,.use-motion .pagination,.use-motion .post-block,.use-motion .post-body,.use-motion .post-header{opacity:initial}.use-motion .logo,.use-motion .site-subtitle,.use-motion .site-title{opacity:initial;top:initial}.use-motion .logo-line-before i{left:initial}.use-motion .logo-line-after i{right:initial}</style></noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"><style>pre{position:relative;border-radius:2px;padding:25px 0 0}pre.mermaid{background:#d3d3d3;display:flex;justify-content:center;padding:0}pre>span.code-copy{cursor:pointer;position:absolute;top:0;right:0;color:#a44545;background-color:#222;border-bottom-left-radius:2px;border-top-right-radius:2px;text-align:right;font-size:.7em;padding:5px 10px;line-height:15px;height:15px;font-weight:500}code.has-numbering{margin-left:2.5rem}code.has-numbering::-webkit-scrollbar{display:none}.pre-numbering{margin:0;position:absolute;top:33px;padding:0 10px}.pre-numbering li{list-style-type:decimal-leading-zero!important}blockquote{color:#888;background-color:#eae6f3;border-left:1rem solid #5236a0;padding:0 1.5rem;position:relative;font-family:Roboto,sans-serif}blockquote>p{word-wrap:break-word}blockquote:after,blockquote:before{color:#392570;font-size:2.5rem;position:absolute;line-height:2.5rem}@media (max-width:760px){.post-body pre{padding:25px 0 0}.post-body .pre-numbering,blockquote:after,blockquote:before{display:none}code.has-numbering{margin:0}}.image-caption{display:none}</style></head><body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN"><div class="container sidebar-position-left page-post-detail"><div class="headband"></div><header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="header-inner"><div class="site-brand-wrapper"><div class="site-meta"><div class="custom-logo-site-title"><a href="/" class="brand" rel="start"><span class="logo-line-before"><i></i></span> <span class="site-title">Coding and Fixing</span> <span class="logo-line-after"><i></i></span></a></div><h1 class="site-subtitle" itemprop="description">Coding and Fixing</h1></div><div class="site-nav-toggle"><button aria-label="切换导航栏"><span class="btn-bar"></span> <span class="btn-bar"></span> <span class="btn-bar"></span></button></div></div><nav class="site-nav"><ul id="menu" class="menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i><br>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i><br>标签<span class="badge">41</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i><br>分类<span class="badge">17</span></a></li><li class="menu-item menu-item-archives menu-item-active"><a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i><br>归档<span class="badge">104</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="menu-item-icon fa fa-fw fa-sitemap"></i><br>站点地图</a></li><li class="menu-item menu-item-search"><a href="javascript:;" class="popup-trigger"><i class="menu-item-icon fa fa-search fa-fw"></i><br>搜索</a></li></ul><div class="site-search"><div class="popup search-popup local-search-popup"><div class="local-search-header clearfix"><span class="search-icon"><i class="fa fa-search"></i> </span><span class="popup-btn-close"><i class="fa fa-times-circle"></i></span><div class="local-search-input-wrapper"><input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input"></div></div><div id="local-search-result"></div></div></div></nav></div></header><main id="main" class="main"><div class="main-inner"><div class="content-wrap"><div id="content" class="content"><div id="posts" class="posts-expand"><div class="reading-progress-bar"></div><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><div class="post-block"><link itemprop="mainEntityOfPage" href="https://vxhly.github.io/archives/8d74e1c7.html"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="name" content="星火燎原@vxhly"><meta itemprop="description" content="源于生活而高于生活"><meta itemprop="image" content="/images/avatar.png"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="Coding and Fixing"></span><header class="post-header"><h2 class="post-title" itemprop="name headline">在 vue.js 项目中使用 vuex</h2><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time title="创建时间：2019-01-26 12:18:11" itemprop="dateCreated datePublished" datetime="2019-01-26T12:18:11+00:00">2019-01-26</time> <span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-calendar-check-o"></i> </span><span class="post-meta-item-text">更新于</span> <time title="修改时间：2019-05-28 01:36:30" itemprop="dateModified" datetime="2019-05-28T01:36:30+00:00">2019-05-28</time> </span><span class="post-category"><span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-folder-o"></i> </span><span class="post-meta-item-text">分类于</span> <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/vuejs/" itemprop="url" rel="index"><span itemprop="name">vuejs</span></a></span> </span><span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-eye"></i> 阅读次数： <span class="busuanzi-value" id="busuanzi_value_page_pv"></span></span></div></header><div class="post-body" itemprop="articleBody"><p>Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。 它采用集中式存储管理应用的所有组件的状态, 并以相应的规则保证状态以一种可预测的方式发生变化。 这里就简单的介绍 vuex 的使用方法<a id="more"></a></p><h1 id="文档"><a href="#文档" class="headerlink" title="文档"></a>文档</h1><blockquote><p><span class="exturl" data-url="aHR0cHM6Ly92dWV4LnZ1ZWpzLm9yZy96aC1jbi8=" title="https://vuex.vuejs.org/zh-cn/">vuex 官方文档<i class="fa fa-external-link"></i></span></p></blockquote><h1 id="关于-vuex-的严格模式"><a href="#关于-vuex-的严格模式" class="headerlink" title="关于 vuex 的严格模式"></a>关于 vuex 的严格模式</h1><p>在 vuex 有个参数是 <code>strict</code> 这个是可以配置 vuex 开启严格模式, 这里极力推荐开启严格模式, 当然是在开发模式下, 线上模式可以进行关闭, 因为我们不希望内部逻辑暴露在外面。</p><p>至于为什么极力推荐开启 vuex 的严格模式, 有以下这些原因：</p><ul><li>官方也是这么推荐的, vuex 中的数据被称作 state, 这些数据通过 getters 将其暴露给组件使用, 那么要想改变其值只能在 vuex 内部实现（即 modules 和 actiions, 具体可以阅读官方文档）</li><li>vuex 被设计出来就是一个第三方的状态管理仓库, 当然这些状态也只能由内部的逻辑实现, 外部也可以对 state 的值进行改变, 但是不推荐</li><li>我们常说的 cookie 也好 session 也好, 它们有个致命的弱点, 就是比较容易被窃取, 那么 vuex 就规避了这些缺点, 因为所有的数据都在 vuex 的 store 仓库, 只能由 vuex 内部的状态来管理, 就不容易被窃取, 如果由外部的逻辑来改变 state 值, 那么 vuex 的安全性岌岌可危</li></ul><blockquote><p>更多详情请阅读 <span class="exturl" data-url="aHR0cHM6Ly92dWV4LnZ1ZWpzLm9yZy96aC9ndWlkZS9zdHJpY3QuaHRtbA==" title="https://vuex.vuejs.org/zh/guide/strict.html">vuex 严格模式<i class="fa fa-external-link"></i></span></p></blockquote><h1 id="关于-vuex"><a href="#关于-vuex" class="headerlink" title="关于 vuex"></a>关于 vuex</h1><ul><li><code>state</code> =&gt; 单一状态树,数据存储库,即驱动应用的数据源</li><li><code>getter</code> =&gt; 派生出 <code>state</code> 的值</li><li><code>mutation</code> =&gt; 更改状态的唯一途径,直接修改状态</li><li><code>action</code> =&gt; 提交 <code>mutation</code>,不是直接修改状态,相应在 <code>view</code> 上的用户输入导致状态的变化</li><li><code>module</code> =&gt; 整合一个模块的 <code>state</code>、<code>getter</code>、<code>mutation</code>、<code>action</code></li><li><code>view</code> =&gt; 以声明方式将 <code>state</code> 映射到视图</li></ul><h1 id="install"><a href="#install" class="headerlink" title="install"></a>install</h1><p>使用命令安装 vuex 依赖</p><pre><code class="lang-bash">npm i -D vuex
+# or
+yarn add vuex
+</code></pre><h2 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h2><p>我们单独创建一个 <code>store</code> 目录, 目录结构大致是</p><pre><code class="lang-bash">|-- src
+  |-- store
+    |-- modules
+      |-- index.js
+      |-- ... ...
+    |-- getters.js      # 根级别的 mutation =&gt;
+    |-- index.js        # 我们组装模块并导出 store 的地方
+    |-- mutation-types.js        # 根级别的 type =&gt; 状态
+  |-- main.js
+</code></pre><h2 id="导入-vuex"><a href="#导入-vuex" class="headerlink" title="导入 vuex"></a>导入 vuex</h2><p><code>src/mian.js</code></p><pre><code class="lang-javascript">import Vue from &#39;vue&#39;
+import store from &#39;@/store&#39;
+Vue.config.productionTip = false
+new Vue({
+    store, 
+    render: h =&gt; h(App), 
+}).$mount(&#39;#app&#39;)
+</code></pre><p><code>strore/index.js</code></p><pre><code class="lang-javascript">import Vue from &#39;vue&#39;
+import Vuex from &#39;vuex&#39;
+import modules from &#39;./modules&#39;
+import getters from &#39;./getters&#39;
+Vue.use(Vuex)
+const debug = true // 推荐开启严格模式
+export default new Vuex.Store({
+    modules, 
+    getters, 
+    strict: debug
+})
+</code></pre><p><code>strore/getters.js</code></p><pre><code class="lang-javascript">const getters = {
+    [stateName]: state =&gt; state. [modulesName]. [stateName]
+}
+export default getters
+</code></pre><p><code>store/modules/index.js</code></p><pre><code class="lang-javascript">const files = require.context(&#39;.&#39;, false, /\.js$/)
+const modules = {}
+files.keys().forEach(key =&gt; {
+    if (key === &#39;./index.js&#39;) return
+    modules[key.replace(/(\.\/|\.js)/g, &#39;&#39;)] = files(key).default
+})
+export default modules
+</code></pre><p><code>store/mutation-types.js</code></p><pre><code class="lang-javascript">// 这边必须使用全大写, 没有为什么
+export const TYPES_NAME = &#39;TYPES_NAME&#39;
+</code></pre><h2 id="vuex-食用例子"><a href="#vuex-食用例子" class="headerlink" title="vuex 食用例子"></a>vuex 食用例子</h2><p>做完以上的工作之后我们就可以进行使用 vuex 了, 下方举一个最简单的两个数的 加减乘除 的例子</p><blockquote><p>在线访问 <span class="exturl" data-url="aHR0cHM6Ly9jb2Rlc2FuZGJveC5pby9zLzZqMWtvamtyOXc=" title="https://codesandbox.io/s/6j1kojkr9w">Edit on CodeSandbox<i class="fa fa-external-link"></i></span></p></blockquote><p><code>store/mutation-types.js</code></p><pre><code class="lang-javascript">export const ADDITION = &#39;ADDITION&#39; // + 加法
+export const SUBSTRUCTION = &#39;SUBSTRUCTION&#39; // - 减法
+export const MULTIPLICATION = &#39;MULTIPLICATION&#39; // * 乘法
+export const DIVISION = &#39;DIVISION&#39; // / 除法
+</code></pre><p><code>store/modules/operation.js</code></p><pre><code class="lang-javascript">import {
+    ADDITION, 
+    SUBSTRUCTION, 
+    MULTIPLICATION, 
+    DIVISION
+} from &#39;@/store/mutation-types&#39;
+const operation = {
+    state: {
+        result: 0
+    }, 
+    mutations: {
+        [ADDITION]: (state, payload) =&gt; {
+            state.result = Number(payload.a) + Number(payload.b)
+        }, 
+        [SUBSTRUCTION]: (state, payload) =&gt; {
+            state.result = Number(payload.a) - Number(payload.b)
+        }, 
+        [MULTIPLICATION]: (state, payload) =&gt; {
+            state.result = Number(payload.a) * Number(payload.b)
+        }, 
+        [DIVISION]: (state, payload) =&gt; {
+            state.result = Number(payload.a) / Number(payload.b)
+        }
+    }, 
+    actions: {
+        addition({
+            commit
+        }, payload) {
+            commit(ADDITION, payload)
+        }, 
+        substrction({
+            commit
+        }, payload) {
+            commit(SUBSTRUCTION, payload)
+        }, 
+        multiplication({
+            commit
+        }, payload) {
+            commit(MULTIPLICATION, payload)
+        }, 
+        division({
+            commit
+        }, payload) {
+            commit(DIVISION, payload)
+        }
+    }
+}
+export default operation
+</code></pre><p><code>store/getters.js</code></p><pre><code class="lang-javascript">const getters = {
+    result: state =&gt; state.operation.result
+}
+export default getters
+</code></pre><p><code>views/Operation.vue</code></p><pre><code class="lang-html">&lt;template&gt;
+  &lt;div&gt;
+    &lt;div&gt;
+      &lt;input type=&quot;number&quot; v-model=&quot;payload.a&quot; placeholder=&quot;参数 A&quot; style=&quot;margin:0 5px;height:18px;width:50px;&quot; /&gt;
+      {{ operation }}
+      &lt;input type=&quot;number&quot; v-model=&quot;payload.b&quot; placeholder=&quot;参数 B&quot; style=&quot;margin:0 5px;height:18px;width:50px;&quot; /&gt;
+      = {{ result }}
+    &lt;/div&gt;
+    &lt;div style=&quot;margin-top:10px&quot;&gt;
+      &lt;button @click=&quot;addition&quot; style=&quot;margin:0 5px;&quot;&gt;+&lt;/button&gt;
+      &lt;button @click=&quot;substrction&quot; style=&quot;margin:0 5px;&quot;&gt;-&lt;/button&gt;
+      &lt;button @click=&quot;multiplication&quot; style=&quot;margin:0 5px;&quot;&gt;*&lt;/button&gt;
+      &lt;button @click=&quot;division&quot; style=&quot;margin:0 5px;&quot;&gt;/&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+import { mapGetters } from &#39;vuex&#39;
+
+export default {
+  data () {
+    return {
+      operation: &#39;+&#39;, 
+      payload: {
+        a: 0, 
+        b: 0
+      }
+    }
+  }, 
+  computed: {
+    ...mapGetters([&#39;result&#39;])
+  }, 
+  methods: {
+    addition () {
+      this.operation = &#39;+&#39;
+      this.$store.dispatch(&#39;addition&#39;, this.payload)
+    }, 
+    substrction () {
+      this.operation = &#39;-&#39;
+      this.$store.dispatch(&#39;substrction&#39;, this.payload)
+    }, 
+    multiplication () {
+      this.operation = &#39;*&#39;
+      this.$store.dispatch(&#39;multiplication&#39;, this.payload)
+    }, 
+    division () {
+      this.operation = &#39;/&#39;
+      this.$store.dispatch(&#39;division&#39;, this.payload)
+    }
+  }
+}
+&lt;/script&gt;
+</code></pre></div><div><div id="reward-container"><div>亲!!! 听说给作者打赏一杯咖啡钱,会给自己带来好运哦!</div><button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">打赏</button><div id="qr" style="display:none"><div style="display:inline-block"><img src="http://oss-blog.test.upcdn.net/wechatpay.jpg" alt="星火燎原@vxhly 微信支付"><p>微信支付</p></div><div style="display:inline-block"><img src="http://oss-blog.test.upcdn.net/alipay.jpg" alt="星火燎原@vxhly 支付宝"><p>支付宝</p></div></div></div></div><div><ul class="post-copyright"><li class="post-copyright-author"><strong>本文作者： </strong>星火燎原@vxhly</li><li class="post-copyright-link"><strong>本文链接：</strong> <a href="https://vxhly.github.io/archives/8d74e1c7.html" title="在 vue.js 项目中使用 vuex">https://vxhly.github.io/archives/8d74e1c7.html</a></li><li class="post-copyright-license"><strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC8="><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！</li></ul></div><footer class="post-footer"><div class="post-tags"><a href="/tags/Node-js/" rel="tag"># Node.js</a> <a href="/tags/Vue-js/" rel="tag"># Vue.js</a></div><div class="post-nav"><div class="post-nav-next post-nav-item"><a href="/archives/5ccfcaf1.html" rel="next" title="Vue.js 发送全局事件（Bus）"><i class="fa fa-chevron-left"></i> Vue.js 发送全局事件（Bus）</a></div><span class="post-nav-divider"></span><div class="post-nav-prev post-nav-item"><a href="/archives/1abefd7d.html" rel="prev" title="vue 中 watch 的详细用法">vue 中 watch 的详细用法 <i class="fa fa-chevron-right"></i></a></div></div></footer></div></article></div></div></div><div class="sidebar-toggle"><div class="sidebar-toggle-line-wrap"><span class="sidebar-toggle-line sidebar-toggle-line-first"></span> <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span> <span class="sidebar-toggle-line sidebar-toggle-line-last"></span></div></div><aside id="sidebar" class="sidebar"><div class="sidebar-inner"><ul class="sidebar-nav motion-element"><li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">文章目录</li><li class="sidebar-nav-overview" data-target="site-overview-wrap">站点概览</li></ul><div class="site-overview-wrap sidebar-panel"><div class="site-overview"><div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person"><img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="星火燎原@vxhly"><p class="site-author-name" itemprop="name">星火燎原@vxhly</p><div class="site-description motion-element" itemprop="description">源于生活而高于生活</div></div><nav class="site-state motion-element"><div class="site-state-item site-state-posts"><a href="/archives/"><span class="site-state-item-count">104</span> <span class="site-state-item-name">日志</span></a></div><div class="site-state-item site-state-categories"><a href="/categories/"><span class="site-state-item-count">17</span> <span class="site-state-item-name">分类</span></a></div><div class="site-state-item site-state-tags"><a href="/tags/"><span class="site-state-item-count">41</span> <span class="site-state-item-name">标签</span></a></div></nav><div class="feed-link motion-element"><a href="/axom.xml" rel="alternate"><i class="fa fa-rss"></i> RSS</a></div><div class="links-of-author motion-element"><span class="links-of-author-item"><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3Z4aGx5" title="GitHub &rarr; https://github.com/vxhly"><i class="fa fa-fw fa-github"></i></span> </span><span class="links-of-author-item"><span class="exturl" data-url="bWFpbHRvOnBlbmdjaGVuZ291QGdtYWlsLmNvbQ==" title="E-Mail &rarr; mailto:pengchengou@gmail.com"><i class="fa fa-fw fa-envelope"></i></span></span></div><div class="links-of-blogroll motion-element links-of-blogroll-block"><div class="links-of-blogroll-title"><i class="fa fa-fw fa-link"></i> Links</div><ul class="links-of-blogroll-list"><li class="links-of-blogroll-item"><span class="exturl" data-url="aHR0cHM6Ly9tYW4ubGludXhkZS5uZXQv" title="https://man.linuxde.net/">Liunx Command</span></li><li class="links-of-blogroll-item"><span class="exturl" data-url="aHR0cHM6Ly9sZWFzdC5yZW53ZW5sb25nLmNvbS8=" title="https://least.renwenlong.com/">Least CSS pre-processors</span></li><li class="links-of-blogroll-item"><span class="exturl" data-url="aHR0cHM6Ly9jc3Myc2Fzcy5oZXJva3VhcHAuY29tLw==" title="https://css2sass.herokuapp.com/">CSS 2 SASS/SCSS CONVERTER</span></li><li class="links-of-blogroll-item"><span class="exturl" data-url="aHR0cHM6Ly93d3cuYm9vdGNkbi5jbi8=" title="https://www.bootcdn.cn/">BootCDN</span></li><li class="links-of-blogroll-item"><span class="exturl" data-url="aHR0cHM6Ly93d3cudjJleC5jb20v" title="https://www.v2ex.com/">V2EX</span></li></ul></div></div></div><div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active"><div class="post-toc"><div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#文档"><span class="nav-number">1.</span> <span class="nav-text">文档</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#关于-vuex-的严格模式"><span class="nav-number">2.</span> <span class="nav-text">关于 vuex 的严格模式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#关于-vuex"><span class="nav-number">3.</span> <span class="nav-text">关于 vuex</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#install"><span class="nav-number">4.</span> <span class="nav-text">install</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#目录结构"><span class="nav-number">4.1.</span> <span class="nav-text">目录结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#导入-vuex"><span class="nav-number">4.2.</span> <span class="nav-text">导入 vuex</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vuex-食用例子"><span class="nav-number">4.3.</span> <span class="nav-text">vuex 食用例子</span></a></li></ol></li></ol></div></div></div></div></aside></div></main><footer id="footer" class="footer"><div class="footer-inner"><div class="copyright">&copy; <span itemprop="copyrightYear">2019</span> <span class="with-love" id="animate"><i class="fa fa-user"></i> </span><span class="author" itemprop="copyrightHolder">星火燎原@vxhly</span></div><div class="busuanzi-count"><script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span class="post-meta-item-icon"><i class="fa fa-user"></i> </span><span class="site-uv" title="总访客量"><span class="busuanzi-value" id="busuanzi_value_site_uv"></span> </span><span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-eye"></i> </span><span class="site-pv" title="总访问量"><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span></div></div></footer><div class="back-to-top"><i class="fa fa-arrow-up"></i></div></div><script>"[object Function]"!==Object.prototype.toString.call(window.Promise)&&(window.Promise=null)</script><script color="255,0,255" opacity="0.5" zindex="-1" count="99" src="//cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest.min.js"></script><script src="//cdn.jsdelivr.net/npm/jquery@2/dist/jquery.min.js"></script><script src="//cdn.jsdelivr.net/npm/fastclick@1/lib/fastclick.min.js"></script><script src="//cdn.jsdelivr.net/npm/jquery-lazyload@1/jquery.lazyload.min.js"></script><script src="//cdn.jsdelivr.net/npm/velocity-animate@1/velocity.min.js"></script><script src="//cdn.jsdelivr.net/npm/velocity-animate@1/velocity.ui.min.js"></script><script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script><script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1/reading_progress.min.js"></script><script src="/js/src/utils.js?v=7.0.1"></script><script src="/js/src/motion.js?v=7.0.1"></script><script src="/js/src/schemes/muse.js?v=7.0.1"></script><script src="/js/src/scrollspy.js?v=7.0.1"></script><script src="/js/src/post-details.js?v=7.0.1"></script><script src="/js/src/next-boot.js?v=7.0.1"></script><script src="/js/src/js.cookie.js?v=7.0.1"></script><script src="/js/src/scroll-cookie.js?v=7.0.1"></script><script src="/js/src/exturl.js?v=7.0.1"></script><script>function proceedsearch(){$("body").append('<div class="search-popup-overlay local-search-pop-overlay"></div>').css("overflow","hidden"),$(".search-popup-overlay").click(onPopupClose),$(".popup").toggle();var e=$("#local-search-input");e.attr("autocapitalize","none"),e.attr("autocorrect","off"),e.focus()}var isfetched=!1,isXml=!0,search_path="search.xml";0===search_path.length?search_path="search.xml":/json$/i.test(search_path)&&(isXml=!1);var path="/"+search_path,onPopupClose=function(e){$(".popup").hide(),$("#local-search-input").val(""),$(".search-result-list").remove(),$("#no-result").remove(),$(".local-search-pop-overlay").remove(),$("body").css("overflow","")},searchFunc=function(e,t,o){"use strict";$("body").append('<div class="search-popup-overlay local-search-pop-overlay"><div id="search-loading-icon"><i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i></div></div>').css("overflow","hidden"),$("#search-loading-icon").css("margin","20% auto 0 auto").css("text-align","center");var n=function(e){return String(e).replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/&#x3A;/g,":").replace(/&#(\d+);/g,function(e,t){return String.fromCharCode(t)}).replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&amp;/g,"&")};$.ajax({url:e,dataType:isXml?"xml":"json",async:!0,success:function(e){isfetched=!0,$(".popup").detach().appendTo(".header-inner");var r=isXml?$("entry",e).map(function(){return{title:$("title",this).text(),content:$("content",this).text(),url:$("url",this).text()}}).get():e,a=document.getElementById(t),s=document.getElementById(o),i=function(){var e=a.value.trim().toLowerCase(),t=e.split(/[\s\-]+/);t.length>1&&t.push(e);var o=[];if(e.length>0&&r.forEach(function(r){function a(t,o,n,r){for(var a=r[r.length-1],s=a.position,i=a.word,c=[],h=0;s+i.length<=n&&0!=r.length;){i===e&&h++,c.push({position:s,length:i.length});var p=s+i.length;for(r.pop();0!=r.length&&(a=r[r.length-1],s=a.position,i=a.word,p>s);)r.pop()}return l+=h,{hits:c,start:o,end:n,searchTextCount:h}}function s(e,t){var o="",n=t.start;return t.hits.forEach(function(t){o+=e.substring(n,t.position);var r=t.position+t.length;o+='<b class="search-keyword">'+e.substring(t.position,r)+"</b>",n=r}),o+=e.substring(n,t.end)}var i=!1,c=0,l=0,h=r.title.trim(),p=h.toLowerCase(),u=r.content.trim().replace(/<[^>]+>/g,"");u=n(u);var f=u.toLowerCase(),g=decodeURIComponent(r.url).replace(/\/{2,}/g,"/"),d=[],v=[];if(""!=h&&(t.forEach(function(e){function t(e,t,o){var n=e.length;if(0===n)return[];var r=0,a=[],s=[];for(o||(t=t.toLowerCase(),e=e.toLowerCase());(a=t.indexOf(e,r))>-1;)s.push({position:a,word:e}),r=a+n;return s}d=d.concat(t(e,p,!1)),v=v.concat(t(e,f,!1))}),(d.length>0||v.length>0)&&(i=!0,c=d.length+v.length)),i){[d,v].forEach(function(e){e.sort(function(e,t){return t.position!==e.position?t.position-e.position:e.word.length-t.word.length})});var C=[];0!=d.length&&C.push(a(h,0,h.length,d));for(var m=[];0!=v.length;){var $=v[v.length-1],x=$.position,w=$.word,y=x-20,T=x+80;y<0&&(y=0),T<x+w.length&&(T=x+w.length),T>u.length&&(T=u.length),m.push(a(u,y,T,v))}m.sort(function(e,t){return e.searchTextCount!==t.searchTextCount?t.searchTextCount-e.searchTextCount:e.hits.length!==t.hits.length?t.hits.length-e.hits.length:e.start-t.start});var b=parseInt("1");b>=0&&(m=m.slice(0,b));var E="";E+=0!=C.length?"<li><a href='"+g+"' class='search-result-title'>"+s(h,C[0])+"</a>":"<li><a href='"+g+"' class='search-result-title'>"+h+"</a>",m.forEach(function(e){E+="<a href='"+g+'\'><p class="search-result">'+s(u,e)+"...</p></a>"}),E+="</li>",o.push({item:E,searchTextCount:l,hitCount:c,id:o.length})}}),1===t.length&&""===t[0])s.innerHTML='<div id="no-result"><i class="fa fa-search fa-5x"></i></div>';else if(0===o.length)s.innerHTML='<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>';else{o.sort(function(e,t){return e.searchTextCount!==t.searchTextCount?t.searchTextCount-e.searchTextCount:e.hitCount!==t.hitCount?t.hitCount-e.hitCount:t.id-e.id});var i='<ul class="search-result-list">';o.forEach(function(e){i+=e.item}),i+="</ul>",s.innerHTML=i}};a.addEventListener("input",i),$(".local-search-pop-overlay").remove(),$("body").css("overflow",""),proceedsearch()}})};$(".popup-trigger").click(function(e){e.stopPropagation(),isfetched===!1?searchFunc(path,"local-search-input","local-search-result"):proceedsearch()}),$(".popup-btn-close").click(onPopupClose),$(".popup").click(function(e){e.stopPropagation()}),$(document).on("keyup",function(e){var t=27===e.which&&$(".search-popup").is(":visible");t&&onPopupClose()})</script><script>$("body").find("div.pdf").length&&$.ajax({type:"GET",url:"//cdn.jsdelivr.net/npm/pdfobject@2/pdfobject.min.js",dataType:"script",cache:!0,success:function(){$("body").find("div.pdf").each(function(e,t){PDFObject.embed($(t).attr("target"),$(t),{pdfOpenParams:{navpanes:0,toolbar:0,statusbar:0,pagemode:"thumbs",view:"FitH"},PDFJS_URL:"/lib/pdf/web/viewer.html",height:$(t).attr("height")||"500px"})})}})</script><script>$("body").find("pre.mermaid").length&&$.ajax({type:"GET",url:"//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js",dataType:"script",cache:!0,success:function(){mermaid.initialize({theme:"forest",logLevel:3,flowchart:{curve:"linear"},gantt:{axisFormat:"%m/%d/%Y"},sequence:{actorMargin:50}})}})</script><script>!function(){var t=document.createElement("script"),e=window.location.protocol.split(":")[0];t.src="https"===e?"https://zz.bdstatic.com/linksubmit/push.js":"http://push.zhanzhang.baidu.com/push.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}()</script><script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-bookmark@1/bookmark.min.js"></script><script>bookmark.scrollToMark("auto","#更多")</script><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.1/clipboard.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script><script type="text/javascript">$(function () {
+      // mermaid.initialize({
+      //   startOnLoad: true
+      // });
+
+      $('pre code').not('.lang-mermaid').each(function (i, block) {
+
+        hljs.highlightBlock(block);
+        const lang = $(this).attr('class').split(' ')[0]
+        const pre = $(this).parents('pre')
+        const span = $(`<span class="code-copy" data-clipboard-snippet>${lang.toUpperCase()} | COPY</span>`)
+        pre.append(span)
+        var lines = $(this).text().split('\n').length - 1;
+        var $numbering = $('<ul/>').addClass('pre-numbering');
+        $(this).addClass('has-numbering').parent().append($numbering);
+        for (i = 1; i <= lines; i++) {
+          $numbering.append($('<li/>'));
+        }
+      });
+
+      new ClipboardJS('.code-copy', {
+        target: function (trigger) {
+          return trigger.previousSibling;
+        }
+      });
+    });</script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-135391925-1"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-135391925-1")</script></body></html><!-- rebuild by neat -->
