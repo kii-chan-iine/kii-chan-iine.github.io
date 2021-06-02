@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Coding and Fixing</title>
+  <title>KII IINE</title>
   
-  <subtitle>Coding and Fixing</subtitle>
+  <subtitle>Kii</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://vxhly.github.io/"/>
@@ -10,7 +10,7 @@
   <id>https://vxhly.github.io/</id>
   
   <author>
-    <name>星火燎原@vxhly</name>
+    <name>Elson Chan</name>
     
   </author>
   
