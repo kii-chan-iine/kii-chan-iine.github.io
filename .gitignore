@@ -1,5 +1,5 @@
 node_modules/
-# publish-pages
+publish-pages
 *.log
 *-lock.*
 *.lock
