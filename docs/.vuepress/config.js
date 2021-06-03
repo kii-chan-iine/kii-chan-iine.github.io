@@ -1,6 +1,6 @@
 module.exports = {
-  'title': 'Coding and Fixing',
-  'description': '源于生活而高于生活',
+  'title': 'KII IINE',
+  'description': '明早一起去看海 望向未来',
   'dest': 'publish-pages',
   'base': '/',
   'head': [
@@ -95,36 +95,37 @@ module.exports = {
         'icon': 'reco-message',
         'items': [
           
-          {
-            'text': 'NPM',
-            'link': 'https://www.npmjs.com/~vxhly',
-            'icon': 'reco-npm'
-          },
+          // {
+          //   'text': 'NPM',
+          //   'link': 'https://www.npmjs.com/~vxhly',
+          //   'icon': 'reco-npm'
+          // },
           {
             'text': 'GitHub',
-            'link': 'https://github.com/vxhly',
+            'link': 'https://github.com/kii-chan-iine',
             'icon': 'reco-github'
           },
           {
-            'text': 'Gmail',
-            'link': 'mailto:pengchengou@gmail.com',
+            'text': 'Mail',
+            'link': 'mailto:kaichen1993@hotmail.com',
             'icon': 'iconfont icon-Gmail'
-          },
-          {
-            'text': 'Liunx Command',
-            'link': 'https://man.linuxde.net/',
-            'icon': 'iconfont icon-link'
-          },
-          {
-            'text': 'CSS 2 SASS/SCSS',
-            'link': 'https://css2sass.herokuapp.com/',
-            'icon': 'iconfont icon-link'
-          },
-          {
-            'text': 'BootCDN',
-            'link': 'https://www.bootcdn.cn/',
-            'icon': 'iconfont icon-link'
           }
+          // ,
+          // {
+          //   'text': 'Liunx Command',
+          //   'link': 'https://man.linuxde.net/',
+          //   'icon': 'iconfont icon-link'
+          // },
+          // {
+          //   'text': 'CSS 2 SASS/SCSS',
+          //   'link': 'https://css2sass.herokuapp.com/',
+          //   'icon': 'iconfont icon-link'
+          // },
+          // {
+          //   'text': 'BootCDN',
+          //   'link': 'https://www.bootcdn.cn/',
+          //   'icon': 'iconfont icon-link'
+          // }
         ]
       }
     ],
