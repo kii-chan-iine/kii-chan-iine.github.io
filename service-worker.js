@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "76c447a66e94dafbc21d55e26e93bd87"
+    "revision": "a02b0c9005865f3cfba609b48bea37a7"
   },
   {
     "url": "Alipay.png",
@@ -374,20 +374,20 @@ self.__precacheManifest = [
     "revision": "7b45a8acc9441768b445bbbf68e2ee81"
   },
   {
-    "url": "assets/js/1.bc232c27.js",
-    "revision": "f72f1a488ce1f022293298e5f62c1290"
+    "url": "assets/js/1.a1c68afd.js",
+    "revision": "7f7ee69d59bef39569d22fa56a0f1a2c"
   },
   {
     "url": "assets/js/10.cb6acb3b.js",
     "revision": "c91d9fa2212f0d6dbc41ad303dea60fd"
   },
   {
-    "url": "assets/js/11.5e274d6b.js",
-    "revision": "bf339134a68faef342786e0ea51a6aa7"
+    "url": "assets/js/11.b60f3117.js",
+    "revision": "4ae5d056ca3a34df4c840c470c40175f"
   },
   {
-    "url": "assets/js/12.75530694.js",
-    "revision": "48d163cc33b31fc3d3769f10642eb1db"
+    "url": "assets/js/12.5f192381.js",
+    "revision": "b7c0a34b0ec255721bcfc3953b70a10d"
   },
   {
     "url": "assets/js/13.b248cd6c.js",
@@ -398,16 +398,20 @@ self.__precacheManifest = [
     "revision": "780fecf201f68662c8df1a830daa6bed"
   },
   {
-    "url": "assets/js/15.d83a3d55.js",
-    "revision": "aa51451667ff92736a6261e9ab7102e5"
+    "url": "assets/js/15.6906d831.js",
+    "revision": "bca0f9faba94f2b631c9e4f4cbaab47d"
   },
   {
-    "url": "assets/js/16.a8559162.js",
-    "revision": "25fbd83769fb2295a63f11e9d2518eb0"
+    "url": "assets/js/16.51429d16.js",
+    "revision": "4ea3e477a2edd88e15cea36e5ea4d8ea"
   },
   {
-    "url": "assets/js/17.99ea2e08.js",
-    "revision": "0f8a1a026de5de0d5b6c2bdb537002e4"
+    "url": "assets/js/17.9c951efc.js",
+    "revision": "58352209bedb4bc8ff6009558d3e6e53"
+  },
+  {
+    "url": "assets/js/18.54a48bd7.js",
+    "revision": "1bac47cd0c53a52e6ee4587fa3e3447e"
   },
   {
     "url": "assets/js/3.96c41bda.js",
@@ -438,8 +442,8 @@ self.__precacheManifest = [
     "revision": "3ca99cf7ae43c4f14e92a0f51c3ad511"
   },
   {
-    "url": "assets/js/app.2f3a85a4.js",
-    "revision": "ce5feee462677d21ed0d525b494ab7b7"
+    "url": "assets/js/app.9c70f1c1.js",
+    "revision": "2f2e4680909deb21172c67ee3d234ab7"
   },
   {
     "url": "assets/layout-moblie.gif",
@@ -1226,12 +1230,16 @@ self.__precacheManifest = [
     "revision": "f2bd4594cd7f6a1bb17673b51699206a"
   },
   {
-    "url": "categories/design/index.html",
-    "revision": "b5e2b092f3bd96c46a9bada36d20abda"
+    "url": "categories/index.html",
+    "revision": "4276df8d4767ca341a7f06e8ab75762f"
   },
   {
-    "url": "categories/index.html",
-    "revision": "8af4c5da5c689956cd5a2790d464f569"
+    "url": "categories/深度学习/index.html",
+    "revision": "4de7d7e2d2c717889a395964088b7cb2"
+  },
+  {
+    "url": "categories/闲言碎语/index.html",
+    "revision": "438c39c01a2751f0637b257eeda499f9"
   },
   {
     "url": "iconfont/iconfont.css",
@@ -1311,7 +1319,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "ce9f42476f7764d4de9cac29bc191798"
+    "revision": "3433c35f1c357a9af8e61339fc8d8d3f"
   },
   {
     "url": "kesshouban/model.2048/texture_00.png",
@@ -1319,23 +1327,31 @@ self.__precacheManifest = [
   },
   {
     "url": "project/index.html",
-    "revision": "c707e263758fe41480abe27c1b47a88d"
+    "revision": "f5ad3635b77451f5d4862d9d68409b30"
+  },
+  {
+    "url": "tag/deeplearn/index.html",
+    "revision": "8e2dea864655150479baf0c6de4425fd"
   },
   {
     "url": "tag/Git/index.html",
-    "revision": "39bade4ed8482ab4d327091507aa5192"
+    "revision": "f3ade188acc0b89b0828d678b8d20378"
   },
   {
     "url": "tag/index.html",
-    "revision": "bc5d4bf3d8342035dce6dd371e0981fb"
+    "revision": "c957b9f64ea509f65fdb221d730d07b7"
   },
   {
     "url": "timeline/index.html",
-    "revision": "db21c46b327af30edc77fae11c5c24f6"
+    "revision": "0b410a0ac1699ee29d8c326525d65965"
+  },
+  {
+    "url": "views/Deeplearn/Basic.html",
+    "revision": "9f89794c2d9734ab96c760644e2d6943"
   },
   {
     "url": "views/Git/Vue.html",
-    "revision": "73d81f6739bba31eedc36ecd1ee472e5"
+    "revision": "de118e805ede4567d3f88e55f697ab98"
   },
   {
     "url": "WeChat.png",
