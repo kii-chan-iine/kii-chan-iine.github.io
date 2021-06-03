@@ -27,10 +27,10 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "a02b0c9005865f3cfba609b48bea37a7"
+    "revision": "2063447fa516a2eb8f9959a250a95f8a"
   },
   {
-    "url": "Alipay - 副本.png",
+    "url": "Alipay.png",
     "revision": "f7366096081ffbb417eaf1a33a3cff7e"
   },
   {
@@ -442,8 +442,8 @@ self.__precacheManifest = [
     "revision": "3ca99cf7ae43c4f14e92a0f51c3ad511"
   },
   {
-    "url": "assets/js/app.9c70f1c1.js",
-    "revision": "2f2e4680909deb21172c67ee3d234ab7"
+    "url": "assets/js/app.3c565d21.js",
+    "revision": "e6daf740c4a44a39025a471f959a7901"
   },
   {
     "url": "assets/layout-moblie.gif",
@@ -1239,15 +1239,15 @@ self.__precacheManifest = [
   },
   {
     "url": "categories/index.html",
-    "revision": "4276df8d4767ca341a7f06e8ab75762f"
+    "revision": "2aa0ab5a5c7f30bb1708c21e489cbfb7"
   },
   {
     "url": "categories/深度学习/index.html",
-    "revision": "b53e0b098b3fcab0e2774dc7d169aab0"
+    "revision": "915f7d13d1c03b2eef485122666043d8"
   },
   {
     "url": "categories/闲言碎语/index.html",
-    "revision": "5eb95705c4260b138e35f5ac6fed09fc"
+    "revision": "68c1c0198dac9bc9b9eca73fb3478625"
   },
   {
     "url": "iconfont/iconfont.css",
@@ -1327,7 +1327,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "de3742805775972c259e1fb867204080"
+    "revision": "b22926b8e5581ee3033cae96235ab629"
   },
   {
     "url": "kesshouban/model.2048/texture_00.png",
@@ -1335,31 +1335,31 @@ self.__precacheManifest = [
   },
   {
     "url": "project/index.html",
-    "revision": "f5ad3635b77451f5d4862d9d68409b30"
+    "revision": "0ee974b3afc44ddb77324f6e32cfe158"
   },
   {
     "url": "tag/deeplearn/index.html",
-    "revision": "19cd915296b67fa1c9cd7065f8fbe61b"
+    "revision": "fde17c927b6972462fdb88d15874523c"
   },
   {
     "url": "tag/Git/index.html",
-    "revision": "d838604f34548de6311cd4115781f26a"
+    "revision": "e65433f3c620f882f3fbe46b67bc2474"
   },
   {
     "url": "tag/index.html",
-    "revision": "af195a2ee19da64dba74e544abb5a843"
+    "revision": "8d47a40d04b24aace81158dbd3bc4ac6"
   },
   {
     "url": "timeline/index.html",
-    "revision": "0b410a0ac1699ee29d8c326525d65965"
+    "revision": "26c84c5ee25e6698fbd39e76b1e6f825"
   },
   {
     "url": "views/Deeplearn/Basic.html",
-    "revision": "9f89794c2d9734ab96c760644e2d6943"
+    "revision": "aa6058bfab3158e760cf0fb635d96f79"
   },
   {
     "url": "views/Git/Vue.html",
-    "revision": "de118e805ede4567d3f88e55f697ab98"
+    "revision": "d1b463fc8d4682a1431a053c80af4c43"
   },
   {
     "url": "WeChat.png",
