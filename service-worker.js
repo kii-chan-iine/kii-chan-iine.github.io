@@ -30,8 +30,8 @@ self.__precacheManifest = [
     "revision": "a02b0c9005865f3cfba609b48bea37a7"
   },
   {
-    "url": "Alipay.png",
-    "revision": "0cc11a8c269169a353f68e10569b7287"
+    "url": "Alipay - 副本.png",
+    "revision": "f7366096081ffbb417eaf1a33a3cff7e"
   },
   {
     "url": "assets/box-model.gif",
@@ -1222,8 +1222,16 @@ self.__precacheManifest = [
     "revision": "8e49f298844ce8a7235c197d5d12e4c4"
   },
   {
-    "url": "avatar.jpeg",
+    "url": "avatar - 副本.jpeg",
     "revision": "5e8817c6e3431f1c8807602bdd03a095"
+  },
+  {
+    "url": "avatar.png",
+    "revision": "2062001bc7f62654d92de895f6da724a"
+  },
+  {
+    "url": "banner - 副本.jpg",
+    "revision": "f2bd4594cd7f6a1bb17673b51699206a"
   },
   {
     "url": "banner.jpg",
@@ -1235,11 +1243,11 @@ self.__precacheManifest = [
   },
   {
     "url": "categories/深度学习/index.html",
-    "revision": "4de7d7e2d2c717889a395964088b7cb2"
+    "revision": "b53e0b098b3fcab0e2774dc7d169aab0"
   },
   {
     "url": "categories/闲言碎语/index.html",
-    "revision": "438c39c01a2751f0637b257eeda499f9"
+    "revision": "5eb95705c4260b138e35f5ac6fed09fc"
   },
   {
     "url": "iconfont/iconfont.css",
@@ -1319,7 +1327,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "3433c35f1c357a9af8e61339fc8d8d3f"
+    "revision": "de3742805775972c259e1fb867204080"
   },
   {
     "url": "kesshouban/model.2048/texture_00.png",
@@ -1331,15 +1339,15 @@ self.__precacheManifest = [
   },
   {
     "url": "tag/deeplearn/index.html",
-    "revision": "8e2dea864655150479baf0c6de4425fd"
+    "revision": "19cd915296b67fa1c9cd7065f8fbe61b"
   },
   {
     "url": "tag/Git/index.html",
-    "revision": "f3ade188acc0b89b0828d678b8d20378"
+    "revision": "d838604f34548de6311cd4115781f26a"
   },
   {
     "url": "tag/index.html",
-    "revision": "c957b9f64ea509f65fdb221d730d07b7"
+    "revision": "af195a2ee19da64dba74e544abb5a843"
   },
   {
     "url": "timeline/index.html",
@@ -1355,7 +1363,7 @@ self.__precacheManifest = [
   },
   {
     "url": "WeChat.png",
-    "revision": "63fb02266347d45012b5dd9e50fffe49"
+    "revision": "f7366096081ffbb417eaf1a33a3cff7e"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
