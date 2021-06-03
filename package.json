@@ -1,8 +1,8 @@
 {
-  "name": "vxhly.github.io",
+  "name": "kii-chan-iine.github.io",
   "version": "1.0.0",
   "license": "MIT",
-  "author": "vxhly <pengchengou@gmail.com>",
+  "author": "kii-chan-iine <kaichen1993@hotmail.com>",
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
@@ -25,5 +25,5 @@
     "vuepress-plugin-sitemap": "^2.3.1",
     "vuepress-theme-reco": "^1.6.6"
   },
-  "description": "源于生活而高于生活"
+  "description": "明早一起去看海 望向未来"
 }
