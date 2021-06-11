@@ -145,9 +145,9 @@ module.exports = {
     'searchMaxSuggestions': 10,
     'sidebar': 'auto',
     'lastUpdated': 'Last Updated',
-    'author': '星火燎原@vxhly',
+    'author': 'KII IINE',
     'record': '',
-    'startYear': '2016'
+    'startYear': '2021'
   },
   'markdown': {
     'lineNumbers': true
