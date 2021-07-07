@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "024481f013d26b5f2326c17e3850fe4f"
+    "revision": "9296e793505ab7a81811a953e9ee1402"
   },
   {
     "url": "Alipay.png",
@@ -390,36 +390,36 @@ self.__precacheManifest = [
     "revision": "7e7838174239d7677bdaded0705cbee2"
   },
   {
-    "url": "assets/js/13.aaeb00a2.js",
-    "revision": "5609845efacf0f22aafc90d02d9d77e2"
+    "url": "assets/js/13.91b10b26.js",
+    "revision": "bffdc78ac7e18c8a80b8b3fe6c9d037a"
   },
   {
-    "url": "assets/js/14.a64670fe.js",
-    "revision": "1b9dfc7b60266b21e42dbc11c5ce6d38"
+    "url": "assets/js/14.5a371b9d.js",
+    "revision": "622989b276ef49073b0c245ae235c73b"
   },
   {
     "url": "assets/js/15.e8b1b400.js",
     "revision": "8a009f19dd0acdd180bdb9bc404f28f5"
   },
   {
-    "url": "assets/js/16.4e30a64c.js",
-    "revision": "051d28e225163d29523f89d741a45f2d"
+    "url": "assets/js/16.d7fd7bf7.js",
+    "revision": "528cd139de3b3c2cc9601ab418db5890"
   },
   {
-    "url": "assets/js/17.001cd1db.js",
-    "revision": "d07b9bb2296a7a225b9d78c79df8381a"
+    "url": "assets/js/17.05d55659.js",
+    "revision": "94b2251faaa4c1bc84d841678a74855a"
   },
   {
-    "url": "assets/js/18.5079c136.js",
-    "revision": "591abbdff1b0e6b6b317859de3ad1d95"
+    "url": "assets/js/18.f868fd84.js",
+    "revision": "b4021e02e5add7f3e3c2734202171205"
   },
   {
-    "url": "assets/js/19.186e71b8.js",
-    "revision": "2feb4aaf90f66f72c52c91e0aab0ea6a"
+    "url": "assets/js/19.d99d5a47.js",
+    "revision": "b5afe59ed3a4201aaaa749f856ce234c"
   },
   {
-    "url": "assets/js/20.e2861bac.js",
-    "revision": "acd7a8c2227586b2c03484a131830fd5"
+    "url": "assets/js/20.c8eb257e.js",
+    "revision": "adb966709c59990c4b8b24f51fba672e"
   },
   {
     "url": "assets/js/21.33657b31.js",
@@ -462,8 +462,8 @@ self.__precacheManifest = [
     "revision": "55ca13f6a1584a971b33db5b2983d786"
   },
   {
-    "url": "assets/js/app.75900e5f.js",
-    "revision": "e36ce8649bf434d146e80d6b8a03fa99"
+    "url": "assets/js/app.199936e0.js",
+    "revision": "d267f87d57d1a9729f508a744d0c906c"
   },
   {
     "url": "assets/layout-moblie.gif",
@@ -1259,27 +1259,27 @@ self.__precacheManifest = [
   },
   {
     "url": "categories/Exp/index.html",
-    "revision": "040975f057edddf5ab4ad0ddb8ba0ce5"
+    "revision": "d607b83c3213fce20168b263791e5655"
   },
   {
     "url": "categories/Hadoop/index.html",
-    "revision": "fe13f9c27310b86d9a0e203d399c985b"
+    "revision": "ec5438d197932a6bed1dcf74cba1d204"
   },
   {
     "url": "categories/index.html",
-    "revision": "5ed700b23d6b115442310651fd4a1b6d"
+    "revision": "be7a3d8045930b09b5e1f7654156b27d"
   },
   {
     "url": "categories/Music/index.html",
-    "revision": "9a737247189ea79e1eaa2a62b0832f06"
+    "revision": "dfa73411b178aa6bae37f1591a8c9fb1"
   },
   {
     "url": "categories/深度学习/index.html",
-    "revision": "506b810fa10cc918ebc8ed638155045f"
+    "revision": "cac60da858b014547db80b447fbf8c85"
   },
   {
     "url": "categories/闲言碎语/index.html",
-    "revision": "1763f3717b85668d0e683528a4f8dfde"
+    "revision": "9d84c1c3c9420ea20f4344729469363c"
   },
   {
     "url": "iconfont/iconfont.css",
@@ -1359,7 +1359,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "6df88fed0445045ead14caf33f3243d8"
+    "revision": "2670c2c336ea0485cabe3f6211fa2f8d"
   },
   {
     "url": "kesshouban/model.2048/texture_00.png",
@@ -1367,71 +1367,71 @@ self.__precacheManifest = [
   },
   {
     "url": "project/index.html",
-    "revision": "0a07cc4c33b8c3dffb36ff263c048762"
+    "revision": "903e2fc2478e0162e3767185082aa543"
   },
   {
     "url": "tag/deeplearn/index.html",
-    "revision": "389121e187da15d3e54055815b903252"
+    "revision": "6366e0b65a6ee59ee9c349ef7cdca5b5"
   },
   {
     "url": "tag/Exp/index.html",
-    "revision": "0c8815648948cc3a42ea74af602d2b3d"
+    "revision": "b4e486d65785c35c30dd388e13493632"
   },
   {
     "url": "tag/Git/index.html",
-    "revision": "a3c007ced55a8225c30c35e18a12f79d"
+    "revision": "38dc2896b96ec688e37efefca43af68c"
   },
   {
     "url": "tag/Hadoop/index.html",
-    "revision": "3ddd789909e076a4707350ce24e64686"
+    "revision": "3fca61ed1a1802e8a7e8b63244eefe49"
   },
   {
     "url": "tag/Hive/index.html",
-    "revision": "c079e8c8169b7926d2e41413cf0d3127"
+    "revision": "b829b7218cc0f16142d485572f7a961d"
   },
   {
     "url": "tag/index.html",
-    "revision": "98b1ced314441f8cc1a1fee9bcaa607c"
+    "revision": "5526ed2ecd8c44867913ac6d4d1c13b6"
   },
   {
     "url": "tag/LeetCode/index.html",
-    "revision": "803b85ffde6f40f79fc9de4cc6cb4f79"
+    "revision": "20eaa88403efcc86295057a8bf6da5ab"
   },
   {
     "url": "tag/music/index.html",
-    "revision": "b2ca59dcbc6a4ea7ba0bf31739af2108"
+    "revision": "fe380cb99d5682ff6613176bda097057"
   },
   {
     "url": "timeline/index.html",
-    "revision": "96269f64baed1b109516da314d4b5866"
+    "revision": "14acbc6cdcdf25a165d28179e83755ab"
   },
   {
     "url": "views/Deeplearn/Basic.html",
-    "revision": "fd481cc5f40cd23a600f90cfda668609"
+    "revision": "dc8e80b327637ef5440969100fed396a"
   },
   {
     "url": "views/Exp/Exp.html",
-    "revision": "8b216f05d6a2ac163dd2c68b36e5dfa2"
+    "revision": "af36fbfac618b8ead815b082cac404d6"
   },
   {
     "url": "views/Git/Vue.html",
-    "revision": "ae1d8b6cb046ffd6899b0c6e7ba9a693"
+    "revision": "9a123a0e382648f0d0a757a8d4da4eba"
   },
   {
     "url": "views/Hadoop/Hive.html",
-    "revision": "2f51f9e75a9ffa9b54cd53fc93630e08"
+    "revision": "d5bb6938235c060905232d4270fe50c5"
   },
   {
     "url": "views/Hadoop/Mynote.html",
-    "revision": "94c0a97916f415ca6850195ce6ec9b95"
+    "revision": "70313d0a0328fb8c95237dcb5acc301a"
   },
   {
     "url": "views/LeetCode/Leetcode.html",
-    "revision": "3ac174f25cfb6e0759d984e29f2bdaad"
+    "revision": "2ecaa4986d306be7adbd18ad56184bd0"
   },
   {
     "url": "views/Trials/piano.html",
-    "revision": "92314f21faf542ebfc6fa232e9294401"
+    "revision": "483bbeb296c33d286fb14470928d4f75"
   },
   {
     "url": "WeChat.png",
