@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "b7595734f346855e18264b113b1f23b5"
+    "revision": "35cd5a298339204db8571fb7ab25fe53"
   },
   {
     "url": "Alipay.png",
@@ -386,56 +386,64 @@ self.__precacheManifest = [
     "revision": "2535340ff0b0025302fae0643141cd47"
   },
   {
-    "url": "assets/js/12.b4f26c4f.js",
-    "revision": "b6a43c2e90c33637d414831164056ae5"
+    "url": "assets/js/12.c25974e4.js",
+    "revision": "04f98de1f0c4646d00155e5acefad708"
   },
   {
-    "url": "assets/js/13.aaeb00a2.js",
-    "revision": "5609845efacf0f22aafc90d02d9d77e2"
+    "url": "assets/js/13.91b10b26.js",
+    "revision": "bffdc78ac7e18c8a80b8b3fe6c9d037a"
   },
   {
-    "url": "assets/js/14.a64670fe.js",
-    "revision": "1b9dfc7b60266b21e42dbc11c5ce6d38"
+    "url": "assets/js/14.5a371b9d.js",
+    "revision": "622989b276ef49073b0c245ae235c73b"
   },
   {
-    "url": "assets/js/15.c8e2ec4a.js",
-    "revision": "dc38deb5f84e09593bbafa5fd9da51d9"
+    "url": "assets/js/15.e8b1b400.js",
+    "revision": "8a009f19dd0acdd180bdb9bc404f28f5"
   },
   {
-    "url": "assets/js/16.9aa374ba.js",
-    "revision": "e784182bc6c3f3b3b9023def5d727467"
+    "url": "assets/js/16.4cb65ae3.js",
+    "revision": "42ec0320ee03d2a1beed9b8a50345ef8"
   },
   {
-    "url": "assets/js/17.f75bb44a.js",
-    "revision": "05fa06df61ce077a61d511366f42aef0"
+    "url": "assets/js/17.5d8e3b93.js",
+    "revision": "944562f1b6330d20c46917589fb6a07b"
   },
   {
-    "url": "assets/js/18.1c62b732.js",
-    "revision": "6fe12bda35442366d5f5b35d2c736608"
+    "url": "assets/js/18.66c278dc.js",
+    "revision": "a296ffeeee38ac76d0408373386caa98"
   },
   {
-    "url": "assets/js/19.2a7ae0fd.js",
-    "revision": "6a1a5ad474fc4e57246d16dad33710d7"
+    "url": "assets/js/19.412e5d19.js",
+    "revision": "7a4edbd5a134a69029ce97fcf3d004e7"
   },
   {
-    "url": "assets/js/20.f502a82c.js",
-    "revision": "2252e01895306fdacb13a7dad4ead3de"
+    "url": "assets/js/20.bc610df3.js",
+    "revision": "f9862dc762a833c552886b34c4eff918"
   },
   {
-    "url": "assets/js/21.3d6af3c6.js",
-    "revision": "f532afc3144850f1c0e5bb8028560de5"
+    "url": "assets/js/21.dfe41923.js",
+    "revision": "c3a68a5728117ae3171ebff36b070870"
   },
   {
-    "url": "assets/js/22.0b9ac940.js",
-    "revision": "4f73e64f7522edf8559a4afd208d79e6"
+    "url": "assets/js/22.1e060bac.js",
+    "revision": "3fb9df5a3bc47bd26e24a0b7b1eced78"
   },
   {
-    "url": "assets/js/23.274f677b.js",
-    "revision": "93739f5b0259699489fac8d598a3844e"
+    "url": "assets/js/23.9fea5fba.js",
+    "revision": "78778248269abf1ed9fcae22461b5aa8"
   },
   {
-    "url": "assets/js/24.b15b7ced.js",
-    "revision": "e535a155fd6b5eceb13994e08a4bb108"
+    "url": "assets/js/24.3985117a.js",
+    "revision": "fef4231b1fef1ece5095854c166bc904"
+  },
+  {
+    "url": "assets/js/25.4f341e2a.js",
+    "revision": "38bf6e0447f86ebde458f8e5beb77d6c"
+  },
+  {
+    "url": "assets/js/26.641eaed3.js",
+    "revision": "15cfa2750f3b5b04ac7207bf4141d0ae"
   },
   {
     "url": "assets/js/3.8dcb9561.js",
@@ -466,8 +474,8 @@ self.__precacheManifest = [
     "revision": "55ca13f6a1584a971b33db5b2983d786"
   },
   {
-    "url": "assets/js/app.02e3d0ea.js",
-    "revision": "fd06c641b9ea5569d5b531c376f81b82"
+    "url": "assets/js/app.c36d91db.js",
+    "revision": "e4d53cbc2a7734d246442a10ba85f25e"
   },
   {
     "url": "assets/layout-moblie.gif",
@@ -1263,27 +1271,31 @@ self.__precacheManifest = [
   },
   {
     "url": "categories/Exp/index.html",
-    "revision": "2dd9710f7bb853e5d047eb89a89b4521"
+    "revision": "4d3a74392df52e40d7f193ab11d698b2"
   },
   {
     "url": "categories/Hadoop/index.html",
-    "revision": "41d57a96369eb8c054bf550d374ae802"
+    "revision": "0d6bcc4b91481ea27bec39cfa2350f40"
   },
   {
     "url": "categories/index.html",
-    "revision": "3e4f69ac24420be7e60296523d68b5dc"
+    "revision": "1ccf54246a121f8458301f768bf544ef"
   },
   {
     "url": "categories/Music/index.html",
-    "revision": "ee0f1c054c9d738695330e35bcca480d"
+    "revision": "230dfad3866879f3a5354a1cdfa0fec3"
+  },
+  {
+    "url": "categories/thinks/index.html",
+    "revision": "40019920617ec4919600ce6c6a1c4d5a"
   },
   {
     "url": "categories/深度学习/index.html",
-    "revision": "093a2041147ce69d0d9c859692f1f3e7"
+    "revision": "8abd87e75f5bcd524baff18d32c3e721"
   },
   {
     "url": "categories/闲言碎语/index.html",
-    "revision": "26055fd417e05beec20e3d173128f008"
+    "revision": "e211e60f3b6ad03431d77fd9d7ad293d"
   },
   {
     "url": "iconfont/iconfont.css",
@@ -1363,7 +1375,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "9c5600cfb95b0af33418a57e23667858"
+    "revision": "e6b3be069b43b532ccad61de0a86cd93"
   },
   {
     "url": "kesshouban/model.2048/texture_00.png",
@@ -1371,79 +1383,91 @@ self.__precacheManifest = [
   },
   {
     "url": "project/index.html",
-    "revision": "2006bb3b49ef3f9ed1bc1a8130654ae5"
+    "revision": "86820f9dd45534a2f8ae7b90e3955869"
   },
   {
     "url": "tag/deeplearn/index.html",
-    "revision": "fa397fb5bb539735fbdc88ac9244006f"
+    "revision": "54fa1c19c650ba3a7cf03311226d852e"
   },
   {
     "url": "tag/Exp/index.html",
-    "revision": "4f35cfa50c99b5c203d4af53e9a76d3a"
+    "revision": "6bb5f6096ab5672df1fbdd92d35269ae"
   },
   {
     "url": "tag/Git/index.html",
-    "revision": "e3c4afb3480abd9f334d0085ef85ccf9"
+    "revision": "894cb208859304a6dea4b4f2240912bc"
   },
   {
     "url": "tag/Hadoop/index.html",
-    "revision": "c25a005297b23c568d102e206aea74ee"
+    "revision": "52b0652a2cb7c17c8db8a23f1abb0e4a"
   },
   {
     "url": "tag/Hive/index.html",
-    "revision": "f4d3eb7d516c1bcc54fcdc5eecf2ccc9"
+    "revision": "8486c758183ffc864efd7299d27e03e6"
   },
   {
     "url": "tag/index.html",
-    "revision": "8e6a6c0384a7b891afaf78342dbe2c51"
+    "revision": "33fa34187a722c84bc11b541e84c252f"
   },
   {
     "url": "tag/LeetCode/index.html",
-    "revision": "dcf5931614a7825e908571d573c7f6eb"
+    "revision": "1ab40c6ee2f4c3e58f414c36db160a54"
   },
   {
     "url": "tag/music/index.html",
-    "revision": "5f4faed4940daed858ac5d5bc2be13ed"
+    "revision": "02c428e96c60c5fa18cd65362da28ced"
   },
   {
     "url": "tag/NLP/index.html",
-    "revision": "3f341ac2208b26ce2a8f37c73147e67e"
+    "revision": "8ec5913b2f59ef7f0e5f2fed39b98cb7"
+  },
+  {
+    "url": "tag/trials/index.html",
+    "revision": "26b73c8854c4b372c5ed15ade6abb702"
   },
   {
     "url": "timeline/index.html",
-    "revision": "4df04b181ea3d908f0ec4b63a3d30383"
+    "revision": "17ff88dba92b1d553f5e1f5e7ea59344"
   },
   {
     "url": "views/Deeplearn/Basic.html",
-    "revision": "9c9151f5b6e520d5030a59103ca1776d"
+    "revision": "4504c21337a8d2c5f2bb0f9ada137d7e"
   },
   {
     "url": "views/Deeplearn/DisLearn.html",
-    "revision": "8f807df321adb4d847d60142e5730f67"
+    "revision": "65b0eacca12eed18d8958a3cb0313796"
+  },
+  {
+    "url": "views/Deeplearn/FewShortLearning.html",
+    "revision": "f2c0e1531d497c3fa0603db18007cf35"
   },
   {
     "url": "views/Exp/Exp.html",
-    "revision": "975551b5407e9a89a8504e45b521cb8c"
+    "revision": "1db435545ddbd436d361274e822ce2b6"
   },
   {
     "url": "views/Git/Vue.html",
-    "revision": "da1fe28cf2325e112d2c70b30bb9555a"
+    "revision": "1e90e3dfc81b1f68ebaa0bced506881f"
   },
   {
     "url": "views/Hadoop/Hive.html",
-    "revision": "81afc51146665747dfc61096706d8f0a"
+    "revision": "a1c247165cd027b90302eb35d3b6e546"
   },
   {
     "url": "views/Hadoop/Mynote.html",
-    "revision": "ac075e95736b85495c9b6891bf08c2a9"
+    "revision": "cb0d7bca89d4a2a4ea0aed051eff866a"
   },
   {
     "url": "views/LeetCode/Leetcode.html",
-    "revision": "730c2b8256499e7a048e13cba98e7167"
+    "revision": "6cd6613ae42f65e9f3885caa1e7af261"
+  },
+  {
+    "url": "views/Trials/blah.html",
+    "revision": "5ce26920e335fa9d9040277978943a74"
   },
   {
     "url": "views/Trials/piano.html",
-    "revision": "31ed6757046adf0aa64f0653b95a8185"
+    "revision": "74a4af602fcada9059913c6e00dff24e"
   },
   {
     "url": "WeChat.png",
