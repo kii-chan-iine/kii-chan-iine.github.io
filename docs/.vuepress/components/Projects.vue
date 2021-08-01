@@ -53,7 +53,7 @@
     methods: {
       getProjects() {
         this.loading = true;
-        httpGet("https://api.github.com/users/vxhly/repos").then(res => {
+        httpGet("https://api.github.com/users/kii-chan-iine/repos").then(res => {
           this.loading = false;
           // 过滤掉私有的项目, 过滤掉 fork 项目
           const projects = filter(res, item => !item.private && !item.fork);

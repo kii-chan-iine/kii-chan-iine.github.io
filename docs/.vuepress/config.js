@@ -1,7 +1,7 @@
 module.exports = {
   'title': 'KII IINE',
   'description': '明早一起去看海 望向未来',
-  'dest': 'publish-pages',
+  'dest': '../develop/published-pages',
   'base': '/',
   'head': [
     ['link', {
@@ -210,7 +210,8 @@ module.exports = {
       'noSelect': true
     }],
     [require('./plugin/kanbanniang/index.js'), {
-      'theme': ['kesshouban'],
+      // ['blackCat', 'whiteCat', 'haru1', 'kesshouban','haru2', 'haruto', 'koharu', 'izumi', 'shizuku', 'wanko', 'miku', 'z16'],
+      'theme': ['haru1'],
       'messages': {
         'welcome': ['哦尼桑, 哦尼酱, お帰りなさい !', '你好! 我是你的私人助理, 需要我的帮助吗?'],
         'home': ['准备好回家了吗? 要起航了!', '迷路了吗? 需要人家带你回家吗?', '远方漂泊的人, 常回家看看吧!'],
@@ -237,7 +238,7 @@ module.exports = {
       'height': 281.6
     }],
     ['sitemap', {
-      'hostname': 'https://vxhly.github.io',
+      'hostname': 'https://www.kiischan.ml',
       'exclude': ['/404.html'],
       'dateFormatter': val => {
         return new Date().toISOString()

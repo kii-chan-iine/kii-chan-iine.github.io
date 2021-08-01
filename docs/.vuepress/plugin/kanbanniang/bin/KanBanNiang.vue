@@ -109,7 +109,7 @@
         </i>
         <a
           target="_blank"
-          href="https://github.com/vxhly"
+          href="https://github.com/kii-chan-iine"
         >
           <i
             @mouseenter="hoverMoreAbout"
