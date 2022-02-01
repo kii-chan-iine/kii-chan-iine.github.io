@@ -1,6 +1,6 @@
 ---
 author: kii
-title: why_use_module
+title: why use module
 categories: [深度学习]
 tags: [deeplearn]
 date: 2022-01-18 15:48:00

@@ -9,6 +9,7 @@ date: 2022-01-24 12:25:00
 <Boxx changeTime="10000"/>
 
 ::: tip 前言
+
 通过某种方法使得不同类别的样本对于模型学习中的Loss（或梯度）贡献是比较均衡的。具体可以从**数据样本、模型算法、目标函数、评估指标**等方面进行优化，其中数据增强、代价敏感学习及采样+集成学习是比较常用的，效果也是比较明显的。其实，不均衡问题解决也是**结合实际**再做方法选择、组合及调整，在验证中调优的过程。
 :::
 <!-- more -->
@@ -64,17 +65,17 @@ date: 2022-01-24 12:25:00
 
 样本变换数据增强即采用预设的数据变换规则进行已有数据的扩增，包含单样本数据增强和多样本数据增强。**单样本增强(主要用于图像)**：主要有<font color='red'>几何操作、颜色变换、随机擦除、添加噪声</font>等方法产生新的样本，可参见imgaug开源库。
 
-![图片](https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfpfUiavcjoobicBSzLkYo6qVQWiaG7rm3xKG4MyEA2gOuzpOkibWykH0etR6ianS1II8jJhTHYLS1BV1Ug/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![image-20220124161002927](https://imagerk.oss-cn-beijing.aliyuncs.com/img/image-20220124161002927.png)
 
 **多样本增强**：是通过组合及转换多个样本，主要有Smote类（可见imbalanced-learn.org/stable/references/over_sampling.html）、SamplePairing、Mixup等方法在特征空间内构造已知样本的邻域值样本。(> 这块看一下<)
 
-![图片](https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfpfUiavcjoobicBSzLkYo6qVQy8QlH7sUfTwd4w9dkC3QibibvtrMB5RHB0oe2dalRy008P474HJw6I0g/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![image-20220124161021861](https://imagerk.oss-cn-beijing.aliyuncs.com/img/image-20220124161021861.png)
 
 #### 基于深度学习的数据增强
 
 生成模型如变分自编码网络(Variational Auto-Encoding network, VAE)和生成对抗网络(Generative Adversarial Network, GAN)，其生成样本的方法也可以用于数据增强。这种基于网络合成的方法相比于传统的数据增强技术虽然过程更加复杂, 但是生成的样本更加多样。
 
-![图片](https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfpfUiavcjoobicBSzLkYo6qVQpyL9XQaDwes1TxqdYRJT4OCnHeBrng2ZJezwryWduM0CHB40OtgnVA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![image-20220124161042531](https://imagerk.oss-cn-beijing.aliyuncs.com/img/image-20220124161042531.png)
 
 **数据样本层面解决不均衡的方法，需要关注的是：**
 
@@ -93,7 +94,7 @@ date: 2022-01-24 12:25:00
 clf2 = LogisticRegression(class_weight={0:1,1:10}) # 代价敏感学习
 ```
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/eyibF6kJBjTt5CmJOP0oYqTCZkeic1KHoVukoCy8Es0AfllpqzxUXXtOdxsqK7kK38AicXKwEFvLia2FKZsM6TMOmA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![image-20220124161101003](https://imagerk.oss-cn-beijing.aliyuncs.com/img/image-20220124161101003.png)
 
 ### OHEM 和 Focal Loss
 
@@ -106,13 +107,13 @@ clf2 = LogisticRegression(class_weight={0:1,1:10}) # 代价敏感学习
 - OHEM（Online Hard Example Mining）算法的核心是选择一些hard examples（多样性和高损失的样本）作为训练的样本，针对性地改善模型学习效果。对于数据的类别不平衡问题，OHEM的针对性更强。
 - Focal loss的核心思想是在交叉熵损失函数（CE）的基础上增加了类别的不同权重以及困难（高损失）样本的权重（如下公式），以改善模型学习效果。
 
-![图片](https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfpfUiavcjoobicBSzLkYo6qVQb4owZYnibUicGbvY9nBtRxYOspGhQ2QZjxzicTAdnsaIZdBvWIh6gj1MA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![image-20220124161118681](https://imagerk.oss-cn-beijing.aliyuncs.com/img/image-20220124161118681.png)
 
 ## 模型层面
 
 模型方面主要是选择一些对不均衡比较不敏感的模型，比如，对比逻辑回归模型（lr学习的是全量训练样本的最小损失，自然会比较偏向去减少多数类样本造成的损失），决策树在不平衡数据上面表现相对好一些，树模型是按照增益递归地划分数据（如下图），划分过程考虑的是局部的增益，全局样本是不均衡，局部空间就不一定，所以比较不敏感一些（但还是会有偏向性）。相关实验可见arxiv.org/abs/2104.02240。
 
-![图片](https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfpfUiavcjoobicBSzLkYo6qVQLYq66XgodGf3GfwddQ9tW5jfLjcm4VkoKMJv6oLRfr1IDFYw9heh6Q/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![image-20220124161135940](https://imagerk.oss-cn-beijing.aliyuncs.com/img/image-20220124161135940.png)
 
 <font color='red'>解决不均衡问题，更为优秀的是基于采样+集成树模型等方法，可以在类别不均衡数据上表现良好</font>。
 
@@ -120,7 +121,7 @@ clf2 = LogisticRegression(class_weight={0:1,1:10}) # 代价敏感学习
 
 这类方法简单来说，通过重复组合少数类样本与抽样的同样数量的多数类样本，训练若干的分类器进行集成学习。
 
-![图片](https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfpfUiavcjoobicBSzLkYo6qVQHpC7r7St3y5iaGyZxERMg2icLhFQATNXoOJayLUQKCOPHgymgZYhE1lA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![image-20220124161157928](https://imagerk.oss-cn-beijing.aliyuncs.com/img/image-20220124161157928.png)
 
 - BalanceCascade BalanceCascade基于Adaboost作为基分类器，核心思路是在每一轮训练时都使用多数类与少数类数量上相等的训练集，然后使用该分类器对全体多数类进行预测，通过控制分类阈值来控制FP（False Positive）率，将所有判断正确的类删除，然后进入下一轮迭代继续降低多数类数量。
 - EasyEnsemble EasyEnsemble也是基于Adaboost作为基分类器，就是将多数类样本集随机分成 N 个子集，且每一个子集样本与少数类样本相同，然后分别将各个多数类样本子集与少数类样本进行组合，使用AdaBoost基分类模型进行训练，最后bagging集成各基分类器，得到最终模型。示例代码可见：www.kaggle.com/orange90/ensemble-test-credit-score-model-example
@@ -131,17 +132,17 @@ clf2 = LogisticRegression(class_weight={0:1,1:10}) # 代价敏感学习
 
 类别不平衡很极端的情况下（比如少数类只有几十个样本），将分类问题考虑成异常检测（anomaly detection）问题可能会更好。异常检测是通过数据挖掘方法发现与数据集分布不一致的异常数据，也被称为离群点、异常值检测等等。无监督异常检测按其算法思想大致可分为几类：基于聚类的方法、基于统计的方法、基于深度的方法(孤立森林)、基于分类模型（one-class SVM）以及基于神经网络的方法（自编码器AE）等等。
 
-![图片](https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfpfUiavcjoobicBSzLkYo6qVQmSw2Nh4eMoscyyjtWFWcqwzatluwATO7VFsKmiaQfkiaicS0xats9uFBw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![image-20220124161215561](https://imagerk.oss-cn-beijing.aliyuncs.com/img/image-20220124161215561.png)
 
 ## 决策及评估指标
 
 本节关注的重点是，当我们采用不平衡数据训练模型，如何更好决策以及客观地评估不平衡数据下的模型表现。对于分类常用的precision、recall、F1、混淆矩阵，样本不均衡的不同程度，都会明显改变这些指标的表现。对于类别不均衡下模型的预测，我们可以做分类阈值移动，以调整模型对于不同类别偏好的情况（如模型偏好预测负样本，偏向0，对应的我们的分类阈值也往下调整），**达到决策时类别平衡的目的**。这里，通常可以通过P-R曲线，选择到较优表现的阈值。
 
-![图片](https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfpfUiavcjoobicBSzLkYo6qVQWVv2ic0HR8frIdqLibtJbpBTJicXmr94FKuLOhAbDtHYT00Fibic9g1EMcA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![image-20220124161243405](https://imagerk.oss-cn-beijing.aliyuncs.com/img/image-20220124161243405.png)
 
 对于类别不均衡下的模型评估，可以采用AUC、AUPRC(更优)评估模型表现。AUC的含义是ROC曲线的面积，其数值的物理意义是：随机给定一正一负两个样本，将正样本预测分值大于负样本的概率大小。**AUC对样本的正负样本比例情况是不敏感**，即使正例与负例的比例发生了很大变化，ROC曲线面积也不会产生大的变化。
 
-![图片](https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfpfUiavcjoobicBSzLkYo6qVQgYro9QEJXnibC0dqYo2yGqa5vxKKvAVbnSXfOFYiaGcPRK2ZhU1CicCwQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![image-20220124161306945](https://imagerk.oss-cn-beijing.aliyuncs.com/img/image-20220124161306945.png)
 
 ## 小结
 

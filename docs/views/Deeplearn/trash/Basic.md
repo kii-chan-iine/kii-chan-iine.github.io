@@ -1,18 +1,3 @@
----
-author: kii
-title: Something for Deeplearn
-categories: [深度学习]
-tags: [deeplearn]
-date: 2021-06-03 20:00:00
----
-
-<Boxx changeTime="10000"/>
-
-::: tip 前言
-这里主要讲深度学习的一些基础知识。
-:::
-<!-- more -->
-
 
 
 # 深度学习的思考

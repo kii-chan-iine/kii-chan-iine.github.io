@@ -102,7 +102,7 @@ module.exports = {
           // },
           {
             'text': 'GitHub',
-            'link': 'https://github.com/kii-chan-iine',
+            'link': 'https://github.com/kii-chan-iine/kii-chan-iine.github.io/tree/develop',
             'icon': 'reco-github'
           },
           {
@@ -211,13 +211,14 @@ module.exports = {
     }],
     [require('./plugin/kanbanniang/index.js'), {
       // ['blackCat', 'whiteCat', 'haru1', 'kesshouban','haru2', 'haruto', 'koharu', 'izumi', 'shizuku', 'wanko', 'miku', 'z16'],
-      'theme': ['haru1'],
+      'theme': ['haru1','miku', 'z16'],
       'messages': {
         'welcome': ['哦尼桑, 哦尼酱, お帰りなさい !', '你好! 我是你的私人助理, 需要我的帮助吗?'],
         'home': ['准备好回家了吗? 要起航了!', '迷路了吗? 需要人家带你回家吗?', '远方漂泊的人, 常回家看看吧!'],
         'photo': ['呀! 要给人家拍照了, 羞死了羞死了!', '要拍照了, 茄子✌️', '保持微笑就好'],
         'close': ['讨厌啦! 真的要离开我吗？', '哼, 干嘛要关了人家(＞人＜;)', '呜呜呜～, 不要离开人家!', '哼! 你会后悔的!!'],
-        'about': ['想知道我的一切?', '想知道关于我主人的更多信息吗？', '如果我主人的开源项目帮到你了, 别忘了给我主人来个 start!']
+        'about': ['想知道我的一切?', '想知道关于我主人的更多信息吗？', '如果我主人的开源项目帮到你了, 别忘了给我主人来个 star!'],
+        'theme': ['好吧，希望你能喜欢我的其他小伙伴。']
       },
       'messageStyle': {
         'position': 'fixed',
