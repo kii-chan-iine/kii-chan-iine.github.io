@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "a6549fff420023c5ba60083b9188c103"
+    "revision": "82f942f39964cadfec7e5d46cc46e053"
   },
   {
     "url": "Alipay.png",
@@ -398,124 +398,124 @@ self.__precacheManifest = [
     "revision": "86f9c47d028347e4fe19939c62c2ab9d"
   },
   {
-    "url": "assets/js/15.a0f57bdb.js",
-    "revision": "089c927a97672d4456239d81cd76afc2"
+    "url": "assets/js/15.bba7d888.js",
+    "revision": "97eb269ad09bf312e2490630ee0b35ef"
   },
   {
-    "url": "assets/js/16.6265f695.js",
-    "revision": "4cdbbce8572dff03ed764b5e12576a90"
+    "url": "assets/js/16.c1002d1a.js",
+    "revision": "071c1cdbd3f3e6d2f38b6a2fc2c1cc00"
   },
   {
-    "url": "assets/js/17.8931228a.js",
-    "revision": "ee699ab033f954d98ffc6f8cac9e2b73"
+    "url": "assets/js/17.b0d9a86c.js",
+    "revision": "99e23515ec7b203a3e6b3a361bdbf0cc"
   },
   {
-    "url": "assets/js/18.8f30d492.js",
-    "revision": "893edac917e979cbdd56a1ce8eaa42c9"
+    "url": "assets/js/18.a435c5f4.js",
+    "revision": "069ee08417e16cacaad637ada7f554c5"
   },
   {
-    "url": "assets/js/19.2ba9258e.js",
-    "revision": "2e35aa09a651c425dacbeafd41c88ebc"
+    "url": "assets/js/19.5cd82c71.js",
+    "revision": "c455cf5bec2241fdd9853d2b646256d3"
   },
   {
-    "url": "assets/js/20.38506372.js",
-    "revision": "0c08f32c213afa06f1ce3ba9343996fb"
+    "url": "assets/js/20.53383191.js",
+    "revision": "eb86e05c3587aef4eabd3b34c0653a86"
   },
   {
     "url": "assets/js/21.c445e26d.js",
     "revision": "7a11b644c9c23cd9e3dd84c8a8551532"
   },
   {
-    "url": "assets/js/22.eeb1bafc.js",
-    "revision": "8d86b06a5c24f40bfe71868f01458995"
+    "url": "assets/js/22.8b052318.js",
+    "revision": "0b10dc4677f251d860f65f028569bf22"
   },
   {
-    "url": "assets/js/23.f9e63881.js",
-    "revision": "60a5e4e35cb23bed27e3d828731b8d45"
+    "url": "assets/js/23.b212528c.js",
+    "revision": "72310fde57130bc97c645b3cb41f2e4b"
   },
   {
-    "url": "assets/js/24.cd85be84.js",
-    "revision": "be45538b5cebfbf2f84926394025abb2"
+    "url": "assets/js/24.7c09de5a.js",
+    "revision": "cb89e72ee10bc1e51ffd6384c5bbf65c"
   },
   {
-    "url": "assets/js/25.44e4778a.js",
-    "revision": "79ce20843efd619a6a9f8b1b9b698390"
+    "url": "assets/js/25.418d075e.js",
+    "revision": "0283a073304ffc8d1dd43282b5dd2afb"
   },
   {
-    "url": "assets/js/26.6d4d6ec0.js",
-    "revision": "9b69f7fe250d8fed65195c0ce26cdb6b"
+    "url": "assets/js/26.4ec7f3ef.js",
+    "revision": "0b1c2da1ab75cb5b4cd7590546a8478e"
   },
   {
-    "url": "assets/js/27.2e29c708.js",
-    "revision": "58c6e60fecdf7984d8868684a1e5f37e"
+    "url": "assets/js/27.741197b9.js",
+    "revision": "a04c3a73d03cf95917af12de02bda3d2"
   },
   {
     "url": "assets/js/28.efb0829b.js",
     "revision": "51be0641332ebcbd17e029c98b04373e"
   },
   {
-    "url": "assets/js/29.24385105.js",
-    "revision": "d9658503112272ff00570f730ce9c07d"
+    "url": "assets/js/29.d6816008.js",
+    "revision": "2e69e4da77096396071d9bbb6e782999"
   },
   {
     "url": "assets/js/3.a67abeb3.js",
     "revision": "cae7eef5fcd650467a321f6bdb76a724"
   },
   {
-    "url": "assets/js/30.25be2dbf.js",
-    "revision": "a041d0a120b9a58606a69f2e7bf76167"
+    "url": "assets/js/30.6e36dc2f.js",
+    "revision": "a345aa9d503c7d0f4f2920cb3b7979a2"
   },
   {
-    "url": "assets/js/31.6d9f900f.js",
-    "revision": "f5934eb593c3b9c70092706c2c41b45f"
+    "url": "assets/js/31.23432622.js",
+    "revision": "f15a0f5c3d1b49ae0f30d920db57c8b5"
   },
   {
-    "url": "assets/js/32.80875992.js",
-    "revision": "18a816380a88254b42fc186672106077"
+    "url": "assets/js/32.f3a0085e.js",
+    "revision": "4ae2b25e2372995415eeec3980ea07a3"
   },
   {
-    "url": "assets/js/33.d2dce94d.js",
-    "revision": "03efba0aeeaa32244694ad34c38d416c"
+    "url": "assets/js/33.b7940807.js",
+    "revision": "8df835b2c51d16ea8d8c1f9917e3ac4a"
   },
   {
-    "url": "assets/js/34.5e521b56.js",
-    "revision": "760824a0daa7bf81139c781ada668ecc"
+    "url": "assets/js/34.19764529.js",
+    "revision": "3ac6f04e840eefbcd6520fa4ff99579e"
   },
   {
-    "url": "assets/js/35.62338d8f.js",
-    "revision": "b3215fbc00becffdcfd3a1d0c930424d"
+    "url": "assets/js/35.9f0dd342.js",
+    "revision": "364f781fa4f36b786b586bccc2506570"
   },
   {
-    "url": "assets/js/36.a9263957.js",
-    "revision": "dab0225790b923f3cdc7596313cf5690"
+    "url": "assets/js/36.c62937e2.js",
+    "revision": "8bb68a376877535459b987ae853bd530"
   },
   {
-    "url": "assets/js/37.c781759f.js",
-    "revision": "05af2f3da1280cc350862a12e212afbe"
+    "url": "assets/js/37.2380d91c.js",
+    "revision": "490f871f74e2be23b3c3fa9b1fdcc18f"
   },
   {
     "url": "assets/js/38.7f4de876.js",
     "revision": "99dec4ddea0990bd64d22706a8314628"
   },
   {
-    "url": "assets/js/39.d77ae789.js",
-    "revision": "b911dfe5471fb43f60377cf0ec956c35"
+    "url": "assets/js/39.9b40ceef.js",
+    "revision": "97dae7a614e3b45e3bfdcce77b3663e1"
   },
   {
     "url": "assets/js/4.09dda623.js",
     "revision": "5ffe0b266583f361ada1010030ea102f"
   },
   {
-    "url": "assets/js/40.914cb3f8.js",
-    "revision": "6909499eee8081c750b46da8220729cb"
+    "url": "assets/js/40.84c13741.js",
+    "revision": "a0b8bba7d7d20a0f54eefeae6d27f451"
   },
   {
-    "url": "assets/js/41.d60a33ce.js",
-    "revision": "97c5ad20685dec25a7cab9a7df25e437"
+    "url": "assets/js/41.75923020.js",
+    "revision": "38c76548c0abfefe2c9bb70557612506"
   },
   {
-    "url": "assets/js/42.9d343c53.js",
-    "revision": "f557dcf0215e3ae1ba469c84b444fe88"
+    "url": "assets/js/42.01375e66.js",
+    "revision": "01e1f06ca6d39ac35f9852b6da84b47a"
   },
   {
     "url": "assets/js/43.2ccef0d0.js",
@@ -550,8 +550,8 @@ self.__precacheManifest = [
     "revision": "37499ba40bd858d9b6aa5d6a20c254d2"
   },
   {
-    "url": "assets/js/app.5fd1c026.js",
-    "revision": "0e4f07f6e7f6989b140d49b7a9e9555f"
+    "url": "assets/js/app.12541740.js",
+    "revision": "183431dc105ebd8ff1ff9b84d030f984"
   },
   {
     "url": "assets/layout-moblie.gif",
@@ -1347,39 +1347,43 @@ self.__precacheManifest = [
   },
   {
     "url": "categories/CV/index.html",
-    "revision": "6803352e0e521d0e8f8bf76894e64d83"
+    "revision": "d18acfc7e672625910eab5b215a3d235"
   },
   {
     "url": "categories/Exp/index.html",
-    "revision": "b0186a3f1f188fb4b570bb363ae335aa"
+    "revision": "976ed4fef0af3e8fa7e65e6a9ac8ecaa"
+  },
+  {
+    "url": "categories/funny/index.html",
+    "revision": "2ecc62dc2d87d1e72dac6512499716a5"
   },
   {
     "url": "categories/Hadoop/index.html",
-    "revision": "6b3eefb5ae716e3d8544773cbdbb441c"
+    "revision": "b59eeb951459a4f3ddb70bd1e694ef6d"
   },
   {
     "url": "categories/index.html",
-    "revision": "945e69048a79338d006ac19b37c9826a"
+    "revision": "861996be0728a11cb74c7d16b97e2f56"
   },
   {
     "url": "categories/Linux/index.html",
-    "revision": "5eecec5fb2c44c433e6dc8ccd2e05d5d"
+    "revision": "e5250d192ea95ffe6580b03c3ab202cd"
   },
   {
     "url": "categories/Music/index.html",
-    "revision": "812536b76f857a60fe42ac9fd7298dff"
+    "revision": "033f8bd89ed6119e9569e023b00f8744"
   },
   {
     "url": "categories/thinks/index.html",
-    "revision": "f0b545941a295f5d3271fc2b4d92baad"
+    "revision": "f043e521922a310e5a5f1f399df49e27"
   },
   {
     "url": "categories/深度学习/index.html",
-    "revision": "0b8fcca263607a031335b5d28730c695"
+    "revision": "51cb5de72f0d88dd0865505df6e46ce7"
   },
   {
     "url": "categories/闲言碎语/index.html",
-    "revision": "3f1a7d6ba1bae432579f886da3814710"
+    "revision": "095d8e2013757c3e5db6060e2e04442d"
   },
   {
     "url": "iconfont/iconfont.css",
@@ -1459,7 +1463,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "00113f328531f60681b7aef431ee2b61"
+    "revision": "15b95480d67cbe83c45b0d3daeef5ab6"
   },
   {
     "url": "kesshouban/model.2048/texture_00.png",
@@ -1467,175 +1471,175 @@ self.__precacheManifest = [
   },
   {
     "url": "project/index.html",
-    "revision": "cef6a5bbb89cfae7185e8aaf377bdd5e"
+    "revision": "3393e83a5b43474aba3f2c6740e237d8"
   },
   {
     "url": "tag/CV/index.html",
-    "revision": "b038ec0d5439c103fdb52efc85657aa7"
+    "revision": "74338c12c212cc077529a7a390f2ede3"
   },
   {
     "url": "tag/deeplearn/index.html",
-    "revision": "f83b80463ff3781e152789982f8a6b09"
+    "revision": "e1f7d16c8cf801f5aaadef9d004b6f06"
   },
   {
     "url": "tag/DL/index.html",
-    "revision": "3d7651cec044d7e240a74afeaef1e1a1"
+    "revision": "65decfb9323634977c57fc5b5da1d508"
   },
   {
     "url": "tag/Exp/index.html",
-    "revision": "17ccdec0e38b28d7e6cf72fa31f9ba2b"
+    "revision": "bf3aba414c058db12130d5501a088af6"
   },
   {
     "url": "tag/Git/index.html",
-    "revision": "90686a0c53bfb9ef1b51d5aa2c4e3e91"
+    "revision": "4113dcdc879073dfadc8226d357b600d"
   },
   {
     "url": "tag/Hadoop/index.html",
-    "revision": "7939ed51b002b41a057b5befe9e00751"
+    "revision": "fc02aac4f9aee8688689f5764c50fb32"
   },
   {
     "url": "tag/Hive/index.html",
-    "revision": "b8d78c254e94ea792b7a6903e1b399c0"
+    "revision": "6615490aa26c08b3bae3651bfe2a816d"
   },
   {
     "url": "tag/index.html",
-    "revision": "a5d6557c430f455058cb0537f20b4815"
+    "revision": "61de73eb2c6cf59fb6ad4e0efaf9c20d"
   },
   {
     "url": "tag/LeetCode/index.html",
-    "revision": "260477e5b6998526861e0a0a0c5603c2"
+    "revision": "0317eeeaa0a9453b7c2f2ae733350f0a"
   },
   {
     "url": "tag/Linux/index.html",
-    "revision": "2db74a1057a4354b98351b39d9a42564"
+    "revision": "385f1f9c097cbc789c005e405173d112"
   },
   {
     "url": "tag/music/index.html",
-    "revision": "900e8100f1cc6e390d438ece41b3837a"
+    "revision": "c5b1020e41cd4536ab23908858306f37"
   },
   {
     "url": "tag/NLP/index.html",
-    "revision": "7ff682f9f760b1c5ff9f2313314cd89f"
+    "revision": "6e3df28d68c46d0e174658fa352f079f"
   },
   {
     "url": "tag/trials/index.html",
-    "revision": "c0e48d9125098894b1e1c5c8904e3986"
+    "revision": "605caff8b7aa2361b1aafaf73b091867"
   },
   {
     "url": "timeline/index.html",
-    "revision": "07a00b444de9a9cd1bd53e726ebb1724"
+    "revision": "3bccb1efc04f3cd93d386a6ebaa893c5"
   },
   {
     "url": "views/CV/Adaface.html",
-    "revision": "5a2e98f7b369245f9f89cabff9f14169"
+    "revision": "0bcb887ed5cb6519d78191df109294f7"
   },
   {
     "url": "views/CV/Data_augment.html",
-    "revision": "070bfb944dfb88b2fb2544dbb15c88f5"
+    "revision": "2abaf554d04104033bff8d6abb8ec188"
   },
   {
     "url": "views/CV/Few_short_Learn.html",
-    "revision": "734d685a72aa8ba68227173e064c978e"
+    "revision": "885ea7d78c9f9c7830d7352d4ca00132"
   },
   {
     "url": "views/CV/Pytorch.html",
-    "revision": "6b6719553c8fce2a20efff0cbef0c99f"
+    "revision": "7f16e09dbefec575fee962a96fb7dac0"
   },
   {
     "url": "views/CV/VAE.html",
-    "revision": "25030aaf0ef8bbc904269def08d4741c"
+    "revision": "198bcead60b65aabe8e1b05467e637a5"
   },
   {
     "url": "views/CV/Yolo.html",
-    "revision": "5155a88596926795a68d58dde2a0c962"
+    "revision": "72848b3e4745760ff35011f3bd1599c9"
   },
   {
     "url": "views/Deeplearn/Besic_ec.html",
-    "revision": "f33317b3b03ad0b52d678f2aaa58dcd5"
+    "revision": "9c22e800d747868cbc83b651f12b6f4b"
   },
   {
     "url": "views/Deeplearn/Different_conv.html",
-    "revision": "273cff5296bc3f3061ebf34d119d2f57"
+    "revision": "4f05356929a56020fe3b09d780c5d076"
   },
   {
     "url": "views/Deeplearn/DisLearn.html",
-    "revision": "45acda355f73937e0447e64da0bca1db"
+    "revision": "710c119aeb9c082bf803e3d5373f8538"
   },
   {
     "url": "views/Deeplearn/FewShortLearning.html",
-    "revision": "9ed061dcb1f47803cff4bdbcf6bdf889"
+    "revision": "272ce0730b01f5cac9853a4b49700eb8"
   },
   {
     "url": "views/Deeplearn/ReadingList.html",
-    "revision": "1213b5c4601c8b4487eec92d1d6aaf7e"
+    "revision": "d37a4f4ba6c471f2d3518aab56d61332"
   },
   {
     "url": "views/Deeplearn/Self-attention-Bert_EC.html",
-    "revision": "2f9ef4d5eeaf033d4708ef3921716ed6"
+    "revision": "faa934f1ed2886787d0d9dbfbf43584e"
   },
   {
     "url": "views/Deeplearn/trash/Basic.html",
-    "revision": "3c6fa435b76039c19159d1b511bfbcf2"
+    "revision": "8cd3934370f8616f5ba8829e06b0fd3a"
   },
   {
     "url": "views/Deeplearn/Uneven_Data.html",
-    "revision": "cf9b5c72d4dfa11e55d3afdfbb6b5a3a"
+    "revision": "de0b139fc65b961fb10cc124c3ca39b2"
   },
   {
     "url": "views/Deeplearn/why_use_module.html",
-    "revision": "b1b26614dd4cfe60c04e0be524f08734"
+    "revision": "b1a5fad21ec17aea4ea4c78b4fa0d134"
   },
   {
     "url": "views/Exp/Exp.html",
-    "revision": "167793a15f38a38a1fe05fbfed4dc58c"
+    "revision": "9b194e3929533c134299ae47210a1d83"
   },
   {
     "url": "views/Git/python_install.html",
-    "revision": "418f2f64e059ad3dc6761c377050989b"
+    "revision": "9c757157b8d30a69c64be88f40c336d9"
   },
   {
     "url": "views/Git/Vue.html",
-    "revision": "fe258d66cfb73f2e8c8620dc17fd507c"
+    "revision": "939385b9f2a44fd4b2d8b8baf060ed4c"
   },
   {
     "url": "views/Hadoop/Hive.html",
-    "revision": "368ad1a2c02121480d78dab6c663bc40"
+    "revision": "8894718c36c73bc970315be5e67cef46"
   },
   {
     "url": "views/Hadoop/Mynote.html",
-    "revision": "d1a575f72d8f38ac95b4a46a1f47e3ae"
+    "revision": "0c36165f6e35580cf957fe75c524c51e"
   },
   {
     "url": "views/Latex/bst_file.html",
-    "revision": "bdb690c7fd2bb87d314d90fd44b989a6"
+    "revision": "e1ea58d7aa490c71185aac45f278d730"
   },
   {
     "url": "views/LeetCode/Leetcode.html",
-    "revision": "6c3ee9ef1e266ee35f63992c3e73be6a"
+    "revision": "789a1c37a0ec8a263bbdf3e5c4ea9de1"
   },
   {
     "url": "views/Linux/base.html",
-    "revision": "be642099e56156dca5831ded1259ccf1"
+    "revision": "3252029efb165988f45eba202d614f9e"
   },
   {
     "url": "views/NLP/NLP_fewshort_txt_aug.html",
-    "revision": "e9176ec2dcd3ff3676e322a094431a7f"
+    "revision": "0f897ae67b78677bf239bec635c14fc2"
   },
   {
     "url": "views/Trials/blah.html",
-    "revision": "081346150ee0adfb819e26c2ceabe919"
+    "revision": "b30c00ea0af37064abb0b97513a6a00a"
   },
   {
     "url": "views/Trials/lifeiine.html",
-    "revision": "61c462836377ff6a088d31530ea64bea"
+    "revision": "75e28c1c0c83ebf57733b9dbd75bfb6b"
   },
   {
     "url": "views/Trials/onecloud.html",
-    "revision": "f3e37aa536db2bce78b434a3ebd2a244"
+    "revision": "18b665136a3a8ec6745a1474a06c968d"
   },
   {
     "url": "views/Trials/piano.html",
-    "revision": "b59a775608926e8c10cf9bc1e5b4c298"
+    "revision": "d47df742509ea3abbf618d4a3e57f951"
   },
   {
     "url": "WeChat.png",
