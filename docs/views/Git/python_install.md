@@ -19,3 +19,18 @@ pip更换为清华源：
 ```
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ```
+
+update comment 注释更改：
+
+```bash
+@echo off
+@set input1=
+@set /p input1=ud_info:
+
+git status
+git add -A
+git commit -a -m "%input1%"
+git push
+
+pause
+```
