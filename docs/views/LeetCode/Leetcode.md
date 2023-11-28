@@ -549,6 +549,7 @@ class Solution:
 1. 如果 n<2，则不可能将数组分割成元素和相等的两个子集，因此直接返回false。
 
 2. 计算整个数组的元素和sum 以及最大元素maxNum。如果 sum 是奇数，则不可能将数组分割成元素和相等的两个子集，因此直接返回 false。
+
 3. 如果 sum 是偶数，则令 target= sum//2，需要判断是否可以从数组中选出一些数字，使得这些数字的和等于 target。如果 maxNum>target，则除了 maxNum 以外的所有元素之和一定小于 target，因此不可能将数组分割成元素和相等的两个子集，直接返回 false。
 
 ![img](https://imagerk.oss-cn-beijing.aliyuncs.com/img/3.png)
@@ -566,8 +567,9 @@ class Solution:
 对于 i>0 且 j>0 的情况，如何确定$dp[i][j]$ 的值？需要分别考虑以下两种情况。
 
 1. 如果 $j \ge \textit{nums}[i]$，则对于当前的数字 $\textit{nums}[i]$，可以选取也可以不选取，两种情况只要有一个为 true，就有 $\textit{dp}[i][j]=\text{true}$。
+   
    1. 如果不选取 $\textit{nums}[i]$，则$ \textit{dp}[i][j]=\textit{dp}[i-1][j]$；
-
+   
    2. 如果选取 $\textit{nums}[i]$，则 $\textit{dp}[i][j]=\textit{dp}[i-1][j-\textit{nums}[i]]$。
 
 2. 如果$j < \textit{nums}[i]$，则在选取的数字的和等于 j 的情况下无法选取当前的数字$ \textit{nums}[i]$，因此有 $\textit{dp}[i][j]=\textit{dp}[i-1][j]$。
@@ -581,9 +583,6 @@ dp[i-1][j], \qquad\qquad\qquad\qquad\qquad\qquad\qquad j< nums[i]
 
 \end{matrix}\right.
 $$
-
-
-
 
 最终得到 $\textit{dp}[n-1][\textit{target}]$即为答案。
 
@@ -601,7 +600,7 @@ class Solution:
         if maxNum>target:#case 3
             return False
 
-		#建立矩阵,注意方式 False 可以直接用，[False]*(target+1)
+        #建立矩阵,注意方式 False 可以直接用，[False]*(target+1)
         dp=[[False]*(target+1) for _ in range(n)] 
         for i in range(n):
             dp[i][0]=True
@@ -622,8 +621,6 @@ print(x.canPartition([3,2,1,6]))
 
 作者：LeetCode-Solution
 ```
-
-
 
 ## 494. 目标和
 
@@ -817,8 +814,6 @@ class Solution:
 
 ## 两个数字之和1
 
-
-
 ## 两树之和 2
 
 ## 三数之和
@@ -849,12 +844,6 @@ x=Solution()
 print(x.threeSum(nums))
 ```
 
-
-
-
-
-
-
 ```
 #这个解法是不对的，是解决的另一个问题，这个解法解决的是不能重复用数字
 class Solution:
@@ -877,7 +866,6 @@ class Solution:
                 else:
                     dic.append(k)
         return ans
-
 ```
 
 ## 四数字之和
@@ -926,8 +914,6 @@ nums = [1,0,-1,0,-2,2]
 x=Solution()
 print(x.fourSum(nums,0))
 ```
-
-
 
 # 排序
 
@@ -1095,3 +1081,76 @@ print(hhh)
 ```
 
 ## Leecode329
+
+```python
+#%%
+space = [
+    ['o', 'z', 'k', 'E'],
+    ['o', 'o', 'o', 'v'],
+    ['v', 'f', 'k', 'a'],
+    ['c', 'D', 'a', 'h'],
+    ['q', 'C', 'E', 'I'],
+]
+word = 'zofD'
+
+word = [i for i in word]
+mx = len(space)
+mn = len(space[0])
+
+def get_pos(ix, iy, next_, space, mx, mn, past_pos):
+    new_position=[]
+    for newpos in [[ix-1, iy],[ix, iy-1],[ix+1, iy],[ix, iy+1]]:
+#         print(newpos)
+        if 0 <= newpos[0] < mx and 0 <= newpos[1] < mn and newpos not in past_pos:
+            if space[newpos[0]][newpos[1]] == next_:
+                ix = newpos[0]
+                iy = newpos[1]
+                new_position.append(newpos)
+
+    return new_position
+
+
+def get_res(ix, iy, next_num, space, mx, mn, past_pos, word):
+    # print(next_num)
+    flag = 0
+    next_ = word[next_num]
+    # print(next_)
+    new_poss= get_pos(ix, iy, next_, space, mx, mn, past_pos)
+    for poss in new_poss:
+        ix = poss[0]
+        iy = poss[1]
+        past_pos.append([ix,iy])
+    # print(new_poss)
+    next_num += 1
+#     print('------------>',next_num)
+
+    if next_num == len(word) and new_poss != []:
+        # print(new_poss != [])
+        flag += 1
+        return flag
+    elif next_num == len(word) and new_poss == []:
+        return 0
+    else:
+        return get_res(ix, iy, next_num, space, mx, mn, past_pos, word)
+
+
+
+
+for i in range(mx):
+    for j in range(mn):
+        if space[i][j] == word[0]:
+#             print(i,j)
+            ix = i
+            iy = j
+            past_pos=[[ix,iy]]
+            next_num = 1
+
+            result=get_res(ix, iy, next_num, space, mx, mn, past_pos,word)
+
+
+
+if result:
+    print('YES')
+else:
+    print('No')            
+```
